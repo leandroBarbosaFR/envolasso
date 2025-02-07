@@ -11,8 +11,8 @@ const CookieModal = {
     StyledCookieModal: {
       position: `fixed`,
       zIndex: `1000`,
-      background: `${colors.black}`,
-      border: `1px solid ${colors.greyMid}`,
+      background: `linear-gradient(90deg, #C9EDFF, #96DDFF)`,
+      border: `transparent`,
       borderRadius: `6px`,
       mobile: {
         top: `unset`,
@@ -65,7 +65,7 @@ const CookieModal = {
     // ==========================================================================
     StyledArticle: {
       variant: `bodyCopy`,
-      color: `${colors.white}`,
+      color: `${colors.black}`,
       mobile: {
         margin: ``
       },
@@ -86,7 +86,7 @@ const CookieModal = {
     // StyledHeadingWrap
     // ==========================================================================
     StyledHeadingWrap: {
-      borderBottom: `1px solid ${colors.greyMid}`,
+      borderBottom: `1px solid ${colors.transparent}`,
       width: `100%`,
       mobile: {
         gridColumn: `1/13`,
@@ -122,7 +122,7 @@ const CookieModal = {
       // ==========================================================================
       StyledHeading: {
         variant: `secondary`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         span: {},
         mobile: {
           margin: ``

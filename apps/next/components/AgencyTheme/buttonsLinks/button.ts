@@ -1516,11 +1516,11 @@ const button = {
     fontWeightActivated: `900`,
     // Icon
     icon: {
-      fill: colors.white,
-      fillHover: colors.whiteOpacity,
-      fillFocus: colors.whiteOpacity,
-      fillActive: colors.whiteOpacity,
-      fillActivated: colors.whiteOpacity
+      fill: colors.black,
+      fillHover: colors.black,
+      fillFocus: colors.black,
+      fillActive: colors.black,
+      fillActivated: colors.black
     },
     // Mobile
     mobile: {
