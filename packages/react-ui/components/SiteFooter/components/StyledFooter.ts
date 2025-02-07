@@ -14,9 +14,7 @@ const StyledFooter = styled.footer<StyledComponentProps>`
   bottom: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].bottom};
   left: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].left};
   right: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].right};
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 26px;
+
   // ==========================================================================
   // Mobile
   // ==========================================================================
@@ -24,6 +22,9 @@ const StyledFooter = styled.footer<StyledComponentProps>`
     height: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].mobile.height};
     margin: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].mobile.margin};
     padding: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].mobile.padding};
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 6px;
   }
   // ==========================================================================
   // Mobile Large
@@ -50,6 +51,9 @@ const StyledFooter = styled.footer<StyledComponentProps>`
     height: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].desktop.height};
     margin: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].desktop.margin};
     padding: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].desktop.padding};
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 26px;
   }
 
   // ==========================================================================

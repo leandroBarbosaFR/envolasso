@@ -138,15 +138,15 @@ const logo = {
     fill: colors.white,
     fillHover: colors.white,
     mobile: {
-      height: `100px`,
-      width: `340px`,
+      height: `152px`,
+      width: `132px`,
       margin: `0`,
       padding: `0`,
       border: ``
     },
     mobileLarge: {
-      height: `130px`,
-      width: `340px`,
+      height: `152px`,
+      width: `132px`,
       margin: ``,
       padding: ``,
       border: ``

@@ -167,7 +167,7 @@ const TextImgSection = {
       overflow: `hidden`,
       mobile: {
         gridColumn: `1/6`,
-        gridRow: `1`,
+        gridRow: `6`,
         margin: ``,
         padding: ``
       },
@@ -214,7 +214,7 @@ const TextImgSection = {
     StyledSubTitleWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `2`,
+        gridRow: `1`,
         margin: ``,
         padding: ``,
         zIndex: `1`
@@ -274,7 +274,7 @@ const TextImgSection = {
     StyledHeadingWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `2`,
+        gridRow: `1`,
         margin: ``,
         padding: ``,
         zIndex: `1`
@@ -342,7 +342,7 @@ const TextImgSection = {
       color: `${colors.greyLighter}`,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
+        gridRow: `2`,
         margin: ``,
         padding: ``
       },
@@ -1079,7 +1079,7 @@ const TextImgSection = {
     StyledHeadingWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
+        gridRow: `1`,
         margin: ``,
         padding: ``,
         zIndex: `1`

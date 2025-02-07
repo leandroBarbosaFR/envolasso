@@ -20,22 +20,22 @@ const SiteFooter = {
     mobile: {
       height: ``,
       margin: ``,
-      padding: `35px 0 100px`
+      padding: `35px 0 10px`
     },
     mobileLarge: {
       height: ``,
       margin: ``,
-      padding: `40px 0 130px`
+      padding: `40px 0 10px`
     },
     tablet: {
       height: ``,
       margin: ``,
-      padding: `50px 0 130px`
+      padding: `50px 0 15px`
     },
     desktop: {
       height: ``,
       margin: ``,
-      padding: `80px 0 130px`
+      padding: `80px 0 20px`
     },
     widescreen: {
       height: ``,
@@ -245,10 +245,10 @@ const SiteFooter = {
       display: `flex`,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: ``,
-        margin: ``,
+        gridRow: `1`,
+        margin: `0 auto`,
         padding: ``,
-        justifyContent: ``
+        justifyContent: `center`
       },
       mobileLarge: {
         gridColumn: ``,
@@ -289,7 +289,7 @@ const SiteFooter = {
     StyledNewsletterFormWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
+        gridRow: `2`,
         margin: ``,
         padding: ``
       },
@@ -326,10 +326,10 @@ const SiteFooter = {
       alignItems: `end`,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `2`,
+        gridRow: `3`,
         margin: ``,
         padding: ``,
-        justifyContent: ``
+        justifyContent: `center`
       },
       mobileLarge: {
         gridColumn: ``,
@@ -433,10 +433,10 @@ const SiteFooter = {
     StyledFooterLinks: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `2`,
+        gridRow: `4`,
         display: `flex`,
         alignItems: `center`,
-        margin: ``,
+        margin: `0 auto`,
         padding: ``,
         gap: `5px`,
         position: `relative`,
@@ -466,10 +466,10 @@ const SiteFooter = {
         after: {}
       },
       tablet: {
-        gridColumn: `9/13`,
-        gridRow: `1`,
+        gridColumn: ``,
+        gridRow: ``,
         display: ``,
-        alignItems: `flex-end`,
+        alignItems: ``,
         margin: ``,
         padding: ``,
         gap: ``,
@@ -481,8 +481,8 @@ const SiteFooter = {
         gridColumn: `1/6`,
         gridRow: `2`,
         display: ``,
-        alignItems: ``,
-        margin: ``,
+        alignItems: `center`,
+        margin: `0`,
         padding: ``,
         gap: ``,
         // After pseudo element
