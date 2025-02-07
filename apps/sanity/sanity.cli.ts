@@ -5,6 +5,6 @@ export default defineCliConfig({
     projectId: process.env.SANITY_STUDIO_projectId as string,
     dataset: process.env.SANITY_STUDIO_dataset as string,
   },
-  studioHost: 'sanity-studio1367-next',
+  studioHost: 'sanity-envol-asso-next',
   autoUpdates: true,
 })

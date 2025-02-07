@@ -24,7 +24,6 @@ import { BlogIndexTheme } from './components/BlogIndex';
 import { BlogSinglePageTheme } from './components/BlogSinglePage';
 import { BurgerNavToggleTheme } from './buttonsLinks/burgerNavToggle';
 import { ButtonTheme } from './buttonsLinks/button';
-import { SplashScreenTheme } from './components/SplashScreen';
 import { ContactFormTheme } from './components/ContactForm';
 import { CarouselTheme } from './components/Carousel';
 import { CookieModalTheme } from './components/CookieModal';
@@ -49,8 +48,6 @@ import { FormInputTextareaTheme } from './components/FormInputTextarea';
 import { GlobalErrorMessageTheme } from './components/GlobalErrorMessage';
 import { GlobalLoadingMessageTheme } from './components/GlobalLoadingMessage';
 import { GlobalSuccessMessageTheme } from './components/GlobalSuccessMessage';
-import { GoogleReviewTheme } from './components/GoogleReview';
-import { GoogleReviewSectionTheme } from './components/GoogleReviewSection';
 import { HeadingTheme } from './typography/Heading';
 import { HeroSectionTheme } from './components/HeroSection';
 import { HeroSectionContentCarouselTheme } from './components/HeroSectionContentCarousel';
@@ -63,9 +60,6 @@ import { NavDrawTheme } from './components/NavDraw';
 import { NavListTheme } from './components/NavList';
 import { NavTheme } from './components/Nav';
 import { NewsletterFormTheme } from './components/NewsletterForm';
-import { PriceSectionTheme } from './components/PriceSection';
-import { PricingSectionTheme } from './components/PricingSection';
-import { PricingListTheme } from './components/PricingList';
 import { PageHeaderTheme } from './components/PageHeader';
 import { PageHeaderBannerTheme } from './components/PageHeaderBanner';
 import { PageHeaderMediaTheme } from './components/PageHeaderMedia';
@@ -75,7 +69,6 @@ import { ParagraphTheme } from './typography/Paragraph';
 import { PopoverTheme } from './components/Popover';
 import { PortfolioIndexTheme } from './components/PortfolioIndex';
 import { PortfolioSinglePageTheme } from './components/PortfolioSinglePage';
-import { LogoFeedSectionTheme } from './components/LogoFeedSection';
 import { PortfolioFeedSectionTheme } from './components/PortfolioFeedSection';
 import { PortfolioFeedItemDefaultTheme } from './components/PortfolioFeedItemDefault';
 import { PortfolioFeedItemTheme } from './components/PortfolioFeedItem';
@@ -95,7 +88,6 @@ import { TextSectionAsideTheme } from './components/TextSectionAside';
 import { TextSectionTheme } from './components/TextSection';
 import { ToastTheme } from './components/Toast';
 import { ToolTipTheme } from './components/ToolTip';
-import { ClientLogoSectionTheme } from './components/ClientLogoSection';
 
 // ==========================================================================
 // Agency Theme Types
@@ -139,7 +131,6 @@ export interface ThemeTypes {
   BlogSinglePage: BlogSinglePageTheme;
   burgerNavToggle: BurgerNavToggleTheme;
   button: ButtonTheme;
-  SplashScreen: SplashScreenTheme;
   ContactForm: ContactFormTheme;
   ContactIndex: ContactIndexTheme;
   Carousel: CarouselTheme;
@@ -164,8 +155,6 @@ export interface ThemeTypes {
   GlobalErrorMessage: GlobalErrorMessageTheme;
   GlobalLoadingMessage: GlobalLoadingMessageTheme;
   GlobalSuccessMessage: GlobalSuccessMessageTheme;
-  GoogleReview: GoogleReviewTheme;
-  GoogleReviewSection: GoogleReviewSectionTheme;
   Heading: HeadingTheme;
   HeroSection: HeroSectionTheme;
   HeroSectionContentCarousel: HeroSectionContentCarouselTheme;
@@ -178,9 +167,6 @@ export interface ThemeTypes {
   NavDraw: NavDrawTheme;
   NavList: NavListTheme;
   NewsletterForm: NewsletterFormTheme;
-  PriceSection: PriceSectionTheme;
-  PricingList: PricingListTheme;
-  PricingSection: PricingSectionTheme;
   PageHeader: PageHeaderTheme;
   PageHeaderBanner: PageHeaderBannerTheme;
   PageNotFoundIndex: PageNotFoundIndexTheme;
@@ -191,7 +177,6 @@ export interface ThemeTypes {
   PortfolioIndex: PortfolioIndexTheme;
   PortfolioSinglePage: PortfolioSinglePageTheme;
   PortfolioFeedSection: PortfolioFeedSectionTheme;
-  LogoFeedSection: LogoFeedSectionTheme;
   PortfolioFeedItemDefault: PortfolioFeedItemDefaultTheme;
   PortfolioFeedItem: PortfolioFeedItemTheme;
   PostFeedItem: PostFeedItemTheme;
@@ -210,5 +195,4 @@ export interface ThemeTypes {
   TextSectionAside: TextSectionAsideTheme;
   Toast: ToastTheme;
   ToolTip: ToolTipTheme;
-  ClientLogoSection: ClientLogoSectionTheme;
 }

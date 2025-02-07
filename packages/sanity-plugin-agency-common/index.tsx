@@ -25,11 +25,9 @@ import telLink from './schemas/objects/tel-link';
 import textColumn from './schemas/objects/text-column';
 import textColumnBasic from './schemas/objects/text-column-basic';
 import textImgSection from './schemas/objects/text-img-section';
-import pricingSection from './schemas/objects/pricing-section';
 import price from './schemas/objects/price';
 import textSection from './schemas/objects/text-section';
 import logoFeedSection from './schemas/objects/logo-section';
-import googleReviewSection from './schemas/objects/google-reviews';
 import textSectionAside from './schemas/objects/text-section-aside';
 import client from './schemas/objects/client';
 import clientLogos from './schemas/objects/client-logos';
@@ -53,9 +51,7 @@ interface AgencyCommonPluginOptions {
   layoutVariantTextImgSection: layoutVariantOptions[];
   layoutVariantTextSection: layoutVariantOptions[];
   layoutVariantLogoFeedSection: layoutVariantOptions[];
-  layoutVariantGoogleReviewSection: layoutVariantOptions[];
   layoutVariantTextSectionAside: layoutVariantOptions[];
-  layoutVariantPricingSection: layoutVariantOptions[];
   layoutVariantPageHeader: { title: string; value: string }[];
   layoutVariantClientLogos: layoutVariantOptions[];
 }
@@ -75,10 +71,8 @@ const agencyCommon = definePlugin(
     layoutVariantTextImgSection,
     layoutVariantTextSection,
     layoutVariantLogoFeedSection,
-    layoutVariantGoogleReviewSection,
     layoutVariantTextSectionAside,
     layoutVariantPageHeader,
-    layoutVariantPricingSection,
     layoutVariantClientLogos
   }: AgencyCommonPluginOptions) => ({
     name: 'agency-common',
@@ -130,8 +124,6 @@ const agencyCommon = definePlugin(
         textImgSection({ layoutVariantTextImgSection }),
         textSection({ layoutVariantTextSection }),
         logoFeedSection({ layoutVariantLogoFeedSection }),
-        pricingSection({ layoutVariantPricingSection }),
-        googleReviewSection({ layoutVariantGoogleReviewSection }),
         textSectionAside({ layoutVariantTextSectionAside }),
         client
       ].filter(({ name }) => enableTypes.includes(name))

@@ -9,11 +9,7 @@ import {
   // TestimonialSection,
   TextImgSection,
   TextSection,
-  TextSectionAside,
-  LogoFeedSection,
-  GoogleReviewSection,
-  PricingSection,
-  ClientLogoSection
+  TextSectionAside
 } from '@agency-platform/react-ui';
 import type { LayoutConfig } from '@agency-platform/shared-types';
 
@@ -49,16 +45,8 @@ const Layout = ({ layout }: LayoutProps) => {
           return <TextImgSection key={index} data={layoutBlock} />;
         case 'common.layout.textSection':
           return <TextSection key={index} data={layoutBlock} />;
-        case 'common.layout.logoFeedSection':
-          return <LogoFeedSection key={index} data={layoutBlock} />;
-        case 'common.layout.googleReviewSection':
-          return <GoogleReviewSection key={index} data={layoutBlock} />;
         case 'common.layout.textSectionAside':
           return <TextSectionAside key={index} data={layoutBlock} />;
-        case 'common.layout.pricingSection':
-          return <PricingSection key={index} data={layoutBlock} />;
-        case 'common.layout.clientLogos':
-          return <ClientLogoSection key={index} data={layoutBlock} />;
         default:
           return <p key={index}>No layout exists for {layoutBlock._type}</p>;
       }

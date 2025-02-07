@@ -25,7 +25,6 @@ import { BlogIndex } from './components/BlogIndex';
 import { BlogSinglePage } from './components/BlogSinglePage';
 import { burgerNavToggle } from './buttonsLinks/burgerNavToggle';
 import { button } from './buttonsLinks/button';
-import { SplashScreen } from './components/SplashScreen';
 import { Carousel } from './components/Carousel';
 import { ContactForm } from './components/ContactForm';
 import { ContactIndex } from './components/ContactIndex';
@@ -50,8 +49,6 @@ import { FormInputTextarea } from './components/FormInputTextarea';
 import { GlobalErrorMessage } from './components/GlobalErrorMessage';
 import { GlobalLoadingMessage } from './components/GlobalLoadingMessage';
 import { GlobalSuccessMessage } from './components/GlobalSuccessMessage';
-import { GoogleReview } from './components/GoogleReview';
-import { GoogleReviewSection } from './components/GoogleReviewSection';
 import { Heading } from './typography/Heading';
 import { HeroSectionContentCarousel } from './components/HeroSectionContentCarousel';
 import { HomeCarouselItem } from './components/HomeCarouselItem';
@@ -64,7 +61,6 @@ import { Nav } from './components/Nav';
 import { NavDraw } from './components/NavDraw';
 import { NavList } from './components/NavList';
 import { NewsletterForm } from './components/NewsletterForm';
-import { PriceSection } from './components/PriceSection';
 import { PageHeader } from './components/PageHeader';
 import { PageHeaderBanner } from './components/PageHeaderBanner';
 import { PageHeaderMedia } from './components/PageHeaderMedia';
@@ -75,14 +71,11 @@ import { Popover } from './components/Popover';
 import { PortfolioIndex } from './components/PortfolioIndex';
 import { PortfolioSinglePage } from './components/PortfolioSinglePage';
 import { PortfolioFeedSection } from './components/PortfolioFeedSection';
-import { LogoFeedSection } from './components/LogoFeedSection';
 import { PortfolioFeedItem } from './components/PortfolioFeedItem';
 import { PortfolioFeedItemDefault } from './components/PortfolioFeedItemDefault';
 import { PostFeedItem } from './components/PostFeedItem';
 import { PostFeedItemDefault } from './components/PostFeedItemDefault';
 import { PostFeedSection } from './components/PostFeedSection';
-import { PricingList } from './components/PricingList';
-import { PricingSection } from './components/PricingSection';
 import { SelectMenu } from './components/SelectMenu';
 import { SiteFooter } from './components/SiteFooter';
 import { SiteHeader } from './components/SiteHeader';
@@ -96,7 +89,6 @@ import { TextSection } from './components/TextSection';
 import { TextSectionAside } from './components/TextSectionAside';
 import { Toast } from './components/Toast';
 import { ToolTip } from './components/ToolTip';
-import { ClientLogoSection } from './components/ClientLogoSection';
 
 // ==========================================================================
 // AgencyTheme
@@ -137,7 +129,6 @@ const theme: AgencyTheme = {
   Article,
   BlockQuote,
   BlogIndex,
-  SplashScreen,
   BlogSinglePage,
   burgerNavToggle,
   button,
@@ -165,8 +156,6 @@ const theme: AgencyTheme = {
   GlobalErrorMessage,
   GlobalLoadingMessage,
   GlobalSuccessMessage,
-  GoogleReview,
-  GoogleReviewSection,
   Heading,
   HeroSection,
   HeroSectionContentCarousel,
@@ -179,7 +168,6 @@ const theme: AgencyTheme = {
   NavDraw,
   NavList,
   NewsletterForm,
-  PriceSection,
   PageHeader,
   PageHeaderBanner,
   PageHeaderMedia,
@@ -190,14 +178,11 @@ const theme: AgencyTheme = {
   PortfolioIndex,
   PortfolioSinglePage,
   PortfolioFeedSection,
-  LogoFeedSection,
   PortfolioFeedItem,
   PortfolioFeedItemDefault,
   PostFeedItem,
   PostFeedItemDefault,
   PostFeedSection,
-  PricingList,
-  PricingSection,
   SelectMenu,
   SiteFooter,
   SiteHeader,
@@ -210,8 +195,7 @@ const theme: AgencyTheme = {
   TextSection,
   TextSectionAside,
   Toast,
-  ToolTip,
-  ClientLogoSection
+  ToolTip
 };
 
 export default theme;

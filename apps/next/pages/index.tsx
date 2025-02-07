@@ -1,21 +1,12 @@
 import { GetStaticProps } from 'next';
 import React, { useState } from 'react';
 // 1367 Agency UI
-import {
-  Main,
-  HeroSection,
-  HeroSectionContentCarousel,
-  InfiniteSlider,
-  HorizontalTimeline,
-  AffiliateSection
-  // GoogleReviewSection
-} from '@agency-platform/react-ui';
+import { Main, HeroSection, HeroSectionContentCarousel } from '@agency-platform/react-ui';
 import type { LandingPage } from '@agency-platform/shared-types';
 // Components
 import Layout from 'components/Layout';
 import MetaTags from 'components/MetaTags';
 import RootLayout from 'components/RootLayout';
-import SplashScreen from '../../../packages/react-ui/components/SplashScreen';
 
 // Lib/services/utils
 import getPageData from 'services/getPageData';
@@ -54,9 +45,6 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
     featureImage
   } = landingPage;
 
-  const finishLoading = () => {
-    setLoading(false);
-  };
   return (
     <>
       <MetaTags
@@ -67,9 +55,6 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
         }}
         overrideMetaTags={overrideMetaTags}
       />
-      {loading ? (
-        <SplashScreen finishLoading={finishLoading} layoutVariant={'default'} isModalOpen={false} />
-      ) : null}
       <Main layoutVariant="removeSpacing">
         {heroType === 'static' || heroType === 'carousel' ? (
           <HeroSection
@@ -94,17 +79,7 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
             <HeroSectionContentCarousel carouselType={'homeContentCarousel'} data={contentCarousel} />
           )
         )}
-        <InfiniteSlider />
-        <AffiliateSection />
         <Layout layout={layout} />
-        <HorizontalTimeline />
-        {/* <GoogleReviewSection
-          data={{
-            layoutVariant: 'default',
-            title: 'title',
-            subtitle: 'subtitle'
-          }}
-        /> */}
       </Main>
     </>
   );

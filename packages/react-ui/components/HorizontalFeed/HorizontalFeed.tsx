@@ -10,8 +10,6 @@ import { Portfolio } from '@agency-platform/shared-types';
 // Components
 
 import PortfolioFeedItem from '../PortfolioFeedItem';
-import GoogleReview from '../GoogleReview';
-import PricingList from '../PricingList';
 
 // Styles
 import HorizontalFeedBtn from './components/HorizontalFeedBtn';
@@ -91,55 +89,6 @@ const HorizontalFeed = ({
                 price={item?.price}
                 body={item?.body}
                 subtitle={item?.subtitle}
-              />
-            );
-          })
-        );
-      case 'googleReviewSection':
-        return (
-          data &&
-          data.map((item: any, index: React.Key) => {
-            return (
-              <GoogleReview
-                key={index}
-                layoutVariant={'default'}
-                title={item?.title}
-                review={item?.review}
-                excerpt={item?.excerpt}
-                featureImage={item?.image}
-                slug={item?.slug}
-                dynamicRoute={item?.dynamicRoute}
-                isHorizontalFeed={true}
-                feedItemComponent={feedItemComponent}
-                createdAt={item?._createdAt}
-                price={item?.price}
-                body={item?.body}
-              />
-            );
-          })
-        );
-      case 'pricingSection':
-        return (
-          data &&
-          data.map((item: any, index: React.Key) => {
-            return (
-              <PricingList
-                key={index}
-                layoutVariant={'default'}
-                title={item?.title}
-                review={item?.review}
-                excerpt={item?.excerpt}
-                pricings={item?.pricings || []} // Ensure pricings is an array
-                quote={item?.quote}
-                credit={item?.credit}
-                featureImage={item?.image}
-                slug={item?.slug}
-                dynamicRoute={item?.dynamicRoute}
-                isHorizontalFeed={true}
-                feedItemComponent={feedItemComponent}
-                createdAt={item?._createdAt}
-                price={item?.price}
-                body={item?.body}
               />
             );
           })

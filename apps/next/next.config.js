@@ -40,7 +40,7 @@ const nextConfig = withTM({
         headers: [
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'sanity-studio1367-next'
+            value: 'sanity-envol-asso-next'
           },
           {
             key: 'Access-Control-Allow-Methods',
