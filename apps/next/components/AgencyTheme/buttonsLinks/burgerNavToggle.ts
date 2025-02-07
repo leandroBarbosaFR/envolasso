@@ -22,9 +22,9 @@ const burgerNavToggle = {
       width: `100%`,
       opacity: `1`,
       position: `absolute`,
-      fill: colors.white,
-      fillHover: colors.white,
-      fillActive: colors.white,
+      fill: colors.black,
+      fillHover: colors.black,
+      fillActive: colors.black,
       height: '10%',
       transition: ' 0.25s ease-in-out',
 
@@ -38,7 +38,6 @@ const burgerNavToggle = {
         transform: `rotate(-45deg)`
       }
     },
-
     // Mobile
     mobile: {
       height: '19px',
@@ -136,10 +135,10 @@ const burgerNavToggle = {
       width: `100%`,
       opacity: `1`,
       opacityDisabled: `0.5`,
-      fill: colors.white,
-      fillCollapsed: colors.white,
-      fillHover: colors.white,
-      fillActive: colors.white,
+      fill: colors.black,
+      fillCollapsed: colors.black,
+      fillHover: colors.black,
+      fillActive: colors.black,
       height: '10%',
       transition: ' 0.25s ease-in-out',
 

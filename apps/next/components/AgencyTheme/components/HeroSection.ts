@@ -14,7 +14,7 @@ const HeroSection = {
       overflow: `hidden`,
       background: `${colors.black}`,
       mobile: {
-        height: `90vh`,
+        height: `100vh`,
         minHeight: ``,
         margin: ``,
         padding: `0`,
@@ -686,7 +686,7 @@ const HeroSection = {
         }
       },
       tablet: {
-        height: `90vh`,
+        height: `100vh`,
         minHeight: `500px`,
         margin: ``,
         padding: `0`,
