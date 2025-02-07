@@ -15,15 +15,12 @@ const StyledHeading = styled(StyledHeadingBase)<StyledComponentProps>`
   span {
     color: ${({ layoutVariant, theme }) =>
       theme.PostFeedSection[layoutVariant!].StyledHeadingWrap.StyledHeading.span.color};
-
   }
 
   // ==========================================================================
   // Mobile
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobile} {
-     text-align: center;
-     margin: 0 auto;
     margin: ${({ layoutVariant, theme }) =>
       theme.PostFeedSection[layoutVariant!].StyledHeadingWrap.StyledHeading.mobile.margin};
     padding: ${({ layoutVariant, theme }) =>
@@ -219,8 +216,6 @@ const StyledHeading = styled(StyledHeadingBase)<StyledComponentProps>`
   // Desktop
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.desktop} {
-    text-align: center;
-     margin: 0 auto;
     margin: ${({ layoutVariant, theme }) =>
       theme.PostFeedSection[layoutVariant!].StyledHeadingWrap.StyledHeading.desktop.margin};
     padding: ${({ layoutVariant, theme }) =>

@@ -142,7 +142,7 @@ const PostFeedSection = {
     StyledSubTitleWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
+        gridRow: ``,
         margin: ``,
         padding: ``
       },
@@ -159,7 +159,7 @@ const PostFeedSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/6`,
+        gridColumn: ``,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -174,7 +174,7 @@ const PostFeedSection = {
       // ==========================================================================
       StyledSubTitle: {
         variant: `secondaryXs`,
-        color: `${colors.greyLight}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
@@ -191,7 +191,7 @@ const PostFeedSection = {
           margin: ``
         },
         span: {
-          color: `${colors.red}`
+          color: `${colors.black}`
         }
       }
     },
@@ -218,23 +218,23 @@ const PostFeedSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `2/12`,
+        gridColumn: `2/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `4/10`,
+        gridColumn: ``,
         gridRow: ``,
         margin: ``,
-        padding: `0 0 60px 0`
+        padding: ``
       },
       // StyledHeading
       // ==========================================================================
       StyledHeading: {
         variant: `primary`,
-        color: `${colors.greyLight}`,
-        position: `relative`,
+        color: `${colors.black}`,
+        position: ``,
         overflow: ``,
         mobile: {
           margin: ``,
@@ -257,7 +257,7 @@ const PostFeedSection = {
           After: {}
         },
         span: {
-          color: `${colors.greyLight}`
+          color: `${colors.black}`
         }
       }
     },
@@ -350,7 +350,7 @@ const PostFeedSection = {
         After: {}
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `2/13`,
         gridRow: ``,
         margin: ``,
         padding: ``,
@@ -369,7 +369,7 @@ const PostFeedSection = {
       // HorizontalFeed
       // ==========================================================================
       DefaultFeed: {
-        feedItemComponent: `PostFeedItemPreviewTitle`
+        feedItemComponent: `PostFeedItemDefault`
       },
       // ==========================================================================
       // HorizontalFeed
@@ -377,7 +377,7 @@ const PostFeedSection = {
       HorizontalFeed: {
         layoutVariant: `default`,
         withArrowButton: true,
-        feedItemComponent: `PostFeedItemPreviewTitle`
+        feedItemComponent: `PostFeedItemDefault`
       },
       // Before
       // ==========================================================================

@@ -58,7 +58,7 @@ const PortfolioFeedItemDefault = {
       all: `unset`,
       cursor: `pointer`,
       transition: `transform 0.25s ease-in-out`,
-      display: `block`,
+      display: `block`
     },
     // ==========================================================================
     // ImageTag
@@ -156,9 +156,9 @@ const PortfolioFeedItemDefault = {
     StyledHeadingWrap: {
       alignSelf: `start`,
       mobile: {
-        gridColumn: `1/5`,
+        gridColumn: `1/13`,
         gridRow: ``,
-        margin: ``,
+        margin: `0 auto`,
         padding: ``
       },
       mobileLarge: {
@@ -189,7 +189,7 @@ const PortfolioFeedItemDefault = {
       // ==========================================================================
       StyledHeading: {
         variant: `headingFeedItem`,
-        color: `${colors.greyLighter}`,
+        color: `${colors.black}`,
         mobile: {
           margin: `0 0 5px`
         },
@@ -243,7 +243,7 @@ const PortfolioFeedItemDefault = {
       },
       StyledExcerpt: {
         variant: `bodyCopy`,
-        color: `${colors.greyLighter}`,
+        color: `${colors.black}`,
         whiteSpace: `pre-wrap`,
         truncateValue: 100,
         mobile: {

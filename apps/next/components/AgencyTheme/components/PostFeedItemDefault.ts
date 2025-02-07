@@ -23,8 +23,8 @@ const PostFeedItemDefault = {
         // isHorizontalFeed
         width: `100vw`,
         maxWidth: `300px`,
-        padding: `15px 15px`,
-        minHeight: `450px`
+        padding: ``,
+        minHeight: ``
       },
       mobileLarge: {
         gridColumn: `span 12`,
@@ -37,7 +37,7 @@ const PostFeedItemDefault = {
         // isHorizontalFeed
         width: ``,
         maxWidth: `320px`,
-        minHeight: `600px`
+        minHeight: ``
       },
       desktop: {
         gridColumn: `span 4`,

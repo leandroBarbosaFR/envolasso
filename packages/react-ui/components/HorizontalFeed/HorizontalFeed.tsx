@@ -7,6 +7,7 @@ import useMouseWheelScroll from '../../hooks/useMouseWheelScroll';
 import { useTheme } from 'styled-components';
 import { HorizontalFeedTheme } from '@agency-platform/themes';
 import { Portfolio } from '@agency-platform/shared-types';
+import PostFeedItem from '../PostFeedItem';
 // Components
 
 import PortfolioFeedItem from '../PortfolioFeedItem';

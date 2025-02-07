@@ -150,7 +150,7 @@ const PostFeedItemDefault = ({
               </StyledCtaNavWrap>
             )} */}
           </StyledBottomWrapper>
-          {slug && (
+          {/* {slug && (
             <StyledCtaNavWrap
               layoutVariant={layoutVariant}
               style={{
@@ -175,7 +175,7 @@ const PostFeedItemDefault = ({
                 {theme.PostFeedItemDefault[layoutVariant!].StyledCtaNavWrap.Button.text}
               </ButtonLink>
             </StyledCtaNavWrap>
-          )}
+          )} */}
         </StyledGrid>
       </StyledFeedInner>
     </StyledFeedItem>

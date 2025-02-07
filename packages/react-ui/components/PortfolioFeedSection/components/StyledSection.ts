@@ -19,6 +19,9 @@ const StyledSection = styled(StyledSectionBase)<StyledComponentProps>`
       theme.PortfolioFeedSection[layoutVariant!].StyledSection.mobile.margin};
     padding: ${({ layoutVariant, theme }) =>
       theme.PortfolioFeedSection[layoutVariant!].StyledSection.mobile.padding};
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 6px;
   }
   // ==========================================================================
   // Mobile Large
@@ -54,6 +57,9 @@ const StyledSection = styled(StyledSectionBase)<StyledComponentProps>`
       theme.PortfolioFeedSection[layoutVariant!].StyledSection.desktop.margin};
     padding: ${({ layoutVariant, theme }) =>
       theme.PortfolioFeedSection[layoutVariant!].StyledSection.desktop.padding};
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 26px;
   }
 
   // ==========================================================================

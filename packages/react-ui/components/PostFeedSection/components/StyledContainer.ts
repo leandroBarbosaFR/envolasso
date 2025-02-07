@@ -9,11 +9,6 @@ const StyledContainer = styled(StyledContainerBase)<StyledComponentProps>`
 
   color: ${({ layoutVariant, theme }) => theme.PostFeedSection[layoutVariant!].StyledContainer.color};
   position: ${({ layoutVariant, theme }) => theme.PostFeedSection[layoutVariant!].StyledContainer.position};
-  background:#292929;
-  border-radius: 4px;
-  overflow: hidden;
-
-
 
   ${({ isFluid, layoutVariant, theme }) =>
     isFluid
@@ -32,7 +27,6 @@ const StyledContainer = styled(StyledContainerBase)<StyledComponentProps>`
   // Mobile
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobile} {
-      padding: 80px 20px;
     ${({ isFluid, layoutVariant, theme }) =>
       isFluid
         ? css`
@@ -103,7 +97,6 @@ const StyledContainer = styled(StyledContainerBase)<StyledComponentProps>`
   // Desktop
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.desktop} {
-      padding: 104px 20px;
     ${({ isFluid, layoutVariant, theme }) =>
       isFluid
         ? css`
@@ -127,7 +120,6 @@ const StyledContainer = styled(StyledContainerBase)<StyledComponentProps>`
   // widescreen
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.widescreen} {
-        padding: 104px 80px;
     ${({ isFluid, layoutVariant, theme }) =>
       isFluid
         ? css`

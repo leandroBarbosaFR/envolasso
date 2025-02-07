@@ -9,7 +9,7 @@ const Heading = {
   // ==========================================================================
   primary: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.OverusedGroteskSemiBold,
     fontWeight: 400,
     mobile: {
       fontSize: `32px`,

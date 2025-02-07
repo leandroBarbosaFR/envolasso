@@ -16,31 +16,31 @@ const PortfolioFeedSection = {
     // Section Styles
     // ==========================================================================
     StyledSection: {
-      background: `${colors.blackMid}`,
+      background: `linear-gradient(90deg, #C9EDFF, #96DDFF)`,
       mobile: {
         height: ``,
         margin: ``,
-        padding: `64px 0`
+        padding: `10px 0 10px`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `10px 0 10px`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `15px 0 15px`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: `104px 0`
+        padding: `20px 0 20px`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `20px 0 20px`
       }
     },
     // ==========================================================================
@@ -183,7 +183,7 @@ const PortfolioFeedSection = {
       // ==========================================================================
       StyledSubTitle: {
         variant: `tertiary`,
-        color: colors.greyLighter,
+        color: colors.black,
         mobile: {
           margin: ``
         },
@@ -200,7 +200,7 @@ const PortfolioFeedSection = {
           margin: ``
         },
         span: {
-          color: `${colors.greyLighter}`
+          color: `${colors.black}`
         }
       }
     },
@@ -209,14 +209,14 @@ const PortfolioFeedSection = {
     // ==========================================================================
     StyledHeadingWrap: {
       mobile: {
-        gridColumn: `1/9`,
-        gridRow: `3`,
-        margin: ``,
-        padding: `25px 0 0 0`
+        gridColumn: `1/13`,
+        gridRow: `1`,
+        margin: `0 auto`,
+        padding: ``
       },
       mobileLarge: {
-        gridColumn: `1/9`,
-        gridRow: `3`,
+        gridColumn: ``,
+        gridRow: ``,
         margin: ``,
         padding: ``
       },
@@ -228,12 +228,12 @@ const PortfolioFeedSection = {
       },
       desktop: {
         gridColumn: ``,
-        gridRow: `2`,
+        gridRow: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `1/9`,
+        gridColumn: ``,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -241,8 +241,8 @@ const PortfolioFeedSection = {
       // StyledHeading
       // ==========================================================================
       StyledHeading: {
-        variant: `tertiarySmall`,
-        color: colors.greyLighter,
+        variant: `primary`,
+        color: colors.black,
         position: `relative`,
         overflow: `hidden`,
         mobile: {
@@ -292,7 +292,7 @@ const PortfolioFeedSection = {
           }
         },
         span: {
-          color: `${colors.greyLighter}`
+          color: `${colors.black}`
         }
       }
     },
@@ -301,7 +301,7 @@ const PortfolioFeedSection = {
     // ==========================================================================
     StyledArticle: {
       variant: `bodyCopySm`,
-      color: `${colors.greyLighter}`,
+      color: `${colors.black}`,
       mobile: {
         gridColumn: `1/13`,
         gridRow: `2`,
