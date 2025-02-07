@@ -1,6 +1,6 @@
-import { Cta, Media, Carousel, DialogBox } from '@agency-platform/shared-types';
+import { Cta, Media, Carousel } from '@agency-platform/shared-types';
 import { PortableText } from '@portabletext/react';
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Flip from 'gsap/dist/Flip';
 import { Draggable } from 'gsap/dist/Draggable';
@@ -15,7 +15,6 @@ import TextSlider from '../TextSlider';
 import FadeCarousel from '../FadeCarousel';
 import { ImageTag } from '../ImageTag';
 import SlideCarousel from '../SlideCarousel';
-import ButtonLink from '../ButtonLink';
 // Styles
 import StyledArrowDown from './components/StyledArrowDown';
 import StyledImage from './components/StyledImage';
@@ -24,8 +23,6 @@ import StyledSection from './components/StyledSection';
 import StyledVideo from './components/StyledVideo';
 import StyledArticle from './components/StyledArticle';
 import StyledContainer from './components/StyledContainer';
-import StyledCtaNav from './components/StyledCtaNav';
-import StyledCtaNavWrap from './components/StyledCtaNavWrap';
 import StyledGrid from './components/StyledGrid';
 import StyledHeading from './components/StyledHeading';
 import StyledHeadingWrap from './components/StyledHeadingWrap';
@@ -56,7 +53,6 @@ const HeroSection = ({
   title,
   standFirst,
   subtitle,
-  cta,
   heroType,
   isSlideTransition,
   heroFirstFrameImage,
@@ -72,9 +68,7 @@ const HeroSection = ({
   const headingRef = useRef<HTMLHeadingElement | null>(null);
   const subtitleRef = useRef<HTMLHeadingElement | null>(null);
   const standFirstRef = useRef<HTMLParagraphElement | null>(null);
-  const ctaRef = useRef<HTMLButtonElement | null>(null);
   const imageDragRef = useRef<HTMLDivElement | null>(null);
-  const hasUserInteracted = useRef(false); // Tracks user interaction
 
   const imageSrcFeatured = featureImage?.asset?.url;
   const blurDataURLFeatured = featureImage?.asset?.metadata?.lqip;
@@ -145,38 +139,6 @@ const HeroSection = ({
       if (rotationTimeline) rotationTimeline.kill();
     };
   }, []);
-
-  // useEffect(() => {
-  //   if (subtitleRef.current) {
-  //     gsap.fromTo(
-  //       subtitleRef.current,
-  //       { opacity: 0, y: -70, scale: 0.8 }, // Starting properties (more negative y and scale down)
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         scale: 1, // Scale to normal
-  //         duration: 3, // Increase duration for more visible effect
-  //         delay: 1.8 // Optional delay for effect
-  //       }
-  //     );
-  //   }
-  // }, [subtitle]);
-
-  // useEffect(() => {
-  //   if (subtitleRef.current) {
-  //     gsap.fromTo(
-  //       subtitleRef.current,
-  //       { opacity: 0, y: -70, scale: 0.8 }, // Starting properties (more negative y and scale down)
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         scale: 1, // Scale to normal
-  //         duration: 3, // Increase duration for more visible effect
-  //         delay: 1.8 // Optional delay for effect
-  //       }
-  //     );
-  //   }
-  // }, [subtitle]);
 
   //behind the wall slide
   useEffect(() => {
@@ -337,20 +299,6 @@ const HeroSection = ({
                 <PortableText value={standFirst} components={CustomPortableText} />
               </StyledArticle>
             )}
-          <div style={{ gridRow: '4', gridColumn: '1/13', margin: '0 auto'}}>          
-            <ButtonLink
-            href={`https://calendly.com/hello1367studio/30min`}
-            title={'title'}
-            variant={'buttonPrimary'}
-            withText={true}
-            withIcon={true}
-            iconPosition={'right'}
-            iconName={'arrowRightNew'}
-            target="_blank"
-          >
-            Je veux en savoir plus
-          </ButtonLink></div>
-
           </StyledGrid>
         </StyledContainer>
 

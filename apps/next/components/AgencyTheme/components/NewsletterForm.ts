@@ -44,7 +44,7 @@ const NewsletterForm = {
       // ==========================================================================
       StyledHeading: {
         variant: `secondary`,
-        color: colors.lightGrey,
+        color: colors.black,
         mobile: {
           margin: `0 0 10px`
         },
@@ -67,7 +67,7 @@ const NewsletterForm = {
     // ==========================================================================
     StyledArticle: {
       variant: `bodyCopy`,
-      color: `${colors.lightGrey}`,
+      color: `${colors.black}`,
       mobile: {
         margin: ``,
         gridColumn: ``,
@@ -113,7 +113,7 @@ const NewsletterForm = {
         flexDirection: ``
       },
       buttton: {
-        variant: `buttonPrimaryGrey`
+        variant: `buttonWhitePrimary`
       }
     },
     // ==========================================================================
@@ -125,9 +125,9 @@ const NewsletterForm = {
       fontFamily: ``,
       fontWeight: ``,
       textTransform: `uppercase`,
-      border: `1px solid ${colors.greyMid}`,
+      border: `1px solid ${colors.white}`,
       borderRadius: `4px`,
-      background: `transparent`,
+      background: `${colors.white}`,
       webkitAppearance: `none`,
       mozAppearance: `textfield`,
       width: `100%`,
@@ -141,14 +141,14 @@ const NewsletterForm = {
       },
       /*  Placeholder Colour */
       placeholder: {
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         textTransform: `uppercase`,
         fontFamily: ``,
         fontWeight: ``
       },
       /* Change Autocomplete styles in Chrome*/
       autofill: {
-        fillColor: `${colors.white}`,
+        fillColor: `${colors.black}`,
         webBoxShadow: `rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`,
         boxShadow: `rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`,
         transition: {
@@ -186,7 +186,7 @@ const NewsletterForm = {
         padding: `10px 25px`
       },
       buttton: {
-        variant: `buttonOutLine`
+        variant: `buttonWhitePrimary`
       }
     }
   }

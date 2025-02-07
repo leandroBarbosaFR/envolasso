@@ -15,7 +15,7 @@ const SiteFooter = {
     bottom: ``,
     left: ``,
     right: ``,
-    background: `${colors.white}`,
+    background: `linear-gradient(90deg, #C9EDFF, #96DDFF)`,
     color: `${colors.black}`,
     mobile: {
       height: ``,
@@ -33,12 +33,12 @@ const SiteFooter = {
       padding: `50px 0 130px`
     },
     desktop: {
-      height: `480px`,
+      height: ``,
       margin: ``,
       padding: `80px 0 130px`
     },
     widescreen: {
-      height: `659px`,
+      height: ``,
       margin: ``,
       padding: `100px 0 20px`
     },
@@ -66,16 +66,16 @@ const SiteFooter = {
         gridColumn: `8/13`,
         gridRow: ``,
         textAlign: `right`,
-        justifyContent: `flex-end`
+        justifyContent: `flex-start`
       },
       desktop: {
-        gridColumn: `7/13`,
+        gridColumn: `1/6`,
         gridRow: ``,
         textAlign: ``,
         justifyContent: ``
       },
       widescreen: {
-        gridColumn: ``,
+        gridColumn: `1/6`,
         gridRow: ``,
         textAlign: ``,
         justifyContent: ``
@@ -265,14 +265,14 @@ const SiteFooter = {
         justifyContent: ``
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `9/13`,
         gridRow: ``,
         margin: ``,
         padding: ``,
-        justifyContent: ``
+        justifyContent: `flex-end`
       },
       widescreen: {
-        gridColumn: ``,
+        gridColumn: `9/13`,
         gridRow: ``,
         margin: ``,
         padding: ``,
@@ -307,9 +307,9 @@ const SiteFooter = {
       },
       desktop: {
         gridColumn: `1/9`,
-        gridRow: `3`,
+        gridRow: `1`,
         margin: ``,
-        padding: ``
+        padding: `0 0 123px 0`
       },
       widescreen: {
         gridColumn: ` 1/8`,
@@ -346,11 +346,11 @@ const SiteFooter = {
         justifyContent: ``
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `7/13`,
         gridRow: `2`,
         margin: ``,
         padding: ``,
-        justifyContent: ``
+        justifyContent: `flex-end`
       },
       widescreen: {
         gridColumn: ``,
@@ -469,7 +469,7 @@ const SiteFooter = {
         gridColumn: `9/13`,
         gridRow: `1`,
         display: ``,
-        alignItems: ``,
+        alignItems: `flex-end`,
         margin: ``,
         padding: ``,
         gap: ``,
@@ -478,8 +478,8 @@ const SiteFooter = {
         after: {}
       },
       desktop: {
-        gridColumn: ``,
-        gridRow: ``,
+        gridColumn: `1/6`,
+        gridRow: `2`,
         display: ``,
         alignItems: ``,
         margin: ``,

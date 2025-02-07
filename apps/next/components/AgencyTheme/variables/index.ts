@@ -34,7 +34,7 @@ const colors = {
   transparent: 'transparent',
   white: '#F5F5F5',
   whiteOff: '#F5F5F5',
-  black: '#09090b',
+  black: '#1e1e1e',
   blackMidGrey: `#424242`,
   midBlack: '#292929',
   grey: '#808080',
@@ -49,6 +49,8 @@ const colors = {
   yellow: `#FDD023`,
   darkMid: `#292929`,
   blackMid: '#0F0F0F',
+  blueLight: '#96DDFF',
+  blueLightOpacity: 'rgba(150,221,255, 0.75)',
   //just test
 
   blackHeroGradient: 'linear-gradient(0deg, rgba(24,24,24,1) 25%, rgba(0,0,0,0) 100%)',
@@ -81,7 +83,7 @@ const typeDefaults = {
   weight: 400,
   familyBold: fonts.SwitzerRegular,
   weightBold: 400,
-  backgroundBody: colors.black,
+  backgroundBody: colors.white,
   colorBody: colors.black,
   colorBodyLink: colors.grey,
   size: '14px',

@@ -258,12 +258,12 @@ const Nav = {
     background: `${colors.transparent}`,
     mobile: {
       width: `100%`,
-      justifyContent: `center`,
+      justifyContent: `flex-start`,
       flexWrap: `wrap`,
       gap: `15px`,
       margin: `0`,
       padding: `0`,
-      flexDirection: `column`
+      flexDirection: ``
     },
     mobileLarge: {
       width: ``,
@@ -275,7 +275,7 @@ const Nav = {
     },
     tablet: {
       width: ``,
-      justifyContent: `flex-end`,
+      justifyContent: ``,
       flexWrap: ``,
       gap: ``,
       margin: ``,

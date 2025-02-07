@@ -305,7 +305,7 @@ const button = {
   // ==========================================================================
   // buttonPrimary
   // ==========================================================================
-  buttonWhiteBorder: {
+  buttonBluePrimary: {
     cursor: `pointer`,
     textAlign: `center`,
     whiteSpace: `nowrap`,
@@ -317,32 +317,178 @@ const button = {
     gap: `10px`,
     transition: `0.3s ease-in-out`,
     fontFamily: fonts.SwitzerRegular,
-    fontColor: colors.white,
+    fontColor: colors.black,
     fontWeight: `300`,
     textTransform: ``,
-    background: colors.transparent,
+    background: colors.blueLight,
     //as
     asCursor: `auto`,
     asPointerEvents: `none`,
     // Hover
-    fontColorHover: colors.greyLighter,
-    backgroundHover: colors.transparent,
+    fontColorHover: colors.black,
+    backgroundHover: colors.blueLightOpacity,
     // Focus
-    fontColorFocus: colors.greyLighter,
-    backgroundFocus: colors.transparent,
+    fontColorFocus: colors.black,
+    backgroundFocus: colors.blueLightOpacity,
     // Active
-    fontColorActive: colors.greyLighter,
-    backgroundActive: colors.transparent,
+    fontColorActive: colors.black,
+    backgroundActive: colors.blueLightOpacity,
     // activated
-    fontColorActivated: colors.greyLighter,
-    backgroundaActivated: colors.transparent,
+    fontColorActivated: colors.black,
+    backgroundaActivated: colors.blueLightOpacity,
     // Icon
     icon: {
-      fill: colors.white,
-      fillHover: colors.greyLighter,
-      fillFocus: colors.greyLighter,
-      fillActive: colors.greyLighter,
-      fillActivated: colors.greyLighter
+      fill: colors.black,
+      fillHover: colors.black,
+      fillFocus: colors.black,
+      fillActive: colors.black,
+      fillActivated: colors.black
+    },
+    // Mobile
+    mobile: {
+      fontSize: `12px`,
+      lineHeight: `14px`,
+      letterSpacing: `0`,
+      margin: `0px`,
+      padding: `12px 20px`,
+      borderRadius: `4px`,
+      // Border
+      border: `1px solid ${colors.white}`,
+      // Border Hover
+      borderHover: `1px solid ${colors.greyLighter}`,
+      // Border Focus
+      borderFocus: `1px solid ${colors.greyLighter}`,
+      // Border Active
+      borderActive: `1px solid ${colors.greyLighter}`,
+      // Border Activated
+      borderActivated: `1px solid ${colors.greyLighter}`,
+      // Icon
+      icon: {
+        height: `14px`,
+        width: `14px`,
+        margin: ``
+      }
+    },
+    // Large Mobile
+    mobileLarge: {
+      fontSize: `14px`,
+      lineHeight: `14px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: `12px 40px`,
+      icon: {
+        height: ``,
+        width: ``,
+        margin: ``
+      }
+    },
+    // Tabet
+    tablet: {
+      fontSize: `14px`,
+      lineHeight: `14px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: `14px`,
+        width: `14px`,
+        margin: ``
+      }
+    },
+    // Desktop
+    desktop: {
+      fontSize: `14px`,
+      lineHeight: `14px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: `14px`,
+        width: `14px`,
+        margin: ``
+      }
+    },
+    // widescreen
+    widescreen: {
+      fontSize: `14px`,
+      lineHeight: `14px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: `12px`,
+        width: `12px`,
+        margin: ``
+      }
+    },
+    // disabled
+    // ==========================================================================
+    disabled: {
+      fontColor: colors.white,
+      background: colors.black,
+      border: ``,
+      icon: {
+        fill: colors.grey
+      }
+    },
+    StyledToolTipContent: {
+      zIndex: `99999`,
+      borderRadius: `4px`,
+      padding: `10px 15px`,
+      fontSize: `15px`,
+      color: `${colors.black}`,
+      backgroundColor: `${colors.white}`,
+      boxShadow: `hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px`,
+      userSelect: `none`,
+      animationDuration: `400ms`,
+      animationTimingFunction: `cubic-bezier(0.16, 1, 0.3, 1)`,
+      willChange: `transform, opacity`
+    },
+    StyledToolTipArrow: {
+      fill: `white`
+    }
+  },
+  // ==========================================================================
+  // buttonPrimary
+  // ==========================================================================
+  buttonWhitePrimary: {
+    cursor: `pointer`,
+    textAlign: `center`,
+    whiteSpace: `nowrap`,
+    textDecoration: `none`,
+    width: `fit-content`,
+    alignItems: `center`,
+    justifyContent: `space-between`,
+    display: `flex`,
+    gap: `10px`,
+    transition: `0.3s ease-in-out`,
+    fontFamily: fonts.SwitzerRegular,
+    fontColor: colors.black,
+    fontWeight: `300`,
+    textTransform: ``,
+    background: colors.white,
+    //as
+    asCursor: `auto`,
+    asPointerEvents: `none`,
+    // Hover
+    fontColorHover: colors.black,
+    backgroundHover: colors.white,
+    // Focus
+    fontColorFocus: colors.black,
+    backgroundFocus: colors.white,
+    // Active
+    fontColorActive: colors.black,
+    backgroundActive: colors.white,
+    // activated
+    fontColorActivated: colors.black,
+    backgroundaActivated: colors.white,
+    // Icon
+    icon: {
+      fill: colors.black,
+      fillHover: colors.black,
+      fillFocus: colors.black,
+      fillActive: colors.black,
+      fillActivated: colors.black
     },
     // Mobile
     mobile: {
@@ -1502,11 +1648,11 @@ const button = {
     fontWeightActivated: `900`,
     // Icon
     icon: {
-      fill: colors.lightGrey,
-      fillHover: colors.whiteOpacity,
-      fillFocus: colors.whiteOpacity,
-      fillActive: colors.whiteOpacity,
-      fillActivated: colors.whiteOpacity
+      fill: colors.black,
+      fillHover: colors.midBlack,
+      fillFocus: colors.midBlack,
+      fillActive: colors.midBlack,
+      fillActivated: colors.midBlack
     },
     // Mobile
     mobile: {

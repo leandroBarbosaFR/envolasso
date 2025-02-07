@@ -14,7 +14,7 @@ const TextImgSection = {
     // StyledSection
     // ==========================================================================
     StyledSection: {
-      background: `${colors.midBlack}`,
+      background: `${colors.transparent}`,
       position: `relative`,
       mobile: {
         height: ``,
@@ -162,7 +162,7 @@ const TextImgSection = {
     // StyledImage
     // ==========================================================================
     StyledImage: {
-      border: `1px solid ${colors.greyMid}`,
+      border: `none`,
       borderRadius: `6px`,
       overflow: `hidden`,
       mobile: {
@@ -185,13 +185,13 @@ const TextImgSection = {
         height: `fit-content`
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `2/6`,
         gridRow: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `2/4`,
+        gridColumn: `2/6`,
         gridRow: `2/4`,
         margin: ``,
         padding: ``
@@ -990,7 +990,7 @@ const TextImgSection = {
         height: `fit-content`
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `2/6`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -1032,18 +1032,18 @@ const TextImgSection = {
       },
       tablet: {
         gridColumn: `1/12`,
-        gridRow: `2`,
+        gridRow: `1`,
         margin: ``,
         padding: ``
       },
       desktop: {
-        gridColumn: `6/13`,
+        gridColumn: `7/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `5/13`,
+        gridColumn: `7/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -1052,7 +1052,7 @@ const TextImgSection = {
       // ==========================================================================
       StyledSubTitle: {
         variant: `primaryLarge`,
-        color: `${colors.blackMidGrey}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
@@ -1069,7 +1069,7 @@ const TextImgSection = {
           margin: ``
         },
         span: {
-          color: `${colors.blackMidGrey}`
+          color: `${colors.black}`
         }
       }
     },
@@ -1097,8 +1097,8 @@ const TextImgSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/6`,
-        gridRow: `2`,
+        gridColumn: `7/12`,
+        gridRow: `1`,
         margin: ``,
         padding: ``
       },
@@ -1111,8 +1111,8 @@ const TextImgSection = {
       // StyledHeading: title
       // ==========================================================================
       StyledHeading: {
-        variant: `tertiaryXs`,
-        color: `${colors.GreyBlue}`,
+        variant: `primary`,
+        color: `${colors.black}`,
         position: ``,
         mobile: {
           margin: ``,
@@ -1135,7 +1135,7 @@ const TextImgSection = {
           After: {}
         },
         span: {
-          color: `${colors.GreyBlue}`
+          color: `${colors.black}`
         }
       }
     },
@@ -1144,7 +1144,7 @@ const TextImgSection = {
     // ==========================================================================
     StyledArticle: {
       variant: `standfirst`,
-      color: `${colors.GreyBlue}`,
+      color: `${colors.black}`,
       mobile: {
         gridColumn: `1/13`,
         gridRow: `2`,
@@ -1164,8 +1164,8 @@ const TextImgSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/6`,
-        gridRow: ``,
+        gridColumn: `7/12`,
+        gridRow: `2`,
         margin: ``,
         padding: ``
       },
@@ -1202,13 +1202,13 @@ const TextImgSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `6/13`,
-        gridRow: ``,
+        gridColumn: `7/13`,
+        gridRow: `3`,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `6/13`,
+        gridColumn: `7/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -1612,7 +1612,7 @@ const TextImgSection = {
       }
     }
   },
-    // ==========================================================================
+  // ==========================================================================
   // layoutVariant - default
   // ==========================================================================
   contactPage: {
@@ -2415,6 +2415,6 @@ const TextImgSection = {
         }
       }
     }
-  },
+  }
 };
 export { TextImgSection };

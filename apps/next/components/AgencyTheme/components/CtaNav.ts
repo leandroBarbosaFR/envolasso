@@ -65,7 +65,7 @@ const CtaNav = {
     // Button
     // ==========================================================================
     Button: {
-      buttonVariant: `buttonWhiteBorder`,
+      buttonVariant: `buttonBluePrimary`,
       withIcon: true,
       withText: true,
       iconName: `arrowRightNew`,

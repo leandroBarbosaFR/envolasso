@@ -104,18 +104,6 @@ const SiteHeader = ({ layoutVariant, data, isAltHeaderLayoutVariant }: SiteHeade
                 />
               </StyleNavWap>
             ))}
-          <ButtonLink
-            href={`https://calendly.com/hello1367studio/30min`}
-            title={'title'}
-            variant={'buttonPrimary'}
-            withText={true}
-            withIcon={true}
-            iconPosition={'right'}
-            iconName={'arrowRightNew'}
-            target="_blank"
-          >
-            Votre démo en Direct
-          </ButtonLink>
           {/* Mobile draw toggle */}
           {!isDesktop && !isWidescreen ? (
             <BurgerNavToggle

@@ -55,7 +55,7 @@ const NewsletterForm = ({
         <StyledInput layoutVariant={layoutVariant} type="text" placeholder="name" name="FNAME" />
         <StyledInput layoutVariant={layoutVariant} type="email" placeholder="email" name="EMAIL" />
         <Button type="submit" variant={theme.NewsletterForm[layoutVariant!].StyledForm.buttton.variant}>
-          Join
+          S’abonner
         </Button>
       </StyledForm>
     </>

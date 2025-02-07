@@ -56,14 +56,14 @@ const logo = {
     },
     desktop: {
       height: `60px`,
-      width: '152px',
+      width: `130px`,
       margin: ``,
       padding: ``,
       border: ``
     },
     widescreen: {
       height: `60px`,
-      width: `205px`,
+      width: `130px`,
       margin: ``,
       padding: ``,
       border: ``
@@ -152,22 +152,22 @@ const logo = {
       border: ``
     },
     tablet: {
-      height: `150px`,
-      width: `385px`,
+      height: `152px`,
+      width: `132px`,
       margin: ``,
       padding: ``,
       border: ``
     },
     desktop: {
-      height: `500px`,
-      width: `800px`,
+      height: ``,
+      width: ``,
       margin: ``,
       padding: ``,
       border: ``
     },
     widescreen: {
-      height: `500px`,
-      width: `1316px`,
+      height: ``,
+      width: ``,
       margin: ``,
       padding: ``,
       border: ``

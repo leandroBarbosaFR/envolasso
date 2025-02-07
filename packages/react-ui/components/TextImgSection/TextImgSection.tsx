@@ -1,10 +1,8 @@
 import type { TextImgSectionTheme } from '@agency-platform/themes';
 import type { TextColumn, Cta, Media } from '@agency-platform/shared-types';
 import { PortableText } from '@portabletext/react';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import CustomPortableText from '../../utils/portableText';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 // Theme
 import { useTheme } from 'styled-components';
 // Component
@@ -66,56 +64,6 @@ const TextImgSection = ({
   const imageRef = useRef<HTMLDivElement>(null);
 
   const theme = useTheme();
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {
-    // Ensure the GSAP ScrollTrigger plugin is registered
-    gsap.registerPlugin(ScrollTrigger);
-
-    // ScrollTrigger animation for fade-in effect
-    gsap.fromTo(
-      sectionRef.current, // Reference to the section to animate
-      {
-        opacity: 0,
-        y: 100 // Start below the section
-      },
-      {
-        opacity: 1,
-        y: 0, // End at its original position
-        duration: 1, // Duration of the animation
-        ease: 'power3.out', // Custom easing
-        scrollTrigger: {
-          trigger: sectionRef.current, // Trigger the animation when this section is in view
-          start: 'top 60%', // Trigger animation when the top of the section reaches 80% of the viewport height
-          end: 'bottom 40%', // End the animation when the section reaches 20% from the bottom of the viewport
-          scrub: 1, // Enable smooth scrubbing
-          markers: false, // Remove debug markers
-          toggleActions: 'play none none reverse'
-        }
-      }
-    );
-    if (layoutVariant === 'default') {
-      // Animate image slide and rotation
-      gsap.fromTo(
-        imageRef.current,
-        { opacity: 0, x: -400, rotate: -30 }, // Start hidden, rotated, and off-screen to the left
-        {
-          opacity: 1,
-          x: 0,
-          rotate: 0, // End at the original position
-          duration: 1.5,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 60%',
-            end: 'top 40%',
-            toggleActions: 'play none none reverse'
-          }
-        }
-      );
-    }
-  }, []);
 
   const {
     layoutVariant,
@@ -227,7 +175,7 @@ const TextImgSection = ({
 
   const isImageBgVisible = theme.TextImgSection[layoutVariant!].config.isImageBgVisible;
   return (
-    <StyledSection layoutVariant={layoutVariant} ref={sectionRef}>
+    <StyledSection layoutVariant={layoutVariant}>
       {SectionBgTopAsset && SectionBgTopAsset}
       {isImageBgVisible && textImgSectionImageBg && (
         <ImageTag

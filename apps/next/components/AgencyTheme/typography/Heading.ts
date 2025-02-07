@@ -27,13 +27,13 @@ const Heading = {
       letterSpacing: `0`
     },
     desktop: {
-      fontSize: `60px`,
-      lineHeight: `64px`,
+      fontSize: `48px`,
+      lineHeight: `58px`,
       letterSpacing: `0`
     },
     widescreen: {
-      fontSize: `66px`,
-      lineHeight: `70px`,
+      fontSize: `50px`,
+      lineHeight: `60px`,
       letterSpacing: `0`
     }
   },

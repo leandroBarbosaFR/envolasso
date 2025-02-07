@@ -23,7 +23,6 @@ interface PageProps {
 }
 
 function Page({ landingPage, locale }: PageProps): JSX.Element | null {
-  const [loading, setLoading] = useState(true);
   if (!landingPage) return null;
   const {
     layoutVariant,
@@ -44,7 +43,6 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
     overrideMetaTags,
     featureImage
   } = landingPage;
-
   return (
     <>
       <MetaTags

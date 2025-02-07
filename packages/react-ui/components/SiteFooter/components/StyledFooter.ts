@@ -6,7 +6,7 @@ const StyledFooter = styled.footer<StyledComponentProps>`
   // Global
   // ==========================================================================
   overflow: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].overflow};
-  background-color: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].background};
+  background: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].background};
   color: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].color};
   position: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].position};
   z-index: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].zIndex};
@@ -14,6 +14,9 @@ const StyledFooter = styled.footer<StyledComponentProps>`
   bottom: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].bottom};
   left: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].left};
   right: ${({ layoutVariant, theme }) => theme.SiteFooter[layoutVariant!].right};
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 26px;
   // ==========================================================================
   // Mobile
   // ==========================================================================

@@ -8,15 +8,12 @@ import { SiteFooterTheme } from '@agency-platform/themes';
 // Components
 import Logo from '../Logo';
 import Nav from '../Nav';
-import Button from '../Button';
 import NavList from '../NavList';
 import NewsletterForm from '../NewsletterForm';
 import Paragraph from '../Paragraph';
 import SocialNav from '../SocialNav';
 // Styles
 import StyledLogoWrap from './components/StyledLogoWrap';
-import StyledLogoWrapper from './components/StyledLogoWrapper';
-import StyledIconButton from './components/StyledIconButton';
 import StyledArticle from './components/StyledArticle';
 import StyledCredit from './components/StyledCredit';
 import StyledFooter from './components/StyledFooter';
@@ -127,15 +124,13 @@ const SiteFooter = ({
           withColGapp={theme.SiteFooter[layoutVariant!].StyledFooterGrid.withColGapp}
         >
           {!isAltFooter && (
-            <StyledLogoWrapper layoutVariant={layoutVariant}>
-              <StyledLogoWrap layoutVariant={layoutVariant}>
-                <Logo
-                  href={'/'}
-                  LogoName={theme.SiteFooter[layoutVariant!].StyledLogoWrap.logo.LogoName}
-                  variant={theme.SiteFooter[layoutVariant!].StyledLogoWrap.logo.variant}
-                />
-              </StyledLogoWrap>
-            </StyledLogoWrapper>
+            <StyledLogoWrap layoutVariant={layoutVariant}>
+              <Logo
+                href={'/'}
+                LogoName={theme.SiteFooter[layoutVariant!].StyledLogoWrap.logo.LogoName}
+                variant={theme.SiteFooter[layoutVariant!].StyledLogoWrap.logo.variant}
+              />
+            </StyledLogoWrap>
           )}
           {isNewsletterFormEnabled && !isAltFooter && (
             <StyledNewsletterFormWrap layoutVariant={layoutVariant}>

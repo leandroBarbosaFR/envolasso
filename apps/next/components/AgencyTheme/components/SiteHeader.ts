@@ -171,8 +171,8 @@ const SiteHeader = {
     // Logo
     // ==========================================================================
     logo: {
-      LogoName: `AgencyLogoWhite`,
-      LogoNameCollapsed: `AgencyLogoWhite`,
+      LogoName: `logoNumber`,
+      LogoNameCollapsed: `logoNumber`,
       variant: `headerLogo`,
       variantCollapsed: `headerLogo`
     },
