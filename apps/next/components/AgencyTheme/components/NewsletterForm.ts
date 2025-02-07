@@ -121,7 +121,7 @@ const NewsletterForm = {
     // ==========================================================================
     StyledInput: {
       /* Default input styles */
-      color: `${colors.white}`,
+      color: `${colors.black}`,
       fontFamily: ``,
       fontWeight: ``,
       textTransform: `uppercase`,
@@ -136,13 +136,13 @@ const NewsletterForm = {
       backgroundColor: ``,
 
       focus: {
-        background: `transparent`,
+        background: `white`,
         outline: `0`
       },
       /*  Placeholder Colour */
       placeholder: {
         color: `${colors.black}`,
-        textTransform: `uppercase`,
+        textTransform: `capitalize`,
         fontFamily: ``,
         fontWeight: ``
       },
