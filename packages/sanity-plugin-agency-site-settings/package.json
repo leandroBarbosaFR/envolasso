@@ -1,0 +1,10 @@
+{
+  "name": "@agency-platform/sanity-plugin-agency-site-settings",
+  "version": "0.0.0",
+  "description": "The Site Settings Sanity Plugin for Agency",
+  "main": "index.ts",
+  "devDependencies": {
+    "sanity": "^3.2.6",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "agency-bp",
+  "private": true,
+  "version": "0.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@agency-platform/sanity-plugin-agency-about": "*",
+    "@agency-platform/sanity-plugin-agency-blog": "*",
+    "@agency-platform/sanity-plugin-agency-common": "*",
+    "@agency-platform/sanity-plugin-agency-landing-page": "*",
+    "@agency-platform/sanity-plugin-agency-portfolio": "*",
+    "@agency-platform/sanity-plugin-agency-seo": "*",
+    "@agency-platform/sanity-plugin-agency-services": "*",
+    "@agency-platform/sanity-plugin-agency-site-settings": "*",
+    "@agency-platform/sanity-plugin-agency-team-profile": "*",
+    "@sanity/client": "^6.21.3",
+    "@sanity/document-internationalization": "^1.1.1 ",
+    "@sanity/scheduled-publishing": "^1.1.0",
+    "@sanity/vision": "^3.0.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.4.0",
+    "react-is": "^18.0.0",
+    "sanity": "^3.19.2",
+    "slugify": "^1.6.5",
+    "styled-components": "^6.1",
+    "use-debounce": "^8.0.4"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "eslint": "^8.6.0",
+    "prettier": "^2.7.1",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"],
+      "env": [
+        "NEXT_PUBLIC_SITE_URL",
+        "RECAP_SECRET",
+        "MAIL_INFO",
+        "NEXT_PUBLIC_SANITY_PROJECT_ID",
+        "NEXT_PUBLIC_SANITY_DATASET",
+        "SANITY_API_TOKEN",
+        "SANITY_STUDIO_name",
+        "SANITY_STUDIO_title",
+        "SANITY_STUDIO_projectId",
+        "SANITY_STUDIO_dataset",
+        "CLOUDINARY_URL"
+        ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    }
+  }
+}

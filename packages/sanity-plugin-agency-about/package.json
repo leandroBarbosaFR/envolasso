@@ -1,0 +1,11 @@
+{
+  "name": "@agency-platform/sanity-plugin-agency-about",
+  "version": "0.0.0",
+  "description": "The About Sanity Plugin for Agency",
+  "main": "index.ts",
+  "devDependencies": {
+    "sanity": "^3.2.6",
+    "slugify": "^1.6.5",
+    "typescript": "^5"
+  }
+}

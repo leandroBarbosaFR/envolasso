@@ -1,0 +1,10 @@
+{
+  "name": "@agency-platform/sanity-plugin-agency-portfolio",
+  "version": "0.0.0",
+  "description": "The Portfolio Sanity Plugin for Agency",
+  "main": "index.ts",
+  "devDependencies": {
+    "sanity": "^3.2.6",
+    "typescript": "^5"
+  }
+}

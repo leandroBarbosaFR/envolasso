@@ -1,0 +1,6 @@
+{
+  "name": "@agency-platform/sanity-queries",
+  "version": "0.0.0",
+  "description": "The Sanity queries plugin for agency",
+  "main": "index.ts"
+}

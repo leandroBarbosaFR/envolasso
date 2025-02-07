@@ -1,0 +1,8 @@
+# robots.txt for https://www.1367studio.com/
+
+# Block all crawlers from accessing the /account directory
+User-agent: *
+Disallow: /account
+
+# Provide the location of the sitemap
+Sitemap: https://www.1367studio.com/sitemap.xml

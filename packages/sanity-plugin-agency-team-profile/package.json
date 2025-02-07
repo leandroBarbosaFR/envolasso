@@ -1,0 +1,10 @@
+{
+  "name": "@agency-platform/sanity-plugin-agency-team-profile",
+  "version": "0.0.0",
+  "description": "The Team Profile Sanity Plugin for Agency",
+  "main": "index.ts",
+  "devDependencies": {
+    "sanity": "^3.2.6",
+    "typescript": "^5"
+  }
+}

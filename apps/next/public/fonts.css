@@ -1,0 +1,180 @@
+/* @import url('https://use.typekit.net/akk6apd.css'); */
+/* @font-face {
+  font-family: 'SwitzerRegular';
+  src: url('/fonts/SwitzerRegularNo5.eot');
+  src:
+    url('/fonts/SwitzerRegularNo5.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SwitzerRegularNo5.otf') format('otf'),
+    url('/fonts/SwitzerRegularNo5.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: 'ClashGroteskExtralight';
+  src:
+    url('/fonts/ClashGroteskExtralight.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClashGroteskExtralight.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashGroteskBold';
+  src:
+    url('/fonts/ClashGroteskBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClashGroteskBold.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashGroteskLight';
+  src:
+    url('/fonts/ClashGroteskLight.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClashGroteskLight.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashGroteskMedium';
+  src:
+    url('/fonts/ClashGroteskMedium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClashGroteskMedium.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SwitzerRegular';
+  src:
+    url('/fonts/SwitzerRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SwitzerRegular.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClashGroteskSemibold';
+  src:
+    url('/fonts/ClashGroteskSemibold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ClashGroteskSemibold.otf') format('otf'),
+    url('/fonts/ClashGroteskVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlayfairRegular';
+  src:
+    url('/fonts/PlayfairRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/PlayfairRegular.otf') format('otf'),
+    url('/fonts/PlayfairRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplaySemiBold';
+  src:
+    url('/fonts/PlayfairDisplaySemiBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/PlayfairDisplaySemiBold.otf') format('otf'),
+    url('/fonts/PlayfairDisplaySemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SwitzerRegular';
+  src:
+    url('/fonts/SwitzerRegular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SwitzerRegular.otf') format('otf'),
+    url('/fonts/SwitzerRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 
+Switzer fonts */
+
+@font-face {
+  font-family: 'Switzer-Regular';
+  src: url('/fonts/Switzer-Regular.woff2') format('woff2'),
+    url('/fonts/Switzer-Regular.woff') format('woff'),
+    url('/fonts/Switzer-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer-Semibold';
+  src: url('/fonts/Switzer-Semibold.woff2') format('woff2'),
+    url('/fonts/Switzer-Semibold.woff') format('woff'),
+    url('/fonts/Switzer-Semibold.otf') format('otf'),
+    url('/fonts/Switzer-Semibold.eot') format('eot'),
+    url('/fonts/Switzer-Semibold.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* OverUsed Grotesk */
+
+@font-face {
+  font-family: 'OverusedGrotesk-Medium';
+  src: url('/fonts/OverusedGrotesk-Medium.woff2') format('woff2'),
+    url('/fonts/OverusedGrotesk-Medium.woff') format('woff'),
+    url('/fonts/OverusedGrotesk-Medium.otf') format('otf'),
+    url('/fonts/OverusedGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OverusedGrotesk-SemiBold';
+  src: url('/fonts/OverusedGrotesk-SemiBold.woff2') format('woff2'),
+    url('/fonts/OverusedGrotesk-SemiBold.woff') format('woff'),
+    url('/fonts/OverusedGrotesk-SemiBold.otf') format('otf'),
+    url('/fonts/OverusedGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}

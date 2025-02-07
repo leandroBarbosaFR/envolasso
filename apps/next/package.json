@@ -1,0 +1,49 @@
+{
+  "name": "Agency-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run fetch-static-content && next dev",
+    "build": "npm run fetch-static-content && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "fetch-static-content": "rm -rf ./data && node ./lib/fetch-static-content.js",
+    "postinstall": "cd .. && husky install next/.husky",
+    "prepare": "cd .. && husky install next/.husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
+  "dependencies": {
+    "@agency-platform/react-ui": "*",
+    "@agency-platform/sanity-queries": "*",
+    "@agency-platform/shared-types": "*",
+    "@agency-platform/themes": "*",
+    "@portabletext/react": "^2.0.1",
+    "@sanity/image-url": "^1.0.1",
+    "@tanstack/react-query": "^5.55.4",
+    "graphql": "^16.5.0",
+    "husky": "^9.0.10",
+    "next": "^14.2.13",
+    "next-transpile-modules": "^10.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.8"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{js,jsx,ts,tsx,md,css}": "prettier --write"
+  },
+  "devDependencies": {
+    "@sanity/client": "^3.3.6",
+    "@types/node": "^18.7.6",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.34",
+    "eslint": "^8.22.0",
+    "eslint-config-next": "^13.0.5",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es2015", "DOM"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/components", "src/custom.d.ts", "**/*.ts", "**/*.tsx"]
+}
