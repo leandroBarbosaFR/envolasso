@@ -98,15 +98,15 @@ const HeroSection = {
         background: ``
       },
       After: {
-        zIndex: `3`,
+        zIndex: `1`,
         content: `""`,
-        height: `200px`,
+        height: `100%`,
         width: `100%`,
         position: `absolute`,
         bottom: `0`,
         right: `0`,
         pointerEvents: `none`,
-        background: `linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%)`
+        background: `rgba(0,0,0, 0.3)`
       }
     },
     // ==========================================================================
@@ -360,11 +360,11 @@ const HeroSection = {
     // StyledSubTitleWrap
     // ==========================================================================
     StyledSubTitleWrap: {
-      textAlign: `center`,
+      textAlign: ``,
       mobile: {
         gridColumn: `2/12`,
         gridRow: `1`,
-        margin: `0 auto`,
+        margin: ``,
         padding: ``
       },
       mobileLarge: {
@@ -380,10 +380,10 @@ const HeroSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `3/11`,
+        gridColumn: `2/11`,
         gridRow: ``,
         margin: ``,
-        padding: `0 0 100px 0`
+        padding: ``
       },
       widescreen: {
         gridColumn: ``,
@@ -397,7 +397,7 @@ const HeroSection = {
         variant: `primaryHero`,
         color: `${colors.transparent}`,
         backgroundClip: `text !important`,
-        background: `linear-gradient(180deg, #FFFFFF, #7A7A7A)`,
+        background: `linear-gradient(180deg, #FFFFFF, #FFFFFF)`,
         mobile: {
           margin: ``
         },
@@ -478,8 +478,8 @@ const HeroSection = {
     // ==========================================================================
     StyledArticle: {
       variant: `standfirst`,
-      color: `${colors.greyLighter}`,
-      textAlign: `left`,
+      color: `${colors.white}`,
+      textAlign: ``,
       mobile: {
         gridColumn: `5/13`,
         gridRow: ``,
@@ -499,13 +499,13 @@ const HeroSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `6/12`,
+        gridColumn: `2/8`,
         gridRow: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridColumn: `6/12`,
+        gridColumn: `2/8`,
         gridRow: ``,
         margin: `0`,
         padding: ``

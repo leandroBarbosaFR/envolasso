@@ -82,7 +82,7 @@ const HeroSection = ({
     ? heroFirstFrameImage?.asset?.url
     : fallbackImgSrc;
   const isArrowVisible = theme.HeroSection[layoutVariant!].StyledArrowDown.isArrowVisible;
-
+  console.log(imageSrc);
   gsap.registerPlugin(Flip);
   gsap.registerPlugin(Draggable);
 

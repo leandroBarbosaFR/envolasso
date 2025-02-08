@@ -13,7 +13,7 @@ const HeroSectionContentCarousel = {
       alignItems: ``,
       position: `relative`,
       overflow: `hidden`,
-      background: `${colors.grey}`,
+      background: `${colors.transparent}`,
       mobile: {
         height: `100vh`,
         margin: ``,
