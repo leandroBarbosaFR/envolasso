@@ -5,39 +5,32 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   // Global
   // ==========================================================================
-  align-self: ${({ layoutVariant, theme }) =>
-    theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.alignSelf};
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.3s ease-in-out; /* Smooth animation */
 
   // ==========================================================================
   // Mobile
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobile} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobile.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobile.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.margin};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobile.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.padding};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobile.padding};
   }
   // ==========================================================================
   // Mobile Large
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobileLarge} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobileLarge.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobileLarge.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.margin};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobileLarge.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.padding};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.mobileLarge.padding};
   }
 
   // ==========================================================================
@@ -45,13 +38,13 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.tablet} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.tablet.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.tablet.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.margin};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.tablet.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.padding};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.tablet.padding};
   }
 
   // ==========================================================================
@@ -59,13 +52,13 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.desktop} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.desktop.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.desktop.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.margin};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.desktop.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.padding};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.desktop.padding};
   }
 
   // ==========================================================================
@@ -73,13 +66,13 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.widescreen} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.widescreen.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.widescreen.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.margin};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.widescreen.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.padding};
+      theme.PortfolioBody[layoutVariant!].StyledHeadingWrap.widescreen.padding};
   }
 `;
 export default StyledHeadingWrap;

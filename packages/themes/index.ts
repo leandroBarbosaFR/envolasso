@@ -50,6 +50,7 @@ export type { PortfolioIndexTheme } from './types/components/PortfolioIndex';
 export type { PortfolioSinglePageTheme } from './types/components/PortfolioSinglePage';
 export type { PortfolioFeedSectionTheme } from './types/components/PortfolioFeedSection';
 export type { PortfolioFeedItemDefaultTheme } from './types/components/PortfolioFeedItemDefault';
+export type { PortfolioBodyTheme } from './types/components/PortfolioBody';
 export type { PortfolioFeedItemTheme } from './types/components/PortfolioFeedItem';
 export type { PostBodyTheme } from './types/components/PostBody';
 export type { PostFeedItemDefaultTheme } from './types/components/PostFeedItemDefault';

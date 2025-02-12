@@ -72,6 +72,7 @@ import { Popover } from './components/Popover';
 import { PortfolioIndex } from './components/PortfolioIndex';
 import { PortfolioSinglePage } from './components/PortfolioSinglePage';
 import { PortfolioFeedSection } from './components/PortfolioFeedSection';
+import { PortfolioBody } from './components/PortfolioBody';
 import { PortfolioFeedItem } from './components/PortfolioFeedItem';
 import { PortfolioFeedItemDefault } from './components/PortfolioFeedItemDefault';
 import { PostBody } from './components/PostBody';
@@ -182,6 +183,7 @@ const theme: AgencyTheme = {
   PortfolioSinglePage,
   PortfolioFeedSection,
   PortfolioFeedItem,
+  PortfolioBody,
   PortfolioFeedItemDefault,
   PostBody,
   PostFeedItem,

@@ -286,7 +286,7 @@ const TextImgSection = {
         padding: ``
       },
       tablet: {
-        gridColumn: `5/13`,
+        gridColumn: `7/13`,
         gridRow: ``,
         margin: ``,
         padding: ``

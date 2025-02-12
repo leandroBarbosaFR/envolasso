@@ -1,43 +1,38 @@
 import { StyledComponentProps } from '@agency-platform/shared-types';
 import styled from 'styled-components';
 
-const StyledHeadingWrap = styled.div<StyledComponentProps>`
+const StyledCtaNavWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   // Global
   // ==========================================================================
-  align-self: ${({ layoutVariant, theme }) =>
-    theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.alignSelf};
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.3s ease-in-out; /* Smooth animation */
-
+  display: ${({ layoutVariant, theme }) => theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.display};
+  justify-content: ${({ layoutVariant, theme }) =>
+    theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.justifyContent};
   // ==========================================================================
   // Mobile
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobile} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobile.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobile.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.margin};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobile.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobile.padding};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobile.padding};
   }
   // ==========================================================================
   // Mobile Large
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.mobileLarge} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobileLarge.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobileLarge.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.margin};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobileLarge.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.mobileLarge.padding};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.mobileLarge.padding};
   }
 
   // ==========================================================================
@@ -45,13 +40,13 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.tablet} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.tablet.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.tablet.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.margin};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.tablet.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.tablet.padding};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.tablet.padding};
   }
 
   // ==========================================================================
@@ -59,13 +54,13 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.desktop} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.desktop.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.desktop.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.margin};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.desktop.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.desktop.padding};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.desktop.padding};
   }
 
   // ==========================================================================
@@ -73,13 +68,14 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   ${({ theme }) => theme.mediaQueries.widescreen} {
     grid-column: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.gridColumn};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.widescreen.gridColumn};
     grid-row: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.gridRow};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.widescreen.gridRow};
     margin: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.margin};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.widescreen.margin};
     padding: ${({ layoutVariant, theme }) =>
-      theme.PortfolioFeedItemDefault[layoutVariant!].StyledHeadingWrap.widescreen.padding};
+      theme.PortfolioBody[layoutVariant!].StyledCtaNavWrap.widescreen.padding};
   }
 `;
-export default StyledHeadingWrap;
+
+export default StyledCtaNavWrap;

@@ -8,13 +8,13 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopy: {
-    familyHeading: `${fonts.SwitzerRegular}`,
+    familyHeading: `${fonts.OverusedGroteskSemiBold}`,
     weightHeading: 300,
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.OverusedGroteskSemiBold}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerRegular}`,
+    familyBold: `${fonts.OverusedGroteskSemiBold}`,
     weightBold: 300,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.OverusedGroteskSemiBold}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -1244,11 +1244,11 @@ const Article = {
   // standfirst
   // ==========================================================================
   standfirst: {
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.OverusedGroteskSemiBold}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerRegular}`,
+    familyBold: `${fonts.OverusedGroteskSemiBold}`,
     weightBold: 700,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.OverusedGroteskSemiBold}`,
     weightBlockquote: 300,
 
     // Links

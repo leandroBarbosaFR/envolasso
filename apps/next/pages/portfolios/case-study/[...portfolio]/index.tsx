@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 // 1367 Agency UI
-import { Main, PortfolioSinglePage, PageHeaderMedia } from '@agency-platform/react-ui';
+import { Main, PortfolioSinglePage } from '@agency-platform/react-ui';
 import type { Portfolio } from '@agency-platform/shared-types';
 // Components
 import Layout from 'components/Layout';
@@ -26,10 +26,8 @@ function Page({ portfolioPage, locale }: PortfolioPageProps): JSX.Element | null
     subtitle,
     category,
     layout,
-    postMedoiaVariant,
     heroImage,
     dynamicRoute,
-    embedServices,
     slug,
     overrideMetaTags
   } = portfolioPage;
@@ -48,13 +46,6 @@ function Page({ portfolioPage, locale }: PortfolioPageProps): JSX.Element | null
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant={'default'}>
-        <PageHeaderMedia
-          layoutVariant={'default'}
-          postMedoiaVariant={postMedoiaVariant}
-          heroImage={heroImage}
-          embedServices={embedServices}
-          withShare={false}
-        />
         <PortfolioSinglePage
           layoutVariant={'default'}
           subtitle={subtitle}

@@ -42,6 +42,7 @@ export { default as PortfolioIndex } from './components/PortfolioIndex';
 export { default as PostBody } from './components/PostBody';
 export { default as PostFeedSection } from './components/PostFeedSection';
 export { default as PortfolioSinglePage } from './components/PortfolioSinglePage';
+export { default as PortfolioBody } from './components/PortfolioBody';
 export { default as PortfolioFeedSection } from './components/PortfolioFeedSection';
 export { default as Section } from './components/Section';
 export { SelectMenu } from './components/SelectMenu';

@@ -20,27 +20,27 @@ const PortfolioFeedSection = {
       mobile: {
         height: ``,
         margin: ``,
-        padding: `10px 0 10px`
+        padding: `30px 0 30px`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: `10px 0 10px`
+        padding: `30px 0 30px`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: `15px 0 15px`
+        padding: `40px 0 40px`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: `20px 0 20px`
+        padding: `60px 0 60px`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: `20px 0 20px`
+        padding: `60px 0 60px`
       }
     },
     // ==========================================================================

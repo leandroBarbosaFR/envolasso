@@ -81,27 +81,27 @@ const PostFeedItemDefault = {
       mobile: {
         height: ``,
         margin: ``,
-        padding: `10px 0`
+        padding: `5px 0`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: `15px 0`
+        padding: `5px 0`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: `20px 0`
+        padding: `5px 0`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: `25px 0`
+        padding: `5px 0`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: `30px 0`
+        padding: `10px 0`
       },
       // verlay styles & Hover states in StyledFeedItem file
       opacity: `1`,

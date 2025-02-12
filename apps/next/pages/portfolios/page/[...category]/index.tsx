@@ -2,8 +2,15 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 // 1367 Agency UI
-import { IndexPageHeader, Main, PortfolioIndex } from '@agency-platform/react-ui';
-import type { Portfolio, PortfolioCategories, OverrideMetaTags } from '@agency-platform/shared-types';
+import { PageHeader, Main, PortfolioIndex } from '@agency-platform/react-ui';
+import type {
+  Portfolio,
+  PortfolioCategories,
+  OverrideMetaTags,
+  Cta,
+  Media,
+  Category
+} from '@agency-platform/shared-types';
 // Components
 import MetaTags from 'components/MetaTags';
 import RootLayout from 'components/RootLayout';
@@ -26,6 +33,14 @@ interface PageProps {
       dynamicRoute: string;
       slug: string;
       overrideMetaTags: OverrideMetaTags;
+      ctaTitle: string;
+      cta: Cta[];
+      image: Media;
+      subtitle: string;
+      body: string;
+      featuredBlog: any;
+      sectionImageBg: Media;
+      category: Category;
     };
     portfoliosCategories: PortfolioCategories[];
     portfolios: { title: string; portfoliosCount: number; portfolios: Portfolio[] };
@@ -37,7 +52,21 @@ interface PageProps {
 function Page({ page, locale }: PageProps): JSX.Element | null {
   if (!page) return null;
   const { portfoliosPage, portfolios, pageNumber } = page;
-  const { title, paginationCount, dynamicRoute, slug, overrideMetaTags } = portfoliosPage;
+  const {
+    title,
+    paginationCount,
+    dynamicRoute,
+    slug,
+    overrideMetaTags,
+    ctaTitle,
+    cta,
+    image,
+    subtitle,
+    body,
+    featuredBlog,
+    sectionImageBg,
+    category
+  } = portfoliosPage;
 
   return (
     <>
@@ -50,18 +79,31 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
         }}
         overrideMetaTags={overrideMetaTags}
       />
-      <Main layoutVariant="default">
-        <IndexPageHeader layoutVariant={'default'} title={title} />
+      <Main layoutVariant="removeSpacing">
+        <PageHeader
+          layoutVariant={'default'}
+          withImage={true}
+          ctaTitle={ctaTitle}
+          title={title}
+          subtitle={subtitle}
+          body={body}
+          cta={cta}
+          featureImage={featuredBlog?.featureImage} // Pass it here
+          sectionImageBg={sectionImageBg}
+          // data={featuredBlog}
+          // image={image}
+          // category={category}
+        />
         <PortfolioIndex
           layoutVariant={'default'}
-          pageName={'realisations'}
-          portfolio={portfolios?.portfolios}
+          pageName={'portfolios'}
+          data={portfolios?.portfolios}
           portfolioCount={portfolios?.portfoliosCount}
-          portfoliosCount={portfolios?.portfoliosCount}
           perPage={paginationCount}
           urlPageNumber={pageNumber}
           feedItemComponent={'PortfolioFeedItemDefault'}
-          data={portfolios?.portfolios}
+          portfolio={[]}
+          portfoliosCount={0}
         />
       </Main>
     </>

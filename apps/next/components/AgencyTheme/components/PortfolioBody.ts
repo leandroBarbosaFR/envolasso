@@ -1,8 +1,6 @@
 import { colors } from '../variables/';
-// ==========================================================================
-// PostBody
-// ==========================================================================
-const PostBody = {
+
+const PortfolioBody = {
   // ==========================================================================
   // layoutVariant
   // ==========================================================================
@@ -11,45 +9,40 @@ const PostBody = {
     // Config: Hide/show content
     // ==========================================================================
     config: {
-      isCategoryVisible: true,
+      isHeadingVisible: true,
       isSubtitleVisible: true,
-      isTitleVisible: true,
-      isBodyVisible: true,
       isExcerptVisible: true,
       isCtaVisible: true
-    },
-    OptsSharePage: {
-      layoutVariant: `default`
     },
     // ==========================================================================
     // StyledSection
     // ==========================================================================
     StyledSection: {
-      background: `linear-gradient(90deg, #C9EDFF, #96DDFF)`,
+      background: `${colors.transparent}`,
       mobile: {
         height: ``,
         margin: ``,
-        padding: `30px 0 0`
+        padding: `30px 0 15px`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: `40px 0 0`
+        padding: `40px 0 20px`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: `50px 0 0`
+        padding: `50px 0 25px`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: `60px 0 0`
+        padding: `60px 0 30px`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: `70px 0 0`
+        padding: `70px 0 30px`
       }
     },
     // ==========================================================================
@@ -118,15 +111,14 @@ const PostBody = {
       }
     },
     // ==========================================================================
-    // StyledGrid
+    // StyledProfileGrid
     // ==========================================================================
     StyledGrid: {
-      withRowGap: false,
+      withRowGap: true,
       withColGapp: true,
       gridTemplateColumns: ``,
       alignItems: '',
       display: `grid`,
-      position: `relative`,
       mobile: {
         height: ``,
         colGap: ``,
@@ -151,45 +143,6 @@ const PostBody = {
         height: ``,
         colGap: ``,
         rowGap: ``
-      }
-    },
-    // ==========================================================================
-    // StyledGrid
-    // ==========================================================================
-    StyledIconNav: {
-      position: `absolute`,
-      zIndex: `3`,
-      right: `0`,
-      display: `flex`,
-      flexWrap: `wrap`,
-      gap: `10px`,
-      mobile: {
-        right: `0`,
-        top: `0`
-      },
-      mobileLarge: {
-        right: `0`,
-        top: `20px`
-      },
-      tablet: {
-        right: `0`,
-        top: `20px`
-      },
-      desktop: {
-        right: `0`,
-        top: `30px`,
-        gap: `15px`
-      },
-      widescreen: {
-        right: `0`,
-        top: ``,
-        gap: ``
-      },
-      button: {
-        variant: `buttonIconPrimary`,
-        withIcon: true,
-        withText: true,
-        iconName: `share`
       }
     },
     // ==========================================================================
@@ -198,7 +151,7 @@ const PostBody = {
     StyledCatWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `1`,
+        gridRow: ``,
         margin: ``,
         padding: ``
       },
@@ -256,7 +209,7 @@ const PostBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/5`,
+        gridColumn: `5/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -272,19 +225,19 @@ const PostBody = {
       StyledSubTitle: {
         variant: `secondary`,
         mobile: {
-          margin: `15px 0 15px`
+          margin: `0 0 15px`
         },
         mobileLarge: {
-          margin: `20px 0 20px`
+          margin: `0 0 20px`
         },
         tablet: {
-          margin: `25px 0 25px`
+          margin: `0 0 25px`
         },
         desktop: {
-          margin: `30px 0 30px`
+          margin: `0 0 30px`
         },
         widescreen: {
-          margin: `30px 0 30px`
+          margin: `0 0 30px`
         }
       }
     },
@@ -311,7 +264,7 @@ const PostBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/8`,
+        gridColumn: `5/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -350,32 +303,37 @@ const PostBody = {
     StyledExcerpt: {
       variant: `standfirst`,
       blockquote: {
-        color: colors.green
+        color: colors.black
       },
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
-        margin: ``
+        gridRow: ``,
+        margin: ``,
+        padding: ``
       },
       mobileLarge: {
-        gridColumn: `1/12`,
+        gridColumn: `2/12`,
         gridRow: ``,
-        margin: ``
+        margin: ``,
+        padding: ``
       },
       tablet: {
         gridColumn: ``,
         gridRow: ``,
-        margin: ``
+        margin: ``,
+        padding: ``
       },
       desktop: {
-        gridColumn: `1/5`,
+        gridColumn: `5/13`,
         gridRow: ``,
-        margin: ``
+        margin: ``,
+        padding: ``
       },
       widescreen: {
         gridColumn: ``,
         gridRow: ``,
-        margin: ``
+        margin: ``,
+        padding: ``
       }
     },
     // ==========================================================================
@@ -384,11 +342,11 @@ const PostBody = {
     StyledArticle: {
       variant: `bodyCopy`,
       blockquote: {
-        color: colors.green
+        color: colors.black
       },
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `5`,
+        gridRow: ``,
         margin: ``
       },
       mobileLarge: {
@@ -402,7 +360,7 @@ const PostBody = {
         margin: ``
       },
       desktop: {
-        gridColumn: `1/7`,
+        gridColumn: `5/12`,
         gridRow: ``,
         margin: ``
       },
@@ -420,7 +378,7 @@ const PostBody = {
       justifyContent: ``,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `6`,
+        gridRow: ``,
         margin: `0 0 15px`,
         padding: ``
       },
@@ -438,7 +396,7 @@ const PostBody = {
       },
       desktop: {
         gridColumn: `1/5`,
-        gridRow: `6`,
+        gridRow: `2/3`,
         margin: `0`,
         padding: ``
       },
@@ -472,4 +430,4 @@ const PostBody = {
     }
   }
 };
-export { PostBody };
+export { PortfolioBody };

@@ -54,11 +54,11 @@ const PortfolioFeedItemDefault = {
     // ==========================================================================
     StyledImage: {
       borderRadius: `6px`,
-      overflow: `hidden`,
-      all: `unset`,
-      cursor: `pointer`,
-      transition: `transform 0.25s ease-in-out`,
-      display: `block`
+      overflow: `hidden`
+      // all: `unset`,
+      // cursor: `pointer`,
+      // transition: `transform 0.25s ease-in-out`,
+      // display: `block`
     },
     // ==========================================================================
     // ImageTag
@@ -75,12 +75,12 @@ const PortfolioFeedItemDefault = {
     // StyledFeedInner
     // ==========================================================================
     StyledFeedInner: {
-      // position: `absolute`,
-      top: ``,
+      position: `absolute`,
+      top: `0`,
       left: `0`,
       bottom: `0`,
       right: `0`,
-      // background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)`,
+      background: `linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)`,
       borderRadius: `0`,
       // pointerEvent: `none`,
       mobile: {
@@ -109,11 +109,11 @@ const PortfolioFeedItemDefault = {
         // padding: `30px`
       },
       // verlay styles & Hover states in StyledFeedItem file
-      opacity: `1`,
+      opacity: `0`,
       display: ``,
       transition: `0.25s opacity ease-in-out`,
       opacityHover: `1`,
-      displayHover: ``,
+      displayHover: `block`,
       transformHoverFirstChild: `scale(1.05)`
     },
     // ==========================================================================
@@ -154,7 +154,7 @@ const PortfolioFeedItemDefault = {
     // StyledHeadingWrap
     // ==========================================================================
     StyledHeadingWrap: {
-      alignSelf: `start`,
+      alignSelf: ``,
       mobile: {
         gridColumn: `1/13`,
         gridRow: ``,
@@ -189,7 +189,7 @@ const PortfolioFeedItemDefault = {
       // ==========================================================================
       StyledHeading: {
         variant: `headingFeedItem`,
-        color: `${colors.black}`,
+        color: `${colors.white}`,
         mobile: {
           margin: `0 0 5px`
         },
@@ -243,7 +243,7 @@ const PortfolioFeedItemDefault = {
       },
       StyledExcerpt: {
         variant: `bodyCopy`,
-        color: `${colors.black}`,
+        color: `${colors.white}`,
         whiteSpace: `pre-wrap`,
         truncateValue: 100,
         mobile: {
@@ -269,7 +269,7 @@ const PortfolioFeedItemDefault = {
     StyledCtaNavWrap: {
       position: `absolute`,
       zIndex: `1`,
-      display: `none`,
+      display: ``,
       justifyContent: ``,
       alignSelf: ``,
       mobile: {
@@ -325,10 +325,10 @@ const PortfolioFeedItemDefault = {
       // StyledCtaNav
       // ==========================================================================
       Button: {
-        variant: `buttonPrimary`,
+        variant: `buttonBluePrimary`,
         text: `Voir plus`,
         withIcon: true,
-        iconName: `arrowRightTrigger`,
+        iconName: `arrowRightNew`,
         iconPosition: `right`
       }
     }

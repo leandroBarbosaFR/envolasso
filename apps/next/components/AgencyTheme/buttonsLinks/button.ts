@@ -352,15 +352,15 @@ const button = {
       padding: `12px 20px`,
       borderRadius: `4px`,
       // Border
-      border: `1px solid ${colors.white}`,
+      border: `1px solid ${colors.blueLight}`,
       // Border Hover
-      borderHover: `1px solid ${colors.greyLighter}`,
+      borderHover: `1px solid ${colors.blueLightOpacity}`,
       // Border Focus
-      borderFocus: `1px solid ${colors.greyLighter}`,
+      borderFocus: `1px solid ${colors.blueLightOpacity}`,
       // Border Active
-      borderActive: `1px solid ${colors.greyLighter}`,
+      borderActive: `1px solid ${colors.blueLightOpacity}`,
       // Border Activated
-      borderActivated: `1px solid ${colors.greyLighter}`,
+      borderActivated: `1px solid ${colors.blueLightOpacity}`,
       // Icon
       icon: {
         height: `14px`,

@@ -249,22 +249,22 @@ const Heading = {
     },
     mobileLarge: {
       fontSize: `26px`,
-      lineHeight: `30px`,
+      lineHeight: `39px`,
       letterSpacing: `0`
     },
     tablet: {
       fontSize: `30px`,
-      lineHeight: `34px`,
+      lineHeight: `33px`,
       letterSpacing: `0`
     },
     desktop: {
       fontSize: `32px`,
-      lineHeight: `33px`,
+      lineHeight: `35px`,
       letterSpacing: `0`
     },
     widescreen: {
       fontSize: `32px`,
-      lineHeight: `42px`,
+      lineHeight: `35px`,
       letterSpacing: `0`
     }
   },

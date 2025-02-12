@@ -73,6 +73,7 @@ import { PortfolioSinglePageTheme } from './components/PortfolioSinglePage';
 import { PortfolioFeedSectionTheme } from './components/PortfolioFeedSection';
 import { PortfolioFeedItemDefaultTheme } from './components/PortfolioFeedItemDefault';
 import { PortfolioFeedItemTheme } from './components/PortfolioFeedItem';
+import { PortfolioBodyTheme } from './components/PortfolioBody';
 import { PostBodyTheme } from './components/PostBody';
 import { PostFeedItemDefaultTheme } from './components/PostFeedItemDefault';
 import { PostFeedItemTheme } from './components/PostFeedItem';
@@ -178,6 +179,7 @@ export interface ThemeTypes {
   Paragraph: ParagraphTheme;
   Popover: PopoverTheme;
   PortfolioIndex: PortfolioIndexTheme;
+  PortfolioBody: PortfolioBodyTheme;
   PortfolioSinglePage: PortfolioSinglePageTheme;
   PortfolioFeedSection: PortfolioFeedSectionTheme;
   PortfolioFeedItemDefault: PortfolioFeedItemDefaultTheme;
