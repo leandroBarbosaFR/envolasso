@@ -5,7 +5,17 @@ export default (type) =>
     *[_type == "${type}" && slug.current == $slug && __i18n_lang == $locale && !(_id in path('drafts.**'))][0]{
       title,
       subtitle,
-      body,
+      body[] {
+        _type == "common.htmlField" => {
+          _key,
+          _type,
+          myCodeField {
+            _type,
+            code,
+          },
+        },
+      },
+      body, 
       "featureImage": image {
         alt,
         caption,

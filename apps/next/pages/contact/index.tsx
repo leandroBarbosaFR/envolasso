@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ContactIndex, Main } from '@agency-platform/react-ui';
 import type { Cta, Media, OverrideMetaTags } from '@agency-platform/shared-types';
 import { GetStaticPropsResult } from 'next';
@@ -41,15 +42,6 @@ const Page: NextPageWithLayout<PageProps> = ({ contactPage, locale }) => {
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant={'default'}>
-        {/* <PageHeader
-          layoutVariant={'contact'}
-          featureImage={featureImage}
-          withImage={true}
-          subtitle={subtitle}
-          // title={''}
-          body={body}
-          cta={cta}
-        /> */}
         <ContactIndex layoutVariant={'default'} title={title} body={body}>
           <Layout layout={layout} />
         </ContactIndex>

@@ -6,6 +6,7 @@ import {
   withDocumentI18nPlugin,
 } from '@sanity/document-internationalization'
 // import {visionTool} from '@sanity/vision'
+import {codeInput} from '@sanity/code-input'
 // 1367 Agency npm plugins
 import agencyAbout from '@agency-platform/sanity-plugin-agency-about'
 import agencyBlog from '@agency-platform/sanity-plugin-agency-blog'
@@ -203,6 +204,7 @@ export default defineConfig({
           'common.telLink',
           'common.layout.clientLogos',
           'common.client',
+          'common.htmlField',
           // Page
           'contact',
           'page',
@@ -317,6 +319,8 @@ export default defineConfig({
         ],
       }),
       agencyTeamProfile(),
+      // Code imput plugin for HTML portable text
+      codeInput(),
     ],
     i18nConfig
   ),

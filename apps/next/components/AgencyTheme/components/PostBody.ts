@@ -1,41 +1,55 @@
-import { colors } from '../variables';
+import { colors } from '../variables/';
 // ==========================================================================
-// StandardPageBody Styles
+// PostBody
 // ==========================================================================
-const StandardPageBody = {
+const PostBody = {
   // ==========================================================================
   // layoutVariant
   // ==========================================================================
   default: {
     // ==========================================================================
+    // Config: Hide/show content
+    // ==========================================================================
+    config: {
+      isCategoryVisible: true,
+      isSubtitleVisible: true,
+      isTitleVisible: true,
+      isBodyVisible: true,
+      isExcerptVisible: true,
+      isCtaVisible: true
+    },
+    OptsSharePage: {
+      layoutVariant: `default`
+    },
+    // ==========================================================================
     // StyledSection
     // ==========================================================================
     StyledSection: {
-      background: `${colors.transparent}`,
+      background: `linear-gradient(90deg, #C9EDFF, #96DDFF)`,
       mobile: {
         height: ``,
         margin: ``,
-        padding: `70px 0 20px`
+        padding: `30px 0 0`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: `70px 0 20px`
+        padding: `40px 0 0`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: `80px 0 30px`
+        padding: `50px 0 0`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: `120px 0 30px`
+        padding: `60px 0 0`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: `130px 0 30px`
+        padding: `70px 0 0`
       }
     },
     // ==========================================================================
@@ -112,6 +126,7 @@ const StandardPageBody = {
       gridTemplateColumns: ``,
       alignItems: '',
       display: `grid`,
+      position: `relative`,
       mobile: {
         height: ``,
         colGap: ``,
@@ -139,9 +154,48 @@ const StandardPageBody = {
       }
     },
     // ==========================================================================
+    // StyledGrid
+    // ==========================================================================
+    StyledIconNav: {
+      position: `absolute`,
+      zIndex: `3`,
+      right: `0`,
+      display: `flex`,
+      flexWrap: `wrap`,
+      gap: `10px`,
+      mobile: {
+        right: `0`,
+        top: `0`
+      },
+      mobileLarge: {
+        right: `0`,
+        top: `20px`
+      },
+      tablet: {
+        right: `0`,
+        top: `20px`
+      },
+      desktop: {
+        right: `0`,
+        top: `30px`,
+        gap: `15px`
+      },
+      widescreen: {
+        right: `0`,
+        top: ``,
+        gap: ``
+      },
+      button: {
+        variant: `buttonIconPrimary`,
+        withIcon: true,
+        withText: true,
+        iconName: `share`
+      }
+    },
+    // ==========================================================================
     // StyledSubTitle
     // ==========================================================================
-    StyledSubTitleWrap: {
+    StyledCatWrap: {
       mobile: {
         gridColumn: `1/13`,
         gridRow: `1`,
@@ -149,7 +203,7 @@ const StandardPageBody = {
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `1/13`,
+        gridColumn: `2/12`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -161,10 +215,51 @@ const StandardPageBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `5/12`,
+        gridColumn: `1/5`,
         gridRow: ``,
         margin: ``,
-        padding: `34px 0 0 0`
+        padding: ``
+      },
+      widescreen: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      // StyledCtaNav
+      // ==========================================================================
+      Button: {
+        variant: `buttonPrimary`,
+        text: `Read More`
+      }
+    },
+    // ==========================================================================
+    // StyledSubTitle
+    // ==========================================================================
+    StyledSubTitleWrap: {
+      mobile: {
+        gridColumn: `1/13`,
+        gridRow: `2`,
+        margin: ``,
+        padding: ``
+      },
+      mobileLarge: {
+        gridColumn: `2/12`,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      tablet: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      desktop: {
+        gridColumn: `1/5`,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
       },
       widescreen: {
         gridColumn: ``,
@@ -175,22 +270,21 @@ const StandardPageBody = {
       // StyledSubTitle
       // ==========================================================================
       StyledSubTitle: {
-        variant: `secondaryXs`,
-        color: `${colors.black}`,
+        variant: `secondary`,
         mobile: {
-          margin: `0 0 15px`
+          margin: `15px 0 15px`
         },
         mobileLarge: {
-          margin: `0 0 20px`
+          margin: `20px 0 20px`
         },
         tablet: {
-          margin: `0 0 25px`
+          margin: `25px 0 25px`
         },
         desktop: {
-          margin: `0 0 30px`
+          margin: `30px 0 30px`
         },
         widescreen: {
-          margin: `0 0 30px`
+          margin: `30px 0 30px`
         }
       }
     },
@@ -200,12 +294,12 @@ const StandardPageBody = {
     StyledHeadingWrap: {
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `2`,
+        gridRow: `3`,
         margin: ``,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `1/13`,
+        gridColumn: `2/12`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -217,7 +311,7 @@ const StandardPageBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `2/12`,
+        gridColumn: `1/8`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -231,8 +325,8 @@ const StandardPageBody = {
       // StyledHeading
       // ==========================================================================
       StyledHeading: {
-        variant: `tertiary`,
-        color: `${colors.black}`,
+        variant: `primary`,
+        color: colors.black,
         mobile: {
           margin: `0 0 15px`
         },
@@ -251,75 +345,131 @@ const StandardPageBody = {
       }
     },
     // ==========================================================================
-    // StyledArticleWrap
+    // StyledExcerpt
     // ==========================================================================
-    StyledArticleWrap: {
+    StyledExcerpt: {
+      variant: `standfirst`,
+      blockquote: {
+        color: colors.green
+      },
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
-        margin: ``,
+        gridRow: `4`,
+        margin: ``
+      },
+      mobileLarge: {
+        gridColumn: `1/12`,
+        gridRow: ``,
+        margin: ``
+      },
+      tablet: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``
+      },
+      desktop: {
+        gridColumn: `1/5`,
+        gridRow: ``,
+        margin: ``
+      },
+      widescreen: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``
+      }
+    },
+    // ==========================================================================
+    // StyledTextImgArticle
+    // ==========================================================================
+    StyledArticle: {
+      variant: `bodyCopy`,
+      blockquote: {
+        color: colors.green
+      },
+      mobile: {
+        gridColumn: `1/13`,
+        gridRow: `5`,
+        margin: ``
+      },
+      mobileLarge: {
+        gridColumn: `2/12`,
+        gridRow: ``,
+        margin: ``
+      },
+      tablet: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``
+      },
+      desktop: {
+        gridColumn: `1/7`,
+        gridRow: ``,
+        margin: ``
+      },
+      widescreen: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``
+      }
+    },
+    // ==========================================================================
+    // StyledCtaNavWrap
+    // ==========================================================================
+    StyledCtaNavWrap: {
+      display: `block`,
+      justifyContent: ``,
+      mobile: {
+        gridColumn: `1/13`,
+        gridRow: `6`,
+        margin: `0 0 15px`,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `1/13`,
+        gridColumn: `2/12`,
         gridRow: ``,
-        margin: ``,
+        margin: `0 0 20px`,
         padding: ``
       },
       tablet: {
         gridColumn: ``,
         gridRow: ``,
-        margin: ``,
+        margin: `0 0 25px`,
         padding: ``
       },
       desktop: {
-        gridColumn: `2/12`,
-        gridRow: ``,
-        margin: ``,
+        gridColumn: `1/5`,
+        gridRow: `6`,
+        margin: `0`,
         padding: ``
       },
       widescreen: {
         gridColumn: ``,
         gridRow: ``,
-        margin: ``,
+        margin: `0`,
         padding: ``
       },
-      // StyledArticle
+      // StyledCtaNav
       // ==========================================================================
-      StyledArticle: {
-        variant: `bodyCopyPages`,
-        color: `${colors.black}`,
-        blockquote: {
-          color: `${colors.black}`
-        },
+      StyledCtaNav: {
+        variant: `default`,
+        ctaTitle: `Links:`,
         mobile: {
-          gridColumn: `1/13`,
-          gridRow: ``,
           margin: ``
         },
         mobileLarge: {
-          gridColumn: `1/10`,
-          gridRow: ``,
           margin: ``
         },
         tablet: {
-          gridColumn: ``,
-          gridRow: ``,
           margin: ``
         },
         desktop: {
-          gridColumn: `2/12`,
-          gridRow: ``,
           margin: ``
         },
         widescreen: {
-          gridColumn: ``,
-          gridRow: ``,
           margin: ``
         }
       }
     }
   }
 };
-
-export { StandardPageBody };
+export { PostBody };

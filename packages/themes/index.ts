@@ -6,6 +6,7 @@ export type { AccordionSectionTheme } from './types/components/AccordionSection'
 export type { AccordionTheme } from './types/components/Accordion';
 export type { AddressListTheme } from './types/components/AddressList';
 export type { BlogIndexTheme } from './types/components/BlogIndex';
+export type { BlockContentTheme } from './types/components/BlockContent';
 export type { BlogSinglePageTheme } from './types/components/BlogSinglePage';
 export type { ContactFormTheme } from './types/components/ContactForm';
 export type { ContactIndexTheme } from './types/components/ContactIndex';
@@ -50,6 +51,7 @@ export type { PortfolioSinglePageTheme } from './types/components/PortfolioSingl
 export type { PortfolioFeedSectionTheme } from './types/components/PortfolioFeedSection';
 export type { PortfolioFeedItemDefaultTheme } from './types/components/PortfolioFeedItemDefault';
 export type { PortfolioFeedItemTheme } from './types/components/PortfolioFeedItem';
+export type { PostBodyTheme } from './types/components/PostBody';
 export type { PostFeedItemDefaultTheme } from './types/components/PostFeedItemDefault';
 export type { PostFeedItemTheme } from './types/components/PostFeedItem';
 export type { PostFeedSectionTheme } from './types/components/PostFeedSection';

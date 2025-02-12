@@ -76,7 +76,6 @@ const DefaultFeed = ({
                 dynamicRoute={item?.dynamicRoute}
                 feedItemComponent={feedItemComponent}
                 createdAt={item?._createdAt}
-                price={item?.price}
                 body={item?.body}
                 subtitle={item?.subtitle}
               />

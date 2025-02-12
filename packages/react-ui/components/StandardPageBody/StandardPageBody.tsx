@@ -6,6 +6,7 @@ import React from 'react';
 import { useTheme } from 'styled-components';
 // Components
 import CustomPortableText from '../../utils/portableText';
+import BlockContent from '../BlockContent';
 // Styles
 import StyledArticle from './components/StyledArticle';
 import StyledArticleWrap from './components/StyledArticleWrap';
@@ -68,7 +69,8 @@ const StandardPageBody = ({ layoutVariant, data }: StandardPageBodyProps) => {
                 layoutVariant={layoutVariant}
                 variant={theme.StandardPageBody[layoutVariant!].StyledArticleWrap.StyledArticle.variant}
               >
-                <PortableText value={body} components={CustomPortableText} />
+                {/* <PortableText value={body} components={CustomPortableText} /> */}
+                <BlockContent value={body} layoutVariant={'default'} />
               </StyledArticle>
             </StyledArticleWrap>
           )}

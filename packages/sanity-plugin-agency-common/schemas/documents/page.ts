@@ -116,7 +116,7 @@ export default {
       title: 'Body',
       name: 'body',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block' }, { type: 'common.htmlField' }],
       group: 'content'
     },
     // SEO

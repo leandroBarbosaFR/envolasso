@@ -74,12 +74,6 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
       group: 'post'
     },
     {
-      title: 'Price',
-      name: 'price',
-      type: 'string',
-      group: 'post'
-    },
-    {
       title: 'Title',
       name: 'title',
       type: 'string',

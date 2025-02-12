@@ -1,5 +1,3 @@
-import { colors } from '../variables';
-
 const NavDraw = {
   // ==========================================================================
   // layoutVariant

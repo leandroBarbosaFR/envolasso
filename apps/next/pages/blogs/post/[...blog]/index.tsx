@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 // 1367 Agency UI
-import { BlogSinglePage, Main } from '@agency-platform/react-ui';
+import { PostBody, Main } from '@agency-platform/react-ui';
 import type { Blog } from '@agency-platform/shared-types';
 // Components
 import Layout from 'components/Layout';
@@ -46,7 +46,7 @@ function Page({ blogPage, locale }: BlogPageProps): JSX.Element | null {
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant="default">
-        <BlogSinglePage
+        <PostBody
           layoutVariant={'default'}
           subtitle={subtitle}
           title={title}

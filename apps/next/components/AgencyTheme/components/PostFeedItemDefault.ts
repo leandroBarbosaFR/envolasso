@@ -61,10 +61,10 @@ const PostFeedItemDefault = {
       ImageTag: {
         layoutVariant: `responsive`,
         fit: `crop`,
-        width: 330,
-        height: 240,
-        cropWidth: 330,
-        cropHeight: 240
+        width: 347,
+        height: 252,
+        cropWidth: 347,
+        cropHeight: 252
       }
     },
     // ==========================================================================

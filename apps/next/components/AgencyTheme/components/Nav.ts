@@ -77,7 +77,7 @@ const Nav = {
     // siteNavButton
     // ==========================================================================
     button: {
-      variant: `buttonLinkPrimaryWhite`
+      variant: `buttonLinkPrimary`
     },
     DropdownMenuList: {
       layoutVariant: `default`
@@ -86,7 +86,7 @@ const Nav = {
     // Button - internalLinkButton
     // ==========================================================================
     internalLinkButton: {
-      variant: `buttonLinkPrimaryWhite`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -96,7 +96,7 @@ const Nav = {
     // Button - internalAccountLink
     // ==========================================================================
     internalAccountLink: {
-      variant: `buttonLinkPrimaryWhite`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -106,7 +106,7 @@ const Nav = {
     // Button - externalLink
     // ==========================================================================
     externalLink: {
-      variant: `buttonLinkPrimaryWhite`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -116,7 +116,7 @@ const Nav = {
     // Button - navigationDropdown
     // ==========================================================================
     navigationDropdown: {
-      variant: `buttonLinkPrimaryWhite`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       withIcon: true,
       iconName: `reveal`,

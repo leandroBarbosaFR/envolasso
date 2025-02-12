@@ -25,12 +25,12 @@ import telLink from './schemas/objects/tel-link';
 import textColumn from './schemas/objects/text-column';
 import textColumnBasic from './schemas/objects/text-column-basic';
 import textImgSection from './schemas/objects/text-img-section';
-import price from './schemas/objects/price';
 import textSection from './schemas/objects/text-section';
 import logoFeedSection from './schemas/objects/logo-section';
 import textSectionAside from './schemas/objects/text-section-aside';
 import client from './schemas/objects/client';
 import clientLogos from './schemas/objects/client-logos';
+import htmlField from './schemas/objects/html-field';
 
 interface layoutVariantOptions {
   title: string;
@@ -103,6 +103,7 @@ const agencyCommon = definePlugin(
         navigation,
         navigationDropdown,
         page,
+        htmlField(),
         siteFooter,
         siteHeader,
         socialMediaLink,
@@ -110,7 +111,6 @@ const agencyCommon = definePlugin(
         telLink,
         textColumn,
         textColumnBasic,
-        price,
         // Objects
         internalLink({ linkableContentTypes }),
         clientLogos({ layoutVariantClientLogos }),

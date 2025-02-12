@@ -31,15 +31,15 @@ const IconSet = () => {
         <symbol id="AgencyLogoIcon" viewBox="0 0 400 400">
           <title>AgencyLogo_Icon</title>
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M210.726 4.44255C204.803 -1.48085 195.199 -1.48085 189.276 4.44255L4.44354 189.275C-1.47988 195.198 -1.47988 204.802 4.44354 210.725L189.276 395.557C195.199 401.48 204.803 401.48 210.726 395.557L395.558 210.725C401.482 204.802 401.482 195.198 395.558 189.275L210.726 4.44255Z"
             fill="black"
           />
           <mask id="mask0_41_164" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M210.725 4.44304C204.802 -1.48036 195.198 -1.48037 189.275 4.44304L4.44256 189.275C-1.48086 195.198 -1.48085 204.802 4.44256 210.726L189.275 395.557C195.198 401.481 204.802 401.481 210.725 395.557L395.557 210.726C401.481 204.802 401.481 195.198 395.557 189.275L210.725 4.44304Z"
               fill="black"
             />
@@ -50,8 +50,8 @@ const IconSet = () => {
           </g>
           <mask id="mask1_41_164" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M210.725 4.44255C204.802 -1.48085 195.198 -1.48085 189.275 4.44255L4.44256 189.275C-1.48086 195.198 -1.48085 204.802 4.44256 210.725L189.275 395.557C195.198 401.48 204.802 401.48 210.725 395.557L395.557 210.725C401.481 204.802 401.481 195.198 395.557 189.275L210.725 4.44255Z"
               fill="black"
             />
@@ -76,8 +76,8 @@ const IconSet = () => {
               y2="406.283"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#A3A3A3" />
-              <stop offset="1" stop-color="#F0F0F0" />
+              <stop stopColor="#A3A3A3" />
+              <stop offset="1" stopColor="#F0F0F0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_41_164"
@@ -87,7 +87,7 @@ const IconSet = () => {
               y2="200"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#666666" />
+              <stop stopColor="#666666" />
               <stop offset="1" />
             </linearGradient>
           </defs>
@@ -107,55 +107,55 @@ const IconSet = () => {
           <path
             d="M8 2V5"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M16 2V5"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M3.5 9.08997H20.5"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-miterlimit="10"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M11.9955 13.7H12.0045"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M8.29431 13.7H8.30329"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M8.29431 16.7H8.30329"
             stroke="#171717"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />{' '}
         </symbol>
       </defs>
@@ -263,12 +263,12 @@ const IconSet = () => {
         <symbol id="mouse" viewBox="0 0 15 15" fill="none">
           <title>mouse</title>
 
-          <path d="M7.5 4V7" stroke="#8F8F8F" stroke-width="0.5" className="scroll-line" />
+          <path d="M7.5 4V7" stroke="#8F8F8F" strokeWidth="0.5" className="scroll-line" />
 
           <path
             d="M7.5 14.5C4.73858 14.5 2.5 12.2614 2.5 9.5V5.5C2.5 2.73858 4.73858 0.5 7.5 0.5C10.2614 0.5 12.5 2.73858 12.5 5.5V9.5C12.5 12.2614 10.2614 14.5 7.5 14.5Z"
             stroke="#8F8F8F"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
         </symbol>
         <use href="#mouse"></use>

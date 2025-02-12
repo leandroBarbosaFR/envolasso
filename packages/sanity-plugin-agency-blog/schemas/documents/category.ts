@@ -48,12 +48,6 @@ export default {
       group: 'content'
     },
     {
-      title: 'Price',
-      name: 'price',
-      type: 'string',
-      group: 'content'
-    },
-    {
       title: 'Title',
       name: 'title',
       type: 'string',

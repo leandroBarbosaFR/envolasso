@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next';
-import React, { useState } from 'react';
+import React from 'react';
 // 1367 Agency UI
 import { Main, HeroSection, HeroSectionContentCarousel } from '@agency-platform/react-ui';
 import type { LandingPage } from '@agency-platform/shared-types';

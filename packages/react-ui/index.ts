@@ -39,6 +39,7 @@ export { default as PageHeaderMedia } from './components/PageHeaderMedia';
 export { default as PageNotFoundIndex } from './components/PageNotFoundIndex';
 export { default as Pagination } from './components/Pagination';
 export { default as PortfolioIndex } from './components/PortfolioIndex';
+export { default as PostBody } from './components/PostBody';
 export { default as PostFeedSection } from './components/PostFeedSection';
 export { default as PortfolioSinglePage } from './components/PortfolioSinglePage';
 export { default as PortfolioFeedSection } from './components/PortfolioFeedSection';

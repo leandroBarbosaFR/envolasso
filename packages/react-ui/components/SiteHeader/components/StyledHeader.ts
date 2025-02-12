@@ -13,7 +13,6 @@ const StyledHeader = styled.header<StyledComponentProps>`
   -moz-transition: ${({ layoutVariant, theme }) => theme.SiteHeader[layoutVariant!].transition};
   -webkit-transition: ${({ layoutVariant, theme }) => theme.SiteHeader[layoutVariant!].transition};
 
-  border-bottom: 1px solid #8f8f8f;
   ${({ isCollapsed, isToggle, layoutVariant, theme }) =>
     isToggle
       ? css`

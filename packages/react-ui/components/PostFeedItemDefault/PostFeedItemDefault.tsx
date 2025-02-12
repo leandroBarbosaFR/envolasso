@@ -2,17 +2,14 @@ import { PostFeedItemDefaultTheme } from '@agency-platform/themes';
 import { Media } from '@agency-platform/shared-types';
 import React from 'react';
 import { PortableText } from '@portabletext/react';
-import useTruncate from '../../hooks/useTruncate';
 import CustomPortableText from '../../utils/portableText';
+import { format, differenceInDays } from 'date-fns';
 // Theme
 import { useTheme } from 'styled-components';
 // Components
-import ButtonLink from '../ButtonLink';
 import { ImageTag } from '../ImageTag';
-import ColoredText from '../ColoredText';
 // Styles
 import StyledBottomWrapper from './components/StyledBottomWrapper';
-import StyledCtaNavWrap from './components/StyledCtaNavWrap';
 import StyledExcerpt from './components/StyledExcerpt';
 import StyledExcerptWrap from './components/StyledExcerptWrap';
 import StyledFeedInner from './components/StyledFeedInner';
@@ -21,10 +18,8 @@ import StyledGrid from './components/StyledGrid';
 import StyledHeading from './components/StyledHeading';
 import StyledHeadingWrap from './components/StyledHeadingWrap';
 import StyledImage from './components/StyledImage';
-import StyledSubTitle from './components/StyledSubTitle';
-import StyledSubTitleWrap from './components/StyledSubTitleWrap';
 import StyledArticle from './components/StyledArticle';
-import { transform } from 'next/dist/build/swc';
+import StyledNew from './components/StyledNew';
 
 export interface PostFeedItemDefaultProps {
   layoutVariant: keyof PostFeedItemDefaultTheme;
@@ -35,7 +30,6 @@ export interface PostFeedItemDefaultProps {
   dynamicRoute: string;
   isHorizontalFeed?: boolean;
   createdAt?: string;
-  price?: string;
   body: any;
   subtitle?: string;
 }
@@ -44,22 +38,25 @@ const PostFeedItemDefault = ({
   layoutVariant,
   title,
   excerpt,
+  createdAt,
   featureImage,
   slug,
   dynamicRoute,
   isHorizontalFeed,
-  price,
   body,
   subtitle
 }: PostFeedItemDefaultProps) => {
   const theme = useTheme();
-
   const imageSrc = featureImage?.asset?.url;
   const blurDataURL = featureImage?.asset?.metadata?.lqip;
   const fallbackImgSrc = `${process.env.NEXT_PUBLIC_SITE_URL}/fallbackImg.svg`;
 
+  const isNewPost = createdAt ? differenceInDays(new Date(), new Date(createdAt)) <= 1 : false;
+
   return (
     <StyledFeedItem layoutVariant={layoutVariant} isHorizontalFeed={isHorizontalFeed}>
+      <StyledNew>{isNewPost && <span>NOUVEL ARTICLE</span>}</StyledNew>
+
       {imageSrc ? (
         <StyledImage layoutVariant={layoutVariant} href={`/${dynamicRoute}${slug?.current}`}>
           <ImageTag
@@ -121,19 +118,6 @@ const PostFeedItemDefault = ({
               flexDirection: `column`
             }}
           >
-            {price && (
-              <StyledSubTitleWrap layoutVariant={layoutVariant}>
-                <StyledSubTitle
-                  as={'h2'}
-                  layoutVariant={layoutVariant}
-                  variant={
-                    theme.PostFeedItemDefault[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.variant
-                  }
-                >
-                  <ColoredText text={price} />
-                </StyledSubTitle>
-              </StyledSubTitleWrap>
-            )}
             {/* {slug && (
               <StyledCtaNavWrap layoutVariant={layoutVariant}>
                 <ButtonLink

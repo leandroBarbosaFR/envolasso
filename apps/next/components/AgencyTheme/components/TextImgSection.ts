@@ -247,7 +247,7 @@ const TextImgSection = {
       // ==========================================================================
       StyledSubTitle: {
         variant: `tertiary`,
-        color: `${colors.greyLighter}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
@@ -264,7 +264,7 @@ const TextImgSection = {
           margin: ``
         },
         span: {
-          color: `${colors.greyLighter}`
+          color: `${colors.black}`
         }
       }
     },
@@ -307,7 +307,7 @@ const TextImgSection = {
       // ==========================================================================
       StyledHeading: {
         variant: `tertiary`,
-        color: `${colors.greyLighter}`,
+        color: `${colors.black}`,
         position: ``,
         mobile: {
           margin: ``,
@@ -330,7 +330,7 @@ const TextImgSection = {
           After: {}
         },
         span: {
-          color: `${colors.greyLighter}`
+          color: `${colors.black}`
         }
       }
     },
@@ -339,7 +339,7 @@ const TextImgSection = {
     // ==========================================================================
     StyledArticle: {
       variant: `standfirst`,
-      color: `${colors.greyLighter}`,
+      color: `${colors.black}`,
       mobile: {
         gridColumn: `1/13`,
         gridRow: `2`,
@@ -991,8 +991,8 @@ const TextImgSection = {
       },
       desktop: {
         gridColumn: `2/6`,
-        gridRow: ``,
-        margin: ``,
+        gridRow: `1/3`,
+        margin: `auto`,
         padding: ``
       },
       widescreen: {

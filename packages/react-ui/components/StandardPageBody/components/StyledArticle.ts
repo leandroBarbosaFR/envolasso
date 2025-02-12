@@ -12,27 +12,8 @@ const StyledArticle = styled(Article)<StyledComponentProps>`
     color: ${({ layoutVariant, theme }) =>
       theme.StandardPageBody[layoutVariant!].StyledArticleWrap.StyledArticle.blockquote.color};
   }
-
-  p {
-    border-top: 1px solid #8f8f8f; /* Ajoute une bordure supérieure à tous les paragraphes */
-    border-bottom: 1px solid #8f8f8f; /* Ajoute une bordure inférieure à tous les paragraphes */
-    margin: 0; /* Supprime les marges */
-    padding: 30px 0; /* Ajoute un espacement interne */
-  }
-
-  p:first-child {
-    border-top: 1px solid #8f8f8f; /* Bordure supérieure pour le premier élément */
-  }
-
-  p + p {
-    border-top: none; /* Supprime la bordure supérieure entre les paragraphes consécutifs */
-  }
-
-  h3 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
+  display: flex;
+  flex-direction: column-reverse;
   // ==========================================================================
   // Mobile
   // ==========================================================================

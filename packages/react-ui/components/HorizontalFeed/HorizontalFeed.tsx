@@ -87,7 +87,6 @@ const HorizontalFeed = ({
                 isHorizontalFeed={true}
                 feedItemComponent={feedItemComponent}
                 createdAt={item?._createdAt}
-                price={item?.price}
                 body={item?.body}
                 subtitle={item?.subtitle}
               />

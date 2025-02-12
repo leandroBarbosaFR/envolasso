@@ -21,6 +21,7 @@ import { AccordionSection } from './components/AccordionSection';
 import { AddressList } from './components/AddressList';
 import { Article } from './typography/Article';
 import { BlockQuote } from './typography/BlockQuote';
+import { BlockContent } from './components/BlockContent';
 import { BlogIndex } from './components/BlogIndex';
 import { BlogSinglePage } from './components/BlogSinglePage';
 import { burgerNavToggle } from './buttonsLinks/burgerNavToggle';
@@ -73,6 +74,7 @@ import { PortfolioSinglePage } from './components/PortfolioSinglePage';
 import { PortfolioFeedSection } from './components/PortfolioFeedSection';
 import { PortfolioFeedItem } from './components/PortfolioFeedItem';
 import { PortfolioFeedItemDefault } from './components/PortfolioFeedItemDefault';
+import { PostBody } from './components/PostBody';
 import { PostFeedItem } from './components/PostFeedItem';
 import { PostFeedItemDefault } from './components/PostFeedItemDefault';
 import { PostFeedSection } from './components/PostFeedSection';
@@ -129,6 +131,7 @@ const theme: AgencyTheme = {
   Article,
   BlockQuote,
   BlogIndex,
+  BlockContent,
   BlogSinglePage,
   burgerNavToggle,
   button,
@@ -180,6 +183,7 @@ const theme: AgencyTheme = {
   PortfolioFeedSection,
   PortfolioFeedItem,
   PortfolioFeedItemDefault,
+  PostBody,
   PostFeedItem,
   PostFeedItemDefault,
   PostFeedSection,
