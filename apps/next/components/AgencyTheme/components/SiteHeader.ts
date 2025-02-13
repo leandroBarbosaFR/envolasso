@@ -171,8 +171,8 @@ const SiteHeader = {
     // Logo
     // ==========================================================================
     logo: {
-      LogoName: `logoNumber`,
-      LogoNameCollapsed: `logoNumber`,
+      LogoName: `envolTextLogo`,
+      LogoNameCollapsed: `envolTextLogo`,
       variant: `headerLogo`,
       variantCollapsed: `headerLogo`
     },

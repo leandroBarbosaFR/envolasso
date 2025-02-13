@@ -511,7 +511,7 @@ const Carousel = {
         padding: ``
       },
       tablet: {
-        height: `90vh`,
+        height: ``,
         margin: ``,
         padding: ``
       },
@@ -997,7 +997,7 @@ const Carousel = {
         padding: ``
       },
       tablet: {
-        height: `90vh`,
+        height: ``,
         minHeight: ``,
         maxHeight: ``,
         overflow: ``
@@ -1383,7 +1383,7 @@ const Carousel = {
         },
         widescreen: {
           gap: ``,
-          gridColumn: `1/12;`
+          gridColumn: `1/13;`
         },
         // Button style
         Button: {
@@ -1395,14 +1395,14 @@ const Carousel = {
       ThumbsItem: {
         cursor: `pointer`,
         background: `${colors.white}`,
-        backgroundHover: `${colors.grey}`,
-        backgroundActive: `${colors.grey}`,
+        backgroundHover: `${colors.blueLight}`,
+        backgroundActive: `${colors.blueLight}`,
         mobile: {
           margin: `0 0 0 5px`,
           padding: ``,
-          height: `5px`,
-          width: `30px`,
-          borderRadius: `3px`
+          height: `15px`,
+          width: `15px`,
+          borderRadius: `100%`
         },
         mobileLarge: {
           margin: ``,
@@ -1417,15 +1417,16 @@ const Carousel = {
           borderRadius: ``
         },
         desktop: {
-          margin: ``,
-          height: ``,
-          width: `40px`,
+          margin: `0 0 0 10px`,
+          padding: ``,
+          height: `20px`,
+          width: `20px`,
           borderRadius: ``
         },
         widescreen: {
           margin: ``,
           height: ``,
-          width: `50px`,
+          width: ``,
           borderRadius: ``
         }
       }

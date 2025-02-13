@@ -8,13 +8,13 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopy: {
-    familyHeading: `${fonts.OverusedGroteskSemiBold}`,
+    familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
-    family: `${fonts.OverusedGroteskSemiBold}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.OverusedGroteskSemiBold}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 300,
-    familyBlockquote: `${fonts.OverusedGroteskSemiBold}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -255,14 +255,14 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopyPages: {
-    familyHeading: `${fonts.SwitzerRegular}`,
+    familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
     colorHeading: `${colors.white}`,
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerSemibold}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 400,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -503,13 +503,13 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopyPricingList: {
-    familyHeading: `${fonts.SwitzerRegular}`,
+    familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerRegular}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 300,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -750,13 +750,13 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopyFooter: {
-    familyHeading: `${fonts.SwitzerRegular}`,
+    familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerRegular}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 300,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -997,13 +997,13 @@ const Article = {
   // bodyCopy
   // ==========================================================================
   bodyCopySm: {
-    familyHeading: `${fonts.SwitzerRegular}`,
+    familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
-    family: `${fonts.SwitzerRegular}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.SwitzerRegular}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 300,
-    familyBlockquote: `${fonts.SwitzerRegular}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
     ulLi: {
       listStyle: `disc`,
@@ -1244,11 +1244,11 @@ const Article = {
   // standfirst
   // ==========================================================================
   standfirst: {
-    family: `${fonts.OverusedGroteskSemiBold}`,
+    family: `${fonts.PoppinsRegular}`,
     weight: 300,
-    familyBold: `${fonts.OverusedGroteskSemiBold}`,
+    familyBold: `${fonts.PoppinsRegular}`,
     weightBold: 700,
-    familyBlockquote: `${fonts.OverusedGroteskSemiBold}`,
+    familyBlockquote: `${fonts.PoppinsRegular}`,
     weightBlockquote: 300,
 
     // Links

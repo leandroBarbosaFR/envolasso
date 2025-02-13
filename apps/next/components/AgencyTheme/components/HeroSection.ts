@@ -380,7 +380,7 @@ const HeroSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: `2/11`,
+        gridColumn: `3/11`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -424,7 +424,7 @@ const HeroSection = {
       mobile: {
         gridColumn: `1/13`,
         gridRow: `2`,
-        margin: `0 auto`,
+        margin: ``,
         padding: `30px 0 30px 0`
       },
       mobileLarge: {
@@ -440,13 +440,13 @@ const HeroSection = {
         padding: ``
       },
       desktop: {
-        gridColumn: ``,
+        gridColumn: `2/9`,
         gridRow: ``,
         margin: ``,
         padding: `30px 0 50px 0`
       },
       widescreen: {
-        gridColumn: `1/9`,
+        gridColumn: ``,
         gridRow: ``,
         margin: `0`,
         padding: ``
@@ -483,7 +483,7 @@ const HeroSection = {
       mobile: {
         gridColumn: `5/13`,
         gridRow: ``,
-        margin: `0 auto `,
+        margin: ``,
         padding: ``
       },
       mobileLarge: {

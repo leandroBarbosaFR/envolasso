@@ -36,7 +36,7 @@ const FormInputCheckBox = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -152,7 +152,7 @@ const FormInputCheckBox = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -279,7 +279,7 @@ const FormInputCheckBox = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.black}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -394,7 +394,7 @@ const FormInputCheckBox = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,

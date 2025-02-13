@@ -9,7 +9,7 @@ const BlockQuote = {
   // ==========================================================================
   quote: {
     fontColor: colors.black,
-    fontFamily: fonts.SwitzerRegular,
+    fontFamily: fonts.PoppinsRegular,
     fontWeight: 300,
     mobile: {
       fontSize: '18px',
@@ -73,7 +73,7 @@ const BlockQuote = {
   // ==========================================================================
   quoteCredit: {
     fontColor: colors.black,
-    fontFamily: fonts.SwitzerRegular,
+    fontFamily: fonts.PoppinsRegular,
     fontWeight: 300,
     mobile: {
       fontSize: '13px',

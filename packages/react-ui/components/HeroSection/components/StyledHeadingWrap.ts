@@ -6,7 +6,7 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
   // Global
   // ==========================================================================
   text-align: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledHeadingWrap.textAlign};
-  display: none;
+
   // ==========================================================================
   // Mobile
   // ==========================================================================
@@ -19,7 +19,6 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
       theme.HeroSection[layoutVariant!].StyledHeadingWrap.mobile.margin};
     padding: ${({ layoutVariant, theme }) =>
       theme.HeroSection[layoutVariant!].StyledHeadingWrap.mobile.padding};
-    text-align: center;
   }
   // ==========================================================================
   // Mobile Large
@@ -75,7 +74,6 @@ const StyledHeadingWrap = styled.div<StyledComponentProps>`
       theme.HeroSection[layoutVariant!].StyledHeadingWrap.widescreen.margin};
     padding: ${({ layoutVariant, theme }) =>
       theme.HeroSection[layoutVariant!].StyledHeadingWrap.widescreen.padding};
-    text-align: start;
   }
 `;
 export default StyledHeadingWrap;

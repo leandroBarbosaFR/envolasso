@@ -45,7 +45,6 @@ const StyledArticle = styled(Article)<StyledComponentProps>`
     grid-row: ${({ layoutVariant, theme }) =>
       theme.HeroSection[layoutVariant!].StyledArticle.desktop.gridRow};
     margin: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledArticle.desktop.margin};
-    text-align: start;
   }
 
   // ==========================================================================
@@ -58,7 +57,6 @@ const StyledArticle = styled(Article)<StyledComponentProps>`
       theme.HeroSection[layoutVariant!].StyledArticle.widescreen.gridRow};
     margin: ${({ layoutVariant, theme }) =>
       theme.HeroSection[layoutVariant!].StyledArticle.widescreen.margin};
-    text-align: start;
   }
 `;
 

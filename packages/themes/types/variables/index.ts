@@ -22,7 +22,7 @@ export type Colors = {
 
 // Typography
 export type Fonts = {
-  SwitzerRegular: string;
+  PoppinsRegular: string;
 };
 
 // CSS grid column gap

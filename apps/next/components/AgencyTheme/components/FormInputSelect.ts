@@ -15,7 +15,7 @@ const FormInputSelect = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -179,7 +179,7 @@ const FormInputSelect = {
       alignItems: `center`,
       fontColor: `${colors.white}`,
       background: `${colors.transparent}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       transition: `0.3s ease-in-out`,
       // Hover
@@ -437,7 +437,7 @@ const FormInputSelect = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -545,7 +545,7 @@ const FormInputSelect = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -635,7 +635,7 @@ const FormInputSelect = {
         pointerEvents: `pointer`,
         position: `absolute`,
         display: `block`,
-        fillHover: `white`,
+        fillHover: `white`
       },
       mobile: {
         svg: {
@@ -709,7 +709,7 @@ const FormInputSelect = {
       alignItems: `center`,
       fontColor: `${colors.grey}`,
       background: `${colors.transparent}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       transition: `0.3s ease-in-out`,
       // Hover
@@ -967,7 +967,7 @@ const FormInputSelect = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,

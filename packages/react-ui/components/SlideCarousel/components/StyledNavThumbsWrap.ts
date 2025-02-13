@@ -8,7 +8,7 @@ const StyledNavThumbsWrap = styled.div<StyledComponentProps>`
   display: ${({ layoutVariant, theme }) =>
     theme.Carousel[layoutVariant!].NavThumbs.StyledNavThumbsWrap.display};
   width: ${({ layoutVariant, theme }) => theme.Carousel[layoutVariant!].NavThumbs.StyledNavThumbsWrap.width};
-
+  margin: 0 auto;
   // ==========================================================================
   // Mobile
   // ==========================================================================

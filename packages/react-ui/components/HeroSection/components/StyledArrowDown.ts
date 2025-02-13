@@ -8,21 +8,6 @@ const StyledArrowDown = styled.div<StyledComponentProps>`
   z-index: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledArrowDown.zIndex};
   position: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledArrowDown.position};
 
-  /* Animation for the scroll line */
-  .scroll-line {
-    animation: scrollAnimation 1.5s ease-in-out infinite;
-  }
-
-  @keyframes scrollAnimation {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(3px);
-    }
-  }
-
   // ==========================================================================
   // Mobile
   // ==========================================================================

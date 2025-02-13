@@ -1,7 +1,16 @@
 import { GetStaticProps } from 'next';
 import React from 'react';
+import useGlobalSettings from 'providers/useGlobalSettings';
 // 1367 Agency UI
-import { Main, HeroSection, HeroSectionContentCarousel } from '@agency-platform/react-ui';
+import {
+  Main,
+  HeroSection,
+  HeroSectionContentCarousel
+  // ExchangeRates
+
+  // HorizontalTimeline
+  // GoogleReviewSection
+} from '@agency-platform/react-ui';
 import type { LandingPage } from '@agency-platform/shared-types';
 // Components
 import Layout from 'components/Layout';
@@ -24,6 +33,8 @@ interface PageProps {
 
 function Page({ landingPage, locale }: PageProps): JSX.Element | null {
   if (!landingPage) return null;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+
   const {
     layoutVariant,
     carousel,
@@ -40,9 +51,9 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
     standFirst,
     subtitle,
     title,
-    overrideMetaTags,
-    featureImage
+    overrideMetaTags
   } = landingPage;
+
   return (
     <>
       <MetaTags
@@ -70,14 +81,16 @@ function Page({ landingPage, locale }: PageProps): JSX.Element | null {
             carouselData={carousel}
             carouselType={'homeCarousel'}
             layoutVariant={layoutVariant}
-            featureImage={featureImage}
           />
         ) : (
           heroType === 'contentCarousel' && (
             <HeroSectionContentCarousel carouselType={'homeContentCarousel'} data={contentCarousel} />
           )
         )}
+        {/* <ExchangeRates /> */}
         <Layout layout={layout} />
+        {/* <HorizontalTimeline /> */}
+        {/* <GoogleReviewSection layoutVariant={layoutVariant} /> */}
       </Main>
     </>
   );

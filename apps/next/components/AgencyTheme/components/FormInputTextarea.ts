@@ -11,7 +11,7 @@ const FormInputTextarea = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -96,7 +96,7 @@ const FormInputTextarea = {
 
       fontColor: `${colors.white}`,
       background: `${colors.transparent}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
 
       transition: `0.3s ease-in-out`,
@@ -351,7 +351,7 @@ const FormInputTextarea = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -456,7 +456,7 @@ const FormInputTextarea = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -541,7 +541,7 @@ const FormInputTextarea = {
 
       fontColor: `${colors.white}`,
       background: `${colors.transparent}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
 
       transition: `0.3s ease-in-out`,
@@ -796,7 +796,7 @@ const FormInputTextarea = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,

@@ -280,7 +280,7 @@ const SiteFooter = {
       },
       logo: {
         variant: `footerLogo`,
-        LogoName: `logoNumber`
+        LogoName: `envolTextLogo`
       }
     },
     // ==========================================================================

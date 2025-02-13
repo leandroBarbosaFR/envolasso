@@ -9,9 +9,9 @@ const Paragraph = {
   // ==========================================================================
   credits: {
     fontColor: colors.white,
-    fontFamily: fonts.SwitzerRegular,
+    fontFamily: fonts.PoppinsRegular,
     fontWeight: 300,
-    fontFamilyStrong: fonts.SwitzerRegular,
+    fontFamilyStrong: fonts.PoppinsRegular,
     fontWeightStrong: 300,
     // Link styles
     a: {
@@ -63,9 +63,9 @@ const Paragraph = {
   // ==========================================================================
   caption: {
     fontColor: colors.white,
-    fontFamily: fonts.SwitzerRegular,
+    fontFamily: fonts.PoppinsRegular,
     fontWeight: 300,
-    fontFamilyStrong: fonts.SwitzerRegular,
+    fontFamilyStrong: fonts.PoppinsRegular,
     fontWeightStrong: 300,
     // Link styles
     a: {

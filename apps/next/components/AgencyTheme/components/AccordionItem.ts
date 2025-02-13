@@ -74,7 +74,7 @@ const AccordionItem = {
       alignItems: `center`,
       justifyContent: `space-between`,
       color: colors.white,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       mobile: {
         textAlign: '',

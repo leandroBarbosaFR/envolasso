@@ -19,6 +19,7 @@ const HomeCarouselItem = ({ layoutVariant, data }: HomeCarouselItemProps) => {
   const heroFirstFrameImageSrc = heroFirstFrameImage?.asset?.url?.length
     ? heroFirstFrameImage?.asset?.url
     : fallbackImgSrc;
+
   return (
     <StyledCarouselItem layoutVariant={layoutVariant}>
       {_type === 'hero.image' ? (

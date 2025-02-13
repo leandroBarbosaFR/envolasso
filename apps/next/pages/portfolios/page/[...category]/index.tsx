@@ -60,12 +60,10 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
     overrideMetaTags,
     ctaTitle,
     cta,
-    image,
     subtitle,
     body,
     featuredBlog,
-    sectionImageBg,
-    category
+    sectionImageBg
   } = portfoliosPage;
 
   return (
@@ -90,9 +88,6 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
           cta={cta}
           featureImage={featuredBlog?.featureImage} // Pass it here
           sectionImageBg={sectionImageBg}
-          // data={featuredBlog}
-          // image={image}
-          // category={category}
         />
         <PortfolioIndex
           layoutVariant={'default'}

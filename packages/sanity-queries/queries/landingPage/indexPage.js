@@ -18,6 +18,16 @@ export default (type) =>
               }
             }
           },
+          "featureImage": image {
+            alt,
+            caption,
+            asset->{
+              url,
+              metadata {
+                lqip
+              }
+            }
+          },
         },
         contentCarousel[] {
           _type,
@@ -86,16 +96,6 @@ export default (type) =>
         standFirst,
         subtitle,
         title,
-          "featureImage": image {
-            alt,
-            caption,
-            asset->{
-              url,
-              metadata {
-                lqip
-              }
-            }
-          },
         ${layout},
         "overrideMetaTags": {
           overideMetaTitle,

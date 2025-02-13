@@ -11,7 +11,7 @@ const FormInputMixed = {
     StyledLabel: {
       position: `relative`,
       fontColor: colors.white,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -102,7 +102,7 @@ const FormInputMixed = {
 
       fontColor: colors.white,
       background: colors.transparent,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
 
       transition: `0.3s ease-in-out`,
@@ -130,7 +130,7 @@ const FormInputMixed = {
       // placeholder
       placeholder: {
         color: colors.white,
-        fontFamily: fonts.SwitzerRegular,
+        fontFamily: fonts.PoppinsRegular,
         background: ``
       },
       //autofill
@@ -397,7 +397,7 @@ const FormInputMixed = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: colors.red,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -499,7 +499,7 @@ const FormInputMixed = {
     StyledLabel: {
       position: `relative`,
       fontColor: colors.white,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -590,7 +590,7 @@ const FormInputMixed = {
 
       fontColor: colors.white,
       background: colors.transparent,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
 
       transition: `0.3s ease-in-out`,
@@ -618,7 +618,7 @@ const FormInputMixed = {
       // placeholder
       placeholder: {
         color: colors.grey,
-        fontFamily: fonts.SwitzerRegular,
+        fontFamily: fonts.PoppinsRegular,
         background: ``
       },
       //autofill
@@ -885,7 +885,7 @@ const FormInputMixed = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: colors.red,
-      fontFamily: fonts.SwitzerRegular,
+      fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,

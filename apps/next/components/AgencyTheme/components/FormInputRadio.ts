@@ -21,7 +21,7 @@ const FormInputRadio = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.white}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -136,7 +136,7 @@ const FormInputRadio = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -248,7 +248,7 @@ const FormInputRadio = {
     StyledLabel: {
       position: `relative`,
       fontColor: `${colors.black}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,
@@ -363,7 +363,7 @@ const FormInputRadio = {
     StyledErrorMessage: {
       position: `absolute`,
       fontColor: `${colors.red}`,
-      fontFamily: `${fonts.SwitzerRegular}`,
+      fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
       textAlign: `left`,

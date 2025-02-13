@@ -60,28 +60,17 @@ const colors = {
 
 // Typography
 const fonts = {
-  ClashGroteskExtralight: `'ClashGroteskExtralight', Helvetica, Arial, sans-serif `,
-  ClashGroteskBold: `'ClashGroteskBold', Helvetica, Arial, sans-serif `,
-  ClashGroteskLight: `'ClashGroteskLight', Helvetica, Arial, sans-serif `,
-  ClashGroteskMedium: `'ClashGroteskMedium', Helvetica, Arial, sans-serif `,
-  ClashGroteskRegular: `'ClashGroteskRegular', Helvetica, Arial, sans-serif `,
-  ClashGroteskSemibold: `'ClashGroteskSemibold', Helvetica, Arial, sans-serif `,
-  PlayfairRegular: `'PlayfairRegular', Helvetica, Arial, sans-serif `,
-  PlayfairDisplaySemiBold: `'PlayfairDisplaySemiBold', Helvetica, Arial, sans-serif `,
-
-  // Switzer fonts
-  SwitzerRegular: `'Switzer-Regular', Helvetica, Arial, sans-serif`,
-  SwitzerSemibold: `'Switzer-Semibold', Helvetica, Arial, sans-serif`,
-  //OverUsed Grotesk
-  OverusedGroteskMedium: `'OverusedGrotesk-Medium', Helvetica, Arial, sans-serif`,
-  OverusedGroteskSemiBold: `'OverusedGrotesk-SemiBold', Helvetica, Arial, sans-serif`
+  // Poppins
+  PoppinsRegular: `'PoppinsRegular', Helvetica, Arial, sans-serif `,
+  PoppinsMedium: `'PoppinsMedium', Helvetica, Arial, sans-serif `,
+  PoppinsBold: `'PoppinsBold', Helvetica, Arial, sans-serif `
 };
 
 // Default type settings
 const typeDefaults = {
-  family: fonts.SwitzerRegular,
+  family: fonts.PoppinsRegular,
   weight: 400,
-  familyBold: fonts.SwitzerRegular,
+  familyBold: fonts.PoppinsRegular,
   weightBold: 400,
   backgroundBody: colors.white,
   colorBody: colors.black,

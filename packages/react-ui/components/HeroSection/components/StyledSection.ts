@@ -6,6 +6,7 @@ const StyledSection = styled(StyledSectionBase)<StyledComponentProps>`
   // ==========================================================================
   // Global
   // ==========================================================================
+
   display: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledSection.display};
   align-items: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledSection.alignItems};
   position: ${({ layoutVariant, theme }) => theme.HeroSection[layoutVariant!].StyledSection.position};

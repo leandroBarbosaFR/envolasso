@@ -15,7 +15,7 @@ const logo = {
   // Logo Variant - Header Logo
   // ==========================================================================
   headerLogo: {
-    fill: colors.black,
+    fill: colors.blueLight,
     fillHover: `#00aeef`,
     display: `block`,
     margin: ` 0 auto 0 0`,
@@ -48,22 +48,22 @@ const logo = {
       border: ``
     },
     tablet: {
-      height: `60px`,
-      width: `130px`,
+      height: `70px`,
+      width: `260px`,
       margin: ``,
       padding: ``,
       border: ``
     },
     desktop: {
-      height: `60px`,
-      width: `130px`,
+      height: `70px`,
+      width: `260px`,
       margin: ``,
       padding: ``,
       border: ``
     },
     widescreen: {
-      height: `60px`,
-      width: `130px`,
+      height: `70px`,
+      width: `260px`,
       margin: ``,
       padding: ``,
       border: ``
@@ -77,7 +77,7 @@ const logo = {
   // Logo Variant - Header Logo
   // ==========================================================================
   headerLogoWhite: {
-    fill: colors.white,
+    fill: colors.blueLight,
     fillHover: `#00aeef`,
     display: `block`,
     margin: ` 0 auto 0 0`,
@@ -135,8 +135,8 @@ const logo = {
   // Logo Variant - Footer Logo
   // ==========================================================================
   footerLogo: {
-    fill: colors.white,
-    fillHover: colors.white,
+    fill: colors.midBlack,
+    fillHover: colors.black,
     mobile: {
       height: `152px`,
       width: `132px`,
@@ -152,8 +152,8 @@ const logo = {
       border: ``
     },
     tablet: {
-      height: `152px`,
-      width: `132px`,
+      height: `70px`,
+      width: `260px`,
       margin: ``,
       padding: ``,
       border: ``

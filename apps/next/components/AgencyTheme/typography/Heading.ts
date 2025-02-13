@@ -9,7 +9,7 @@ const Heading = {
   // ==========================================================================
   primary: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskSemiBold,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `32px`,
@@ -42,7 +42,7 @@ const Heading = {
   // ==========================================================================
   primaryLarge: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `56px`,
@@ -75,7 +75,7 @@ const Heading = {
   // ==========================================================================
   primaryBold: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `32px`,
@@ -108,7 +108,7 @@ const Heading = {
   // ==========================================================================
   primarySemiBold: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `32px`,
@@ -141,7 +141,7 @@ const Heading = {
   // ==========================================================================
   tertiary: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `26px`,
@@ -174,7 +174,7 @@ const Heading = {
   // ==========================================================================
   headingFeedItem: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskSemiBold,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `16px`,
@@ -207,7 +207,7 @@ const Heading = {
   // ==========================================================================
   tertiarySmall: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `20px`,
@@ -240,7 +240,7 @@ const Heading = {
   // ==========================================================================
   tertiarySmallPricing: {
     fontColor: colors.black,
-    fontFamily: `${fonts.OverusedGroteskMedium} !important`,
+    fontFamily: `${fonts.PoppinsMedium} !important`,
     fontWeight: 600,
     mobile: {
       fontSize: `20px`,
@@ -273,7 +273,7 @@ const Heading = {
   // ==========================================================================
   primaryXl: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 500,
     mobile: {
       fontSize: `54px`,
@@ -306,7 +306,7 @@ const Heading = {
   // ==========================================================================
   primaryHero: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 500,
     mobile: {
       fontSize: `40px`,
@@ -339,7 +339,7 @@ const Heading = {
   // ==========================================================================
   secondary: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `18px`,
@@ -372,7 +372,7 @@ const Heading = {
   // ==========================================================================
   secondaryXs: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `10px`,
@@ -405,7 +405,7 @@ const Heading = {
   // ==========================================================================
   tertiaryXs: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `12px`,
@@ -438,7 +438,7 @@ const Heading = {
   // ==========================================================================
   secondaryMedium: {
     fontColor: colors.black,
-    fontFamily: fonts.OverusedGroteskMedium,
+    fontFamily: fonts.PoppinsMedium,
     fontWeight: 400,
     mobile: {
       fontSize: `18px`,

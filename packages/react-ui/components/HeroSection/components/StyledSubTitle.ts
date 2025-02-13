@@ -5,13 +5,6 @@ import StyledHeading from '../../Heading/components/StyledHeading';
 const StyledSubTitle = styled(StyledHeading)<StyledComponentProps>`
   color: ${({ layoutVariant, theme }) =>
     theme.HeroSection[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.color};
-
-  background: ${({ layoutVariant, theme }) =>
-    theme.HeroSection[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.background};
-  -webkit-background-clip: text;
-  background-clip: ${({ layoutVariant, theme }) =>
-    theme.HeroSection[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.backgroundClip};
-
   // ==========================================================================
   // Mobile
   // ==========================================================================
