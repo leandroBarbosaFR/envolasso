@@ -13,27 +13,27 @@ const AddressList = {
       mobile: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `0`
       },
       mobileLarge: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `0`
       },
       tablet: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `0`
       },
       desktop: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `0`
       },
       widescreen: {
         height: ``,
         margin: ``,
-        padding: ``
+        padding: `0`
       }
     },
     // ==========================================================================
@@ -171,7 +171,7 @@ const AddressList = {
       // ==========================================================================
       StyledHeading: {
         variant: `primary`,
-        color: colors.white,
+        color: colors.black,
         mobile: {
           margin: ``
         },
@@ -188,7 +188,7 @@ const AddressList = {
           margin: ``
         },
         span: {
-          color: `${colors.white}`
+          color: `${colors.black}`
         }
       }
     },
@@ -197,7 +197,7 @@ const AddressList = {
     // ==========================================================================
     StyledArticle: {
       variant: `bodyCopy`,
-      color: colors.white,
+      color: colors.black,
       lastOfType: {
         margin: `0`,
         padding: `0`
@@ -317,7 +317,7 @@ const AddressList = {
     // ==========================================================================
     StyledAddressTitle: {
       variant: `primary`,
-      color: colors.white,
+      color: colors.black,
       mobile: {
         margin: ``
       },
@@ -334,7 +334,7 @@ const AddressList = {
         margin: ``
       },
       span: {
-        color: `${colors.white}`
+        color: `${colors.black}`
       }
     },
     // ==========================================================================
@@ -342,7 +342,7 @@ const AddressList = {
     // ==========================================================================
     StyledAddressArticle: {
       variant: `bodyCopy`,
-      color: colors.white,
+      color: colors.black,
       lastOfType: {
         margin: `0`,
         padding: `0`
