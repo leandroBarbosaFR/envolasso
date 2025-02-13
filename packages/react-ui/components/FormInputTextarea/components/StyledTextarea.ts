@@ -9,7 +9,7 @@ const StyledTextarea = styled.textarea<StyledComponentProps>`
   resize: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.resize};
   cursor: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.cursor};
   height: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.height};
-
+  border-radius: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.borderRadius};
   color: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.fontColor};
   font-family: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.fontFamily};
   font-weight: ${({ variant, theme }) => theme.FormInputTextarea[variant!].StyledTextarea.fontWeight};

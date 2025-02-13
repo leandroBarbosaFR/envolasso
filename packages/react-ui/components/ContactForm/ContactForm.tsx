@@ -130,8 +130,8 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 variant={theme.ContactForm[variant!].StyledFormFields.FormInputMixed.variant}
                 id={'email'}
                 type={'email'}
-                placeholder={'ex. hello@1367studio.com'}
-                label={'Mail'}
+                placeholder={'ex. envol-association@envol.fr'}
+                label={'Email'}
                 error={errors.Email && errors.Email}
                 {...register('Email')}
               />
@@ -154,7 +154,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 error={errors.Subject && errors.Subject}
                 {...register('Subject')}
               >
-                <option value="Je besoin d'un devis">Je besoin d'un devis</option>
+                <option value="Je besoin d'un devis">Je souhaite être rappelé</option>
                 <option value="J'ai une autre question">J'ai une autre question</option>
                 {/* <option value="license">Help me choose the right license</option>
                 <option value="chat">Just need a chat</option> */}

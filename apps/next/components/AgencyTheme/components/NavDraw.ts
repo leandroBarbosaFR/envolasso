@@ -14,7 +14,7 @@ const NavDraw = {
       left: `0`,
       bottom: `0`,
       right: `0`,
-      background: `linear-gradient(0deg, #96DDFF 25%, #d0edfb 100%)`,
+      background: `rgba(0,0,0,0.95)`,
 
       NavList: {
         layoutVariant: `navDrawNavList`

@@ -544,7 +544,7 @@ const FormInputSelect = {
     // ==========================================================================
     StyledLabel: {
       position: `relative`,
-      fontColor: `${colors.white}`,
+      fontColor: `${colors.black}`,
       fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
@@ -631,11 +631,11 @@ const FormInputSelect = {
       background: `${colors.transparent}`,
       border: `none`,
       svg: {
-        fill: `${colors.grey}`,
+        fill: `${colors.black}`,
         pointerEvents: `pointer`,
         position: `absolute`,
         display: `block`,
-        fillHover: `white`
+        fillHover: `${colors.black}`
       },
       mobile: {
         svg: {
@@ -707,31 +707,31 @@ const FormInputSelect = {
       gap: ``,
       justifyContent: ``,
       alignItems: `center`,
-      fontColor: `${colors.grey}`,
+      fontColor: `${colors.black}`,
       background: `${colors.transparent}`,
       fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       transition: `0.3s ease-in-out`,
       // Hover
-      fontColorHover: `${colors.white}`,
+      fontColorHover: `${colors.black}`,
       backgroundHover: `${colors.transparent}`,
       // Focus
-      fontColorFocus: `${colors.white}`,
+      fontColorFocus: `${colors.black}`,
       backgroundFocus: `${colors.transparent}`,
       // Active
-      fontColorActive: `${colors.white}`,
+      fontColorActive: `${colors.black}`,
       backgroundActive: `${colors.transparent}`,
       // activated
-      fontColorActivated: `${colors.white}`,
+      fontColorActivated: `${colors.black}`,
       backgroundaActivated: `${colors.transparent}`,
       // placeholder
       placeholder: {
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         background: `${colors.transparent}`
       },
       //autofill
       autofill: {
-        textFillColor: `${colors.white}`,
+        textFillColor: `${colors.black}`,
         boxShadow: `rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`,
         transition: `background-color 5000s ease-in-out 0s`
       },
@@ -743,8 +743,8 @@ const FormInputSelect = {
         margin: `5px 0 0 0`,
         padding: `13px 20px`,
         // Border
-        borderRadius: ``,
-        border: `1px solid ${colors.white}`,
+        borderRadius: `8px`,
+        border: `1px solid ${colors.black}`,
         borderTop: ``,
         borderRight: ``,
         borderBottom: ``,
@@ -755,28 +755,28 @@ const FormInputSelect = {
         borderTopHover: ``,
         borderRightHover: ``,
         borderBottomHover: ``,
-        borderLeftHover: `1px solid ${colors.white}`,
+        borderLeftHover: `1px solid ${colors.black}`,
         // Border Focus
         borderRadiusFocus: ``,
         borderFocus: ``,
         borderTopFocus: ``,
         borderRightFocus: ``,
         borderBottomFocus: ``,
-        borderLeftFocus: `1px solid ${colors.white}`,
+        borderLeftFocus: `1px solid ${colors.black}`,
         // Border Active
         borderRadiusActive: ``,
         borderActive: ``,
         borderTopActive: ``,
         borderRightActive: ``,
         borderBottomActive: ``,
-        borderLeftActive: `1px solid ${colors.white}`,
+        borderLeftActive: `1px solid ${colors.black}`,
         // Border Activated
         borderRadiusActivated: ``,
         borderActivated: ``,
         borderTopActivated: ``,
         borderRightActivated: ``,
         borderBottomActivated: ``,
-        borderLeftActivated: `1px solid ${colors.white}`
+        borderLeftActivated: `1px solid ${colors.black}`
       },
       // Large Mobile
       mobileLarge: {

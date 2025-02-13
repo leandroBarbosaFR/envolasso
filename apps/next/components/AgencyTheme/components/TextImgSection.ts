@@ -19,7 +19,7 @@ const TextImgSection = {
       mobile: {
         height: ``,
         margin: ``,
-        padding: `50px 0`
+        padding: ``
       },
       mobileLarge: {
         height: ``,
@@ -29,7 +29,7 @@ const TextImgSection = {
       tablet: {
         height: ``,
         margin: ``,
-        padding: `70px 0`
+        padding: ``
       },
       desktop: {
         height: ``,
@@ -166,7 +166,7 @@ const TextImgSection = {
       borderRadius: `6px`,
       overflow: `hidden`,
       mobile: {
-        gridColumn: `1/6`,
+        gridColumn: `1/13`,
         gridRow: `6`,
         margin: ``,
         padding: ``
@@ -178,7 +178,7 @@ const TextImgSection = {
         padding: ``
       },
       tablet: {
-        gridColumn: `1/5`,
+        gridColumn: `1/7`,
         gridRow: `2/4`,
         margin: ``,
         padding: ``,

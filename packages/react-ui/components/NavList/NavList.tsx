@@ -128,19 +128,6 @@ const NavList = ({ layoutVariant, navListTitle, siteNavigation, handleClick }: N
         </StyledHeading>
       )}
       <StyledList layoutVariant={layoutVariant}>{siteNavigation && renderNav(siteNavigation)}</StyledList>
-      <div style={{ width: '100%', padding: '30px 0 0 0' }}>
-        <ButtonLink
-          variant={'buttonPrimaryNavDraw'}
-          href={`https://calendly.com/hello1367studio/30min`}
-          withIcon={true}
-          withText={true}
-          iconName="calendarIcon"
-          iconPosition="left"
-          target="_blank"
-        >
-          Réservez votre appel découverte
-        </ButtonLink>
-      </div>
     </StyledNav>
   );
 };

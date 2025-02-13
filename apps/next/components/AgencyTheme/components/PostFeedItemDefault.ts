@@ -247,7 +247,7 @@ const PostFeedItemDefault = {
       // StyledHeading
       // ==========================================================================
       StyledHeading: {
-        variant: `tertiarySmallPricing`,
+        variant: `secondaryXs`,
         color: `${colors.blackMid}`,
         mobile: {
           margin: `0 0 5px`

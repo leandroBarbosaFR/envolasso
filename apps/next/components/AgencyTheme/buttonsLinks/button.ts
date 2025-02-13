@@ -2014,6 +2014,145 @@ const button = {
   // ==========================================================================
   // buttonLinkPrimary
   // ==========================================================================
+  buttonLinkFooter: {
+    cursor: `pointer`,
+    textAlign: `center`,
+    whiteSpace: `nowrap`,
+    textDecoration: `none`,
+    width: `fit-content`,
+    alignItems: `center`,
+    justifyContent: `space-between`,
+    display: `flex`,
+    gap: `8px`,
+    transition: `0.3s ease-in-out`,
+    fontFamily: fonts.PoppinsRegular,
+    fontColor: colors.midBlack,
+    fontWeight: `300`,
+    textTransform: ``,
+    background: colors.transparent,
+    //as
+    asCursor: `auto`,
+    asPointerEvents: `none`,
+    // Hover
+    fontColorHover: colors.black,
+    backgroundHover: colors.transparent,
+    fontWeightHover: `300`,
+    // Focus
+    fontColorFocus: colors.black,
+    backgroundFocus: colors.transparent,
+    fontWeightFocus: `300`,
+    // Active
+    fontColorActive: colors.black,
+    backgroundActive: colors.transparent,
+    fontWeightActive: `300`,
+    // activated
+    fontColorActivated: colors.black,
+    backgroundaActivated: colors.transparent,
+    fontWeightActivated: `300`,
+    // Icon
+    icon: {
+      fill: colors.midBlack,
+      fillHover: colors.black,
+      fillFocus: colors.black,
+      fillActive: colors.black
+    },
+    // Mobile
+    mobile: {
+      fontSize: `13px`,
+      lineHeight: `13px`,
+      letterSpacing: `0`,
+      margin: `0`,
+      padding: ``,
+      border: `none`,
+      icon: {
+        height: `13px`,
+        width: `13px`,
+        margin: `0`
+      }
+    },
+    // Large Mobile
+    mobileLarge: {
+      fontSize: ``,
+      lineHeight: ``,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: ``,
+        width: ``,
+        margin: ``
+      }
+    },
+    // Tabet
+    tablet: {
+      fontSize: `14px`,
+      lineHeight: `14px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: `14px`,
+        width: `14px`,
+        margin: ``
+      }
+    },
+    // Desktop
+    desktop: {
+      fontSize: `15px`,
+      lineHeight: `15px`,
+      letterSpacing: `0`,
+      margin: ``,
+      padding: ``,
+      border: ``,
+      icon: {
+        height: `15px`,
+        width: `15px`,
+        margin: ``
+      }
+    },
+    // widescreen
+    widescreen: {
+      fontSize: `16px`,
+      lineHeight: `16px`,
+      letterSpacing: ``,
+      margin: ``,
+      padding: ``,
+      icon: {
+        height: `16px`,
+        width: `16px`,
+        margin: ``
+      }
+    },
+    // disabled
+    // ==========================================================================
+    disabled: {
+      fontColor: ``,
+      background: ``,
+      border: ``,
+      icon: {
+        fill: ``
+      }
+    },
+    StyledToolTipContent: {
+      zIndex: `99999`,
+      borderRadius: `4px`,
+      padding: `10px 15px`,
+      fontSize: `15px`,
+      color: `${colors.black}`,
+      backgroundColor: `${colors.white}`,
+      boxShadow: `hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px`,
+      userSelect: `none`,
+      animationDuration: `400ms`,
+      animationTimingFunction: `cubic-bezier(0.16, 1, 0.3, 1)`,
+      willChange: `transform, opacity`
+    },
+    StyledToolTipArrow: {
+      fill: `white`
+    }
+  },
+  // ==========================================================================
+  // buttonLinkPrimary
+  // ==========================================================================
   buttonLinkNav: {
     position: 'relative',
     cursor: `pointer`,

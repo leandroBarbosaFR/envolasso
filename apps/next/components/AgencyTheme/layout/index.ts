@@ -25,7 +25,7 @@ const main = {
       height: ``,
       minHeight: 'calc(100vh - 200px)',
       margin: `0`,
-      padding: `95px 0 0 0`
+      padding: `75px 0 0 0`
     },
     mobileLarge: {
       height: ``,

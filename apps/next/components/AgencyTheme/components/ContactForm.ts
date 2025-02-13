@@ -10,7 +10,7 @@ const ContactForm = {
     // ==========================================================================
     StyledHeading: {
       variant: `secondary`,
-      color: `${colors.white}`,
+      color: `${colors.black}`,
       mobile: {
         margin: `0 0 10px 0`
       },
@@ -32,7 +32,7 @@ const ContactForm = {
     // ==========================================================================
     StyledArticle: {
       variant: `bodyCopy`,
-      color: `${colors.white}`,
+      color: `${colors.black}`,
       mobile: {
         margin: ``,
         padding: ``
@@ -187,7 +187,7 @@ const ContactForm = {
       // submitButton
       // ==========================================================================
       submitButton: {
-        variant: `buttonPrimary`
+        variant: `buttonBluePrimary`
       }
     }
   }

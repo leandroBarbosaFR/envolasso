@@ -455,7 +455,7 @@ const FormInputTextarea = {
     // ==========================================================================
     StyledLabel: {
       position: `relative`,
-      fontColor: `${colors.white}`,
+      fontColor: `${colors.black}`,
       fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       textTransform: ``,
@@ -463,7 +463,6 @@ const FormInputTextarea = {
       background: `${colors.transparent}`,
       display: `block`,
       width: '100%',
-
       mobile: {
         fontSize: '14px',
         lineHeight: '14px',
@@ -537,9 +536,9 @@ const FormInputTextarea = {
       width: `100%`,
       resize: `none`,
       cursor: `text`,
-      height: `80px`,
-
-      fontColor: `${colors.white}`,
+      height: `120px`,
+      borderRadius: `8px`,
+      fontColor: `${colors.black}`,
       background: `${colors.transparent}`,
       fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
@@ -547,16 +546,16 @@ const FormInputTextarea = {
       transition: `0.3s ease-in-out`,
 
       // Hover
-      fontColorHover: `${colors.white}`,
+      fontColorHover: `${colors.black}`,
       backgroundHover: `${colors.transparent}`,
       // Focus
-      fontColorFocus: `${colors.white}`,
+      fontColorFocus: `${colors.black}`,
       backgroundFocus: `${colors.transparent}`,
       // Active
-      fontColorActive: `${colors.white}`,
+      fontColorActive: `${colors.black}`,
       backgroundActive: `${colors.transparent}`,
       // activated
-      fontColorActivated: `${colors.white}`,
+      fontColorActivated: `${colors.black}`,
       backgroundaActivated: `${colors.transparent}`,
 
       mobile: {
@@ -566,40 +565,40 @@ const FormInputTextarea = {
         margin: `5px 0 0 0`,
         padding: `13px 20px`,
         // Border
-        borderRadius: ``,
-        border: `1px solid ${colors.white}`,
+        borderRadius: `8px`,
+        border: `1px solid ${colors.black}`,
         borderTop: ``,
         borderRight: ``,
         borderBottom: ``,
         borderLeft: ``,
         // Border Hover
-        borderRadiusHover: ``,
+        borderRadiusHover: `8px`,
         borderHover: ``,
         borderTopHover: ``,
         borderRightHover: ``,
         borderBottomHover: ``,
-        borderLeftHover: `1px solid ${colors.white}`,
+        borderLeftHover: `1px solid ${colors.black}`,
         // Border Focus
-        borderRadiusFocus: ``,
+        borderRadiusFocus: `8px`,
         borderFocus: ``,
         borderTopFocus: ``,
         borderRightFocus: ``,
         borderBottomFocus: ``,
-        borderLeftFocus: `1px solid ${colors.white}`,
+        borderLeftFocus: `1px solid ${colors.black}`,
         // Border Active
-        borderRadiusActive: ``,
+        borderRadiusActive: `8px`,
         borderActive: ``,
         borderTopActive: ``,
         borderRightActive: ``,
         borderBottomActive: ``,
-        borderLeftActive: `1px solid ${colors.white}`,
+        borderLeftActive: `1px solid ${colors.black}`,
         // Border Activated
-        borderRadiusActivated: ``,
+        borderRadiusActivated: `8px`,
         borderActivated: ``,
         borderTopActivated: ``,
         borderRightActivated: ``,
         borderBottomActivated: ``,
-        borderLeftActivated: `1px solid ${colors.white}`
+        borderLeftActivated: `1px solid ${colors.black}`
       },
       mobileLarge: {
         fontSize: '',

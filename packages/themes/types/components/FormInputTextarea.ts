@@ -101,6 +101,7 @@ export type FormInputTextarea = {
     fontWeight: number;
     transition: string;
     textTransform?: string;
+    borderRadius?: string;
     // Hover
     fontColorHover: string;
     backgroundHover: string;

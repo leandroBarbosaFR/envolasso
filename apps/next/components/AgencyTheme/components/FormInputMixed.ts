@@ -498,7 +498,7 @@ const FormInputMixed = {
     // ==========================================================================
     StyledLabel: {
       position: `relative`,
-      fontColor: colors.white,
+      fontColor: colors.black,
       fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
       textTransform: ``,
@@ -588,7 +588,7 @@ const FormInputMixed = {
       justifyContent: ``,
       alignItems: `center`,
 
-      fontColor: colors.white,
+      fontColor: colors.black,
       background: colors.transparent,
       fontFamily: fonts.PoppinsRegular,
       fontWeight: 300,
@@ -596,34 +596,34 @@ const FormInputMixed = {
       transition: `0.3s ease-in-out`,
 
       // Hover
-      fontColorHover: colors.white,
+      fontColorHover: colors.black,
       backgroundHover: colors.transparent,
       // Focus
-      fontColorFocus: colors.white,
+      fontColorFocus: colors.black,
       backgroundFocus: colors.transparent,
       // Active
-      fontColorActive: colors.white,
+      fontColorActive: colors.black,
       backgroundActive: colors.transparent,
       // activated
-      fontColorActivated: colors.white,
+      fontColorActivated: colors.black,
       backgroundaActivated: colors.transparent,
       // Icon
       icon: {
-        fill: colors.white,
-        fillHover: colors.white,
-        fillFocus: colors.white,
-        fillActive: colors.white,
-        fillActivated: colors.white
+        fill: colors.black,
+        fillHover: colors.black,
+        fillFocus: colors.black,
+        fillActive: colors.black,
+        fillActivated: colors.black
       },
       // placeholder
       placeholder: {
-        color: colors.grey,
+        color: colors.black,
         fontFamily: fonts.PoppinsRegular,
         background: ``
       },
       //autofill
       autofill: {
-        textFillColor: colors.white,
+        textFillColor: colors.black,
         boxShadow: `rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`,
         transition: `background-color 5000s ease-in-out 0s`
       },
@@ -635,8 +635,8 @@ const FormInputMixed = {
         margin: `5px 0 0 0`,
         padding: `13px 20px`,
         // Border
-        borderRadius: ``,
-        border: `1px solid ${colors.white}`,
+        borderRadius: `8px`,
+        border: `1px solid ${colors.black}`,
         borderTop: ``,
         borderRight: ``,
         borderBottom: ``,

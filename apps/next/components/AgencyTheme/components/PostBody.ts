@@ -197,13 +197,13 @@ const PostBody = {
     // ==========================================================================
     StyledCatWrap: {
       mobile: {
-        gridColumn: `1/13`,
+        gridColumn: `6/13`,
         gridRow: `1`,
-        margin: ``,
+        margin: `0 0 0 auto`,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `2/12`,
+        gridColumn: `6/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -215,9 +215,9 @@ const PostBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/5`,
+        gridColumn: ``,
         gridRow: ``,
-        margin: ``,
+        margin: `0 0 0 auto`,
         padding: ``
       },
       widescreen: {
@@ -238,13 +238,13 @@ const PostBody = {
     // ==========================================================================
     StyledSubTitleWrap: {
       mobile: {
-        gridColumn: `1/13`,
+        gridColumn: `1/10`,
         gridRow: `1`,
         margin: ``,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `2/12`,
+        gridColumn: `1/10`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -293,13 +293,13 @@ const PostBody = {
     // ==========================================================================
     StyledHeadingWrap: {
       mobile: {
-        gridColumn: `1/13`,
+        gridColumn: `1/10`,
         gridRow: `2`,
         margin: ``,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `2/12`,
+        gridColumn: `1/10`,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -437,7 +437,7 @@ const PostBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `1/5`,
+        gridColumn: `6/13`,
         gridRow: `6`,
         margin: `0`,
         padding: ``

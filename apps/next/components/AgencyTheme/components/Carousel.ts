@@ -1216,7 +1216,7 @@ const Carousel = {
       // ==========================================================================
       StyledNavThumbs: {
         position: `absolute`,
-        zIndex: `10`,
+        zIndex: `9`,
         mobile: {
           top: ``,
           bottom: `30px`,

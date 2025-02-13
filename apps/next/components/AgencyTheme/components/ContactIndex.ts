@@ -16,7 +16,7 @@ const ContactIndex = {
     // Section Styles
     // ==========================================================================
     StyledSection: {
-      background: `${colors.black}`,
+      background: `${colors.transparent}`,
       mobile: {
         height: ``,
         margin: ``,
@@ -181,7 +181,7 @@ const ContactIndex = {
       // ==========================================================================
       StyledHeading: {
         variant: `primary`,
-        color: `${colors.transparent}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
@@ -240,7 +240,7 @@ const ContactIndex = {
       // ==========================================================================
       StyledBodycopy: {
         variant: `bodyCopy`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
