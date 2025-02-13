@@ -362,7 +362,7 @@ const HeroSection = {
     StyledSubTitleWrap: {
       textAlign: ``,
       mobile: {
-        gridColumn: `2/12`,
+        gridColumn: `1/12`,
         gridRow: `1`,
         margin: ``,
         padding: ``
@@ -481,7 +481,7 @@ const HeroSection = {
       color: `${colors.white}`,
       textAlign: ``,
       mobile: {
-        gridColumn: `5/13`,
+        gridColumn: `1/13`,
         gridRow: ``,
         margin: ``,
         padding: ``
