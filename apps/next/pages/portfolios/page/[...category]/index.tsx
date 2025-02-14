@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 // 1367 Agency UI
-import { PageHeader, Main, PortfolioIndex } from '@agency-platform/react-ui';
+import { Main, PortfolioIndex } from '@agency-platform/react-ui';
 import type {
   Portfolio,
   PortfolioCategories,
@@ -78,7 +78,7 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant="removeSpacing">
-        <PageHeader
+        {/* <PageHeader
           layoutVariant={'default'}
           withImage={true}
           ctaTitle={ctaTitle}
@@ -88,7 +88,7 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
           cta={cta}
           featureImage={featuredBlog?.featureImage} // Pass it here
           sectionImageBg={sectionImageBg}
-        />
+        /> */}
         <PortfolioIndex
           layoutVariant={'default'}
           pageName={'portfolios'}
