@@ -1419,8 +1419,8 @@ const Carousel = {
         desktop: {
           margin: `0 0 0 10px`,
           padding: ``,
-          height: `20px`,
-          width: `20px`,
+          height: `15px`,
+          width: `15px`,
           borderRadius: ``
         },
         widescreen: {

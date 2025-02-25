@@ -89,21 +89,20 @@ const SiteHeader = ({ layoutVariant, data, isAltHeaderLayoutVariant }: SiteHeade
             }
             variant={theme.SiteHeader[layoutVariant].logo.variant}
           />
-          {isDesktop ||
-            (isWidescreen && (
-              <StyleNavWap layoutVariant={layoutVariant} isCollapsed={isCollapsed}>
-                <Nav
-                  data={navigationSite?.naviagtionList}
-                  layoutVariant={
-                    isCollapsed
-                      ? theme.SiteHeader[layoutVariant].Nav.variantCollapsed
-                      : theme.SiteHeader[layoutVariant].Nav.variant
-                  }
-                  isTitleEnabled={navigationSite?.isTitleEnabled}
-                  navListTitle={navigationSite?.titleNav}
-                />
-              </StyleNavWap>
-            ))}
+          {isDesktop || isWidescreen ? (
+            <StyleNavWap layoutVariant={layoutVariant} isCollapsed={isCollapsed}>
+              <Nav
+                data={navigationSite?.naviagtionList}
+                layoutVariant={
+                  isCollapsed
+                    ? theme.SiteHeader[layoutVariant].Nav.variantCollapsed
+                    : theme.SiteHeader[layoutVariant].Nav.variant
+                }
+                isTitleEnabled={navigationSite?.isTitleEnabled}
+                navListTitle={navigationSite?.titleNav}
+              />
+            </StyleNavWap>
+          ) : null}
           {/* Mobile draw toggle */}
           {!isDesktop && !isWidescreen ? (
             <BurgerNavToggle

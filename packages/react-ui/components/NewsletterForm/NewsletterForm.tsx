@@ -52,8 +52,8 @@ const NewsletterForm = ({
         </StyledArticle>
       )}
       <StyledForm layoutVariant={layoutVariant} action={actionNewsletterForm} method="post" target="_blank">
-        <StyledInput layoutVariant={layoutVariant} type="text" placeholder="name" name="FNAME" />
-        <StyledInput layoutVariant={layoutVariant} type="email" placeholder="email" name="EMAIL" />
+        <StyledInput layoutVariant={layoutVariant} type="text" placeholder="prénom" name="FNAME" />
+        <StyledInput layoutVariant={layoutVariant} type="email" placeholder="courriel" name="EMAIL" />
         <Button type="submit" variant={theme.NewsletterForm[layoutVariant!].StyledForm.buttton.variant}>
           S’abonner
         </Button>
