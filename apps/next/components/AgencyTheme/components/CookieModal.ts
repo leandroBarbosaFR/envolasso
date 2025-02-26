@@ -83,6 +83,29 @@ const CookieModal = {
       }
     },
     // ==========================================================================
+    // StyledArticle
+    // ==========================================================================
+    StyledLabel: {
+      display: `flex`,
+      gap: `10px`,
+      alignItems: `center`,
+      mobile: {
+        margin: `0 0 10px 0`
+      },
+      mobileLarge: {
+        margin: `0 0 10px 0`
+      },
+      tablet: {
+        margin: `0 0 10px 0`
+      },
+      desktop: {
+        margin: `0 0 10px 0`
+      },
+      widescreen: {
+        margin: `0 0 10px 0`
+      }
+    },
+    // ==========================================================================
     // StyledHeadingWrap
     // ==========================================================================
     StyledHeadingWrap: {

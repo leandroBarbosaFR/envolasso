@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next';
 import React from 'react';
-import useGlobalSettings from 'providers/useGlobalSettings';
 // 1367 Agency UI
 import {
   Main,

@@ -52,19 +52,7 @@ interface PageProps {
 function Page({ page, locale }: PageProps): JSX.Element | null {
   if (!page) return null;
   const { portfoliosPage, portfolios, pageNumber } = page;
-  const {
-    title,
-    paginationCount,
-    dynamicRoute,
-    slug,
-    overrideMetaTags,
-    ctaTitle,
-    cta,
-    subtitle,
-    body,
-    featuredBlog,
-    sectionImageBg
-  } = portfoliosPage;
+  const { title, paginationCount, dynamicRoute, slug, overrideMetaTags } = portfoliosPage;
 
   return (
     <>
@@ -78,17 +66,6 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant="removeSpacing">
-        {/* <PageHeader
-          layoutVariant={'default'}
-          withImage={true}
-          ctaTitle={ctaTitle}
-          title={title}
-          subtitle={subtitle}
-          body={body}
-          cta={cta}
-          featureImage={featuredBlog?.featureImage} // Pass it here
-          sectionImageBg={sectionImageBg}
-        /> */}
         <PortfolioIndex
           layoutVariant={'default'}
           pageName={'portfolios'}

@@ -70,6 +70,29 @@ export type CookieModal = {
   // ==========================================================================
   // StyledArticle
   // ==========================================================================
+  StyledLabel: {
+    display?: string;
+    alignItems?: string;
+    gap?: string;
+    mobile: {
+      margin?: string;
+    };
+    mobileLarge: {
+      margin?: string;
+    };
+    tablet: {
+      margin?: string;
+    };
+    desktop: {
+      margin?: string;
+    };
+    widescreen: {
+      margin?: string;
+    };
+  };
+  // ==========================================================================
+  // StyledArticle
+  // ==========================================================================
   StyledArticle: {
     variant: string;
     color: string;

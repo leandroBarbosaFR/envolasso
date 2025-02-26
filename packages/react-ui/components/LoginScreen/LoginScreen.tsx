@@ -1,10 +1,16 @@
 'use client';
 import React, { useState } from 'react';
 
+// Styles
+import StyledForm from './components/StyledForm';
+import { LoginScreenTheme } from '@agency-platform/themes';
+
 function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+
+  const layoutVariant = 'default' as keyof LoginScreenTheme;
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -12,15 +18,7 @@ function LoginScreen() {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        width: '100vw',
-        backgroundColor: 'transparent',
-        justifyContent: 'center',
-        transform: 'translate(0, 50%)'
-      }}
-    >
+    <StyledForm layoutVariant={layoutVariant}>
       {/* Login Card - Positioned Bottom Right */}
       <div
         style={{
@@ -153,7 +151,7 @@ function LoginScreen() {
       >
         Envol © 2025
       </div>
-    </div>
+    </StyledForm>
   );
 }
 

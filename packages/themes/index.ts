@@ -36,6 +36,7 @@ export type { HeroSectionTheme } from './types/components/HeroSection';
 export type { HomeContentCarouselItemTheme } from './types/components/HomeContentCarouselItem';
 export type { HorizontalFeedTheme } from './types/components/HorizontalFeed';
 export type { ImageTagTheme } from './types/components/ImageTag';
+export type { LoginScreenTheme } from './types/components/LoginScreen';
 export type { NavDrawTheme } from './types/components/NavDraw';
 export type { NavListTheme } from './types/components/NavList';
 export type { NavTheme } from './types/components/Nav';

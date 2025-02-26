@@ -8,15 +8,19 @@ import Button from '../Button';
 // Styles
 import StyledCookieModal from './components/StyledCookieModal';
 import StyledArticle from './components/StyledArticle';
-import StyledButton from './components/StyledButton';
 import StyledButtonWrap from './components/StyledButtonWrap';
 import StyledHeading from './components/StyledHeading';
 import StyledHeadingWrap from './components/StyledHeadingWrap';
+import StyledSwitch from './components/StyledSwitch';
+import StyledLabel from './components/StyledLabel';
 
 const CookieModal = () => {
   const theme = useTheme();
-  const [cookies, setCookie] = useCookies(['starter-cookie-data']);
+  const [cookies, setCookie] = useCookies(['starter-cookie-data', 'functional', 'performance']);
   const [cookieModalHidden, setCookieModalHidden] = useState(true);
+  const [functionalCookies, setFunctionalCookies] = useState(!!cookies['functional']);
+  const [performanceCookies, setPerformanceCookies] = useState(!!cookies['performance']);
+
   const cookieValid: string = cookies['starter-cookie-data'];
   const layoutVariant = 'default' as keyof CookieModalTheme;
 
@@ -25,16 +29,20 @@ const CookieModal = () => {
     return setCookieModalHidden(false);
   }, []);
 
-  const handleClose = () => {
-    const currentYear = new Date();
-    const nextYear = new Date();
-    nextYear.setFullYear(currentYear.getFullYear() + 1);
+  // while testing the cookies modal it will always show it
+  // useEffect(() => {
+  //   setCookieModalHidden(false); // Always show the modal for testing
+  // }, []);
 
-    setCookie('starter-cookie-data', 'hasAckowledged', {
-      expires: nextYear,
-      sameSite: 'strict',
-      path: '/'
-    });
+  const handleSavePreferences = () => {
+    const nextYear = new Date();
+    nextYear.setFullYear(nextYear.getFullYear() + 1);
+
+    // Store user preferences in cookies
+    setCookie('starter-cookie-data', 'hasAcknowledged', { expires: nextYear, sameSite: 'strict', path: '/' });
+    setCookie('functional', functionalCookies.toString(), { expires: nextYear, path: '/' });
+    setCookie('performance', performanceCookies.toString(), { expires: nextYear, path: '/' });
+
     setTimeout(() => {
       setCookieModalHidden(true);
     }, 500);
@@ -57,31 +65,46 @@ const CookieModal = () => {
         layoutVariant={layoutVariant}
         variant={theme.CookieModal[layoutVariant!].StyledArticle.variant}
       >
-        <p>
-          Ce site utilise des cookies comme expliqué dans notre politique en matière de cookies. Si vous
-          acceptez notre utilisation des cookies, veuillez fermer ce message et continuer à utiliser le site.
-        </p>
+        <p>Gérez vos paramètres de cookies ici :</p>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+          {/* Strictement Nécessaires - Non toggleable */}
+          <StyledLabel layoutVariant={layoutVariant}>
+            <StyledSwitch
+              checked={true} // Always on
+              disabled // Non-toggleable
+            />
+            Strictement Nécessaires
+          </StyledLabel>
+
+          {/* Fonctionnels */}
+          <StyledLabel layoutVariant={layoutVariant}>
+            <StyledSwitch
+              checked={functionalCookies}
+              onChange={() => setFunctionalCookies(!functionalCookies)} // Toggleable
+            />
+            Fonctionnels
+          </StyledLabel>
+
+          {/* Performance */}
+          <StyledLabel layoutVariant={layoutVariant}>
+            <StyledSwitch
+              checked={performanceCookies}
+              onChange={() => setPerformanceCookies(!performanceCookies)} // Toggleable
+            />
+            Performance
+          </StyledLabel>
+        </div>
       </StyledArticle>
       <StyledButtonWrap layoutVariant={layoutVariant}>
         <Button
           variant={theme.CookieModal[layoutVariant!].StyledButtonWrap.ButtonAccept.variant}
           withIcon={theme.CookieModal[layoutVariant!].StyledButtonWrap.ButtonAccept.withIcon}
           withText={theme.CookieModal[layoutVariant!].StyledButtonWrap.ButtonAccept.withText}
-          onClick={handleClose}
+          onClick={handleSavePreferences}
         >
-          Accepter et fermer
+          Sauvegarder les préférences
         </Button>
       </StyledButtonWrap>
-
-      <StyledButton layoutVariant={layoutVariant}>
-        <Button
-          variant={theme.CookieModal[layoutVariant!].StyledButton.Button.variant}
-          withIcon={theme.CookieModal[layoutVariant!].StyledButton.Button.withIcon}
-          withText={theme.CookieModal[layoutVariant!].StyledButton.Button.withText}
-          iconName={theme.CookieModal[layoutVariant!].StyledButton.Button.iconName}
-          onClick={handleClose}
-        />
-      </StyledButton>
     </StyledCookieModal>
   );
 };

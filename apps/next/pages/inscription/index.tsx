@@ -5,7 +5,6 @@ import { GetStaticPropsResult } from 'next';
 import type { NextPageWithLayout } from '../_app';
 import RootLayout from '../../components/RootLayout';
 import MetaTags from '../../components/MetaTags';
-import Layout from '../../components/Layout';
 import getPageData from '../../services/getPageData';
 
 interface PageProps {
@@ -26,7 +25,7 @@ interface PageProps {
 
 const Page: NextPageWithLayout<PageProps> = ({ contactPage, locale }) => {
   if (!contactPage) return null;
-  const { title, body, featureImage, layout, dynamicRoute, slug, overrideMetaTags } = contactPage;
+  const { title, body, featureImage, dynamicRoute, slug, overrideMetaTags } = contactPage;
 
   return (
     <>

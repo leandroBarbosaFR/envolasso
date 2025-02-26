@@ -58,6 +58,7 @@ import { HorizontalFeed } from './components/HorizontalFeed';
 import { IndexPageHeader } from './components/IndexPageHeader';
 import { HeroSection } from './components/HeroSection';
 import { ImageTag } from './components/ImageTag';
+import { LoginScreen } from './components/LoginScreen';
 import { Nav } from './components/Nav';
 import { NavDraw } from './components/NavDraw';
 import { NavList } from './components/NavList';
@@ -168,6 +169,7 @@ const theme: AgencyTheme = {
   HorizontalFeed,
   IndexPageHeader,
   ImageTag,
+  LoginScreen,
   Nav,
   NavDraw,
   NavList,

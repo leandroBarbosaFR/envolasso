@@ -1091,8 +1091,8 @@ const TextImgSection = {
         padding: ``
       },
       tablet: {
-        gridColumn: `1/12`,
-        gridRow: ``,
+        gridColumn: `5/12`,
+        gridRow: `1`,
         margin: ``,
         padding: ``
       },
@@ -1159,7 +1159,7 @@ const TextImgSection = {
       },
       tablet: {
         gridColumn: `5/13`,
-        gridRow: `1`,
+        gridRow: `2`,
         margin: ``,
         padding: ``
       },

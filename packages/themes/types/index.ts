@@ -57,6 +57,7 @@ import { HomeContentCarouselItemTheme } from './components/HomeContentCarouselIt
 import { HorizontalFeedTheme } from './components/HorizontalFeed';
 import { IndexPageHeaderTheme } from './components/IndexPageHeader';
 import { ImageTagTheme } from './components/ImageTag';
+import { LoginScreenTheme } from './components/LoginScreen';
 import { NavDrawTheme } from './components/NavDraw';
 import { NavListTheme } from './components/NavList';
 import { NavTheme } from './components/Nav';
@@ -166,6 +167,7 @@ export interface ThemeTypes {
   HomeContentCarouselItem: HomeContentCarouselItemTheme;
   HorizontalFeed: HorizontalFeedTheme;
   IndexPageHeader: IndexPageHeaderTheme;
+  LoginScreen: LoginScreenTheme;
   ImageTag: ImageTagTheme;
   Nav: NavTheme;
   NavDraw: NavDrawTheme;
