@@ -12,7 +12,7 @@ const BlogSinglePage = {
     // StyledSection
     // ==========================================================================
     StyledSection: {
-      background: `${colors.black}`,
+      background: `${colors.transparent}`,
       mobile: {
         height: ``,
         margin: ``,
@@ -218,7 +218,7 @@ const BlogSinglePage = {
       // ==========================================================================
       StyledSubTitle: {
         variant: `secondary`,
-        color: `${colors.greyLighter}`,
+        color: `${colors.black}`,
         mobile: {
           margin: `0 0 15px`
         },
@@ -274,7 +274,7 @@ const BlogSinglePage = {
       // ==========================================================================
       StyledHeading: {
         variant: `primary`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         mobile: {
           margin: `0 0 15px`
         },
@@ -330,9 +330,9 @@ const BlogSinglePage = {
       // ==========================================================================
       StyledExcerpt: {
         variant: `standfirst`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         blockquote: {
-          color: `${colors.white}`
+          color: `${colors.black}`
         },
         mobile: {
           gridColumn: `1/13`,
@@ -399,9 +399,9 @@ const BlogSinglePage = {
       // ==========================================================================
       StyledArticle: {
         variant: `bodyCopy`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         blockquote: {
-          color: `${colors.white}`
+          color: `${colors.black}`
         },
         mobile: {
           gridColumn: `1/13`,
