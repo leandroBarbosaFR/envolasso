@@ -8,16 +8,16 @@ const Paragraph = {
   // Credits
   // ==========================================================================
   credits: {
-    fontColor: colors.white,
+    fontColor: colors.black,
     fontFamily: fonts.PoppinsRegular,
     fontWeight: 300,
     fontFamilyStrong: fonts.PoppinsRegular,
     fontWeightStrong: 300,
     // Link styles
     a: {
-      link: `white`,
-      visited: `white`,
-      hover: `gray`,
+      link: `black`,
+      visited: `black`,
+      hover: `white`,
       active: `white`,
       textDecoration: `none`
     },

@@ -52,7 +52,7 @@ const SiteFooter = {
       alignItems: `center`,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: ``,
+        gridRow: `5`,
         textAlign: `center`,
         justifyContent: `center`
       },
@@ -63,22 +63,22 @@ const SiteFooter = {
         justifyContent: ``
       },
       tablet: {
-        gridColumn: `8/13`,
+        gridColumn: `1/13`,
         gridRow: ``,
-        textAlign: `right`,
-        justifyContent: `flex-start`
+        textAlign: `center`,
+        justifyContent: ``
       },
       desktop: {
-        gridColumn: `1/6`,
-        gridRow: ``,
-        textAlign: ``,
-        justifyContent: ``
+        gridColumn: `5/13`,
+        gridRow: `3`,
+        textAlign: `right`,
+        justifyContent: `flex-end`
       },
       widescreen: {
-        gridColumn: `1/6`,
-        gridRow: ``,
+        gridColumn: `6/13`,
+        gridRow: `3`,
         textAlign: ``,
-        justifyContent: ``
+        justifyContent: `flex-end`
       }
     },
     // ==========================================================================
@@ -478,8 +478,8 @@ const SiteFooter = {
         after: {}
       },
       desktop: {
-        gridColumn: `1/6`,
-        gridRow: `2`,
+        gridColumn: `1/5`,
+        gridRow: `3`,
         display: ``,
         alignItems: `center`,
         margin: `0`,
@@ -490,8 +490,8 @@ const SiteFooter = {
         after: {}
       },
       widescreen: {
-        gridColumn: ``,
-        gridRow: ``,
+        gridColumn: `1/6`,
+        gridRow: `3`,
         display: ``,
         alignItems: ``,
         margin: ``,

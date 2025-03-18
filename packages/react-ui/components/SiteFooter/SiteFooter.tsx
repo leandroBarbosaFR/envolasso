@@ -182,7 +182,7 @@ const SiteFooter = ({
                 {copyrightName && copyrightName} {year} {copyrightPhase && copyrightPhase}{' '}
                 {isCopyrightEnt && (
                   <>
-                    <a href="https://www.agency.co.uk" target={'_new'}>
+                    <a href="https://www.1367studio.com" target={'_new'}>
                       1367 Studio
                     </a>{' '}
                     {/* &{' '} */}
