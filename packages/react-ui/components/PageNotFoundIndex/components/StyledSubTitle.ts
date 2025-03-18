@@ -7,7 +7,7 @@ const StyledSubTitle = styled(StyledHeading)<StyledComponentProps>`
     theme.PageNotFoundIndex[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.color};
   text-decoration: ${({ layoutVariant, theme }) =>
     theme.PageNotFoundIndex[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.textDecoration};
-  letter-spacing: -0.01em;
+  /* letter-spacing: -0.01em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -16,7 +16,7 @@ const StyledSubTitle = styled(StyledHeading)<StyledComponentProps>`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  opacity: 1;
+  opacity: 1; */
   span {
     color: ${({ layoutVariant, theme }) =>
       theme.PageNotFoundIndex[layoutVariant!].StyledSubTitleWrap.StyledSubTitle.span.color};

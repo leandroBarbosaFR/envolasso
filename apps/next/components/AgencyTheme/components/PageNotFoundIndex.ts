@@ -178,9 +178,9 @@ const PageNotFoundIndex = {
       StyledSubTitle: {
         variant: `primaryXl`,
         textDecoration: ``,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         span: {
-          color: `${colors.white}`
+          color: `${colors.black}`
         },
         mobile: {
           margin: ``
@@ -237,7 +237,7 @@ const PageNotFoundIndex = {
       // ==========================================================================
       StyledHeading: {
         variant: `primary`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         span: {},
         mobile: {
           margin: ``
@@ -294,7 +294,7 @@ const PageNotFoundIndex = {
       // ==========================================================================
       StyledBodycopy: {
         variant: `bodyCopy`,
-        color: `${colors.white}`,
+        color: `${colors.black}`,
         mobile: {
           margin: ``
         },
@@ -361,7 +361,7 @@ const PageNotFoundIndex = {
     // ==========================================================================
     StyledArticle: {
       variant: `standfirst`,
-      color: `${colors.greyLight}`,
+      color: `${colors.black}`,
       gridColumn: `1/8`,
       gridRow: ``,
       padding: ``,
@@ -452,7 +452,7 @@ const PageNotFoundIndex = {
       gridColumn: `8/13`,
       gridRow: `span 1`,
       padding: ``,
-      fontColor: colors.greyLight,
+      fontColor: colors.black,
       textDecoration: `none`,
       mobile: {
         display: ``,

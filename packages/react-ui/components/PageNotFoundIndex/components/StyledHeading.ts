@@ -5,7 +5,7 @@ import StyledHeadingBase from '../../Heading/components/StyledHeading';
 const StyledHeading = styled(StyledHeadingBase)<StyledComponentProps>`
   color: ${({ layoutVariant, theme }) =>
     theme.PageNotFoundIndex[layoutVariant!].StyledHeadingWrap.StyledHeading.color};
-  letter-spacing: -0.01em;
+  /* letter-spacing: -0.01em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -14,7 +14,7 @@ const StyledHeading = styled(StyledHeadingBase)<StyledComponentProps>`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  opacity: 1;
+  opacity: 1; */
   span {
     color: ${({ layoutVariant, theme }) =>
       theme.PageNotFoundIndex[layoutVariant!].StyledHeadingWrap.StyledHeading.span.color};
