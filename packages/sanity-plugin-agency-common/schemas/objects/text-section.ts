@@ -17,17 +17,17 @@ export default ({ layoutVariantTextSection }: TextSectionArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -38,18 +38,18 @@ export default ({ layoutVariantTextSection }: TextSectionArgs) => ({
       type: 'array',
       of: [{ type: 'common.externalLink' }, { type: 'common.internalLink' }]
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'subtitle'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `Text Section: ${subtitle ? subtitle : 'unknown'}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'subtitle'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `Text Section: ${subtitle ? subtitle : 'unknown'}`
+  //     };
+  //   }
+  // }
 });

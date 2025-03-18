@@ -17,12 +17,12 @@ export default ({ layoutVariantContactForm }: ContactFormArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -34,18 +34,18 @@ export default ({ layoutVariantContactForm }: ContactFormArgs) => ({
       rows: 4,
       description: 'Message after the contact form has been submitted...'
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'subtitle'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `Conact Form: ${subtitle ? subtitle : ''}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'subtitle'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `Conact Form: ${subtitle ? subtitle : ''}`
+  //     };
+  //   }
+  // }
 });

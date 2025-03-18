@@ -17,20 +17,20 @@ export default ({ layoutVariantLogoFeedSection }: LogoFeedSectionArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     }
-  ],
-  preview: {
-    select: {
-      title: 'title'
-    },
-    prepare(selection: { title: string }) {
-      const { title } = selection;
-      return {
-        title: title
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'title'
+  //   },
+  //   prepare(selection: { title: string }) {
+  //     const { title } = selection;
+  //     return {
+  //       title: title
+  //     };
+  //   }
+  // }
 });

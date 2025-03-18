@@ -7,7 +7,7 @@ export default [
     group: 'seo'
   },
   {
-    title: 'Title',
+    title: 'Titre',
     name: 'metaTitle',
     type: 'string',
     description:

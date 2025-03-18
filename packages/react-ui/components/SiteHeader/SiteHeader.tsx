@@ -107,9 +107,7 @@ const SiteHeader = ({ layoutVariant, data, isAltHeaderLayoutVariant }: SiteHeade
           {!isDesktop && !isWidescreen ? (
             <BurgerNavToggle
               isOpen={isNavDrawerOpen}
-              variant={
-                isAltHeaderLayoutVariant ? alternateBurgerNavToggleVariant : defaultBurgerNavToggleVariant
-              }
+              variant={'default'}
               onClick={handleClick}
               isCollapsed={isCollapsed}
             />

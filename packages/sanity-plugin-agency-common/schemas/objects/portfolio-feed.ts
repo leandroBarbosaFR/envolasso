@@ -49,17 +49,17 @@ export default ({ layoutVariantPortfolioFeed }: PortfolioFeedArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -92,19 +92,19 @@ export default ({ layoutVariantPortfolioFeed }: PortfolioFeedArgs) => ({
     layoutVariant: `default`,
     feedType: 'created',
     feedStyle: 'grid'
-  },
-  preview: {
-    select: {
-      title: 'title',
-      feedStyle: 'feedStyle',
-      subtitle: 'subtitle'
-    },
-    prepare(selection: { title: string; subtitle: string; feedStyle: string }) {
-      const { title, subtitle, feedStyle } = selection;
-      return {
-        title: title,
-        subtitle: `portfolio Feed (${feedStyle ? feedStyle : ''}): ${subtitle ? subtitle : ''}`
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     feedStyle: 'feedStyle',
+  //     subtitle: 'subtitle'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string; feedStyle: string }) {
+  //     const { title, subtitle, feedStyle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `portfolio Feed (${feedStyle ? feedStyle : ''}): ${subtitle ? subtitle : ''}`
+  //     };
+  //   }
+  // }
 });

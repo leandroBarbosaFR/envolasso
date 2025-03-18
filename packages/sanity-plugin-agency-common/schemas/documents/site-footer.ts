@@ -9,12 +9,12 @@ export default {
   groups: [
     {
       name: 'setings',
-      title: 'Settings',
+      title: 'Paramètres',
       default: true
     },
     {
       name: 'socialMediaNavigaiton',
-      title: 'Social Media Navigation'
+      title: 'Navigation réseaux sociaux'
     },
     {
       name: 'navigation',
@@ -26,7 +26,7 @@ export default {
     },
     {
       name: 'newsletter',
-      title: 'Newsletter Form'
+      title: 'Formulaire de newsletter'
     },
     {
       name: 'copyrightInfo',
@@ -46,13 +46,13 @@ export default {
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Enable Social Media Navigation',
+      title: 'Activer la navigation des réseaux sociaux',
       name: 'isSocialNavEnabled',
       type: 'boolean',
       group: 'socialMediaNavigaiton'
     },
     {
-      title: 'Social Media Navigation',
+      title: 'Navigation des réseaux sociaux',
       name: 'navigationSocial',
       type: 'common.socialMediaNavigation',
       hidden: ({ parent }: any) => parent?.isSocialNavEnabled !== true,
@@ -60,7 +60,7 @@ export default {
     },
     // navigation
     {
-      title: 'Enable Footer Navigaiton',
+      title: 'Activer la navigation du pied de page',
       name: 'isNavFooterEnabled',
       type: 'boolean',
       group: 'navigation'
@@ -72,21 +72,6 @@ export default {
       hidden: ({ parent }: any) => parent?.isNavFooterEnabled !== true,
       group: 'navigation'
     },
-    // content
-    {
-      title: 'Enable Content Form',
-      name: 'isContentEnabled',
-      type: 'boolean',
-      group: 'content'
-    },
-    {
-      title: 'Content Columns',
-      name: 'columnsContent',
-      type: 'array',
-      of: [{ type: 'common.layout.textColumnBasic' }, { type: 'common.navigation' }],
-      hidden: ({ parent }: any) => parent?.isContentEnabled !== true,
-      group: 'content'
-    },
     // Newsletter
     {
       title: 'Enable Newsletter Form',
@@ -95,7 +80,7 @@ export default {
       group: 'newsletter'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'titleNewsletterForm',
       type: 'string',
       hidden: ({ parent }: any) => parent?.isNewsletterFormEnabled !== true,

@@ -1,34 +1,34 @@
 export default {
   name: 'siteSettings.pageNotFound404',
-  title: '404 Not Gound',
+  title: 'Page non trouvée 404',
   type: 'object',
   i18n: true,
   fields: [
     {
-      title: 'Feature Image',
+      title: 'Image principale',
       name: 'imageSource',
       type: 'image'
     },
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }],
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Call to Action (CTA) title',
+      title: 'Call to Action (CTA) titre',
       name: 'ctaTitle',
       type: 'string'
     },
@@ -45,7 +45,7 @@ export default {
       ]
     },
     {
-      title: 'Address',
+      title: 'Adresse',
       name: 'address',
       type: 'array',
       of: [{ type: 'block' }]

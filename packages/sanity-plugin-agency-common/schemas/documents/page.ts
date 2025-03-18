@@ -42,13 +42,13 @@ export default {
   ],
   fields: [
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string',
       group: 'content'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       validation: (Rule: { required: () => boolean }) => Rule.required(),
@@ -84,7 +84,7 @@ export default {
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -94,7 +94,7 @@ export default {
       ]
     },
     {
-      title: 'Address',
+      title: 'Adresse',
       name: 'address',
       type: 'array',
       of: [{ type: 'block' }],
@@ -113,7 +113,7 @@ export default {
       group: 'content'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }, { type: 'common.htmlField' }],
@@ -124,27 +124,27 @@ export default {
   ],
   initialValue: {
     dynamicRoute: 'pages/'
-  },
-  preview: {
-    select: {
-      title: 'title',
-      image: 'image',
-      locale: '__i18n_lang',
-      locales: '__i18n_refs'
-    },
-    prepare(selection: {
-      title: string;
-      image: string;
-      locale: string;
-      locales: { _key: string | number }[];
-    }) {
-      const { title, locale, locales = [], image } = selection;
-      const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
-      return {
-        title: title,
-        subtitle: languages,
-        media: image
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'image',
+  //     locale: '__i18n_lang',
+  //     locales: '__i18n_refs'
+  //   },
+  //   prepare(selection: {
+  //     title: string;
+  //     image: string;
+  //     locale: string;
+  //     locales: { _key: string | number }[];
+  //   }) {
+  //     const { title, locale, locales = [], image } = selection;
+  //     const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
+  //     return {
+  //       title: title,
+  //       subtitle: languages,
+  //       media: image
+  //     };
+  //   }
+  // }
 };

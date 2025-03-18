@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'pageNotFound404Configuration',
-      title: 'Page Not Found 404 Configuration'
+      title: 'Page non trouvée 404 Configuration'
     }
   ],
   fields: [
@@ -33,13 +33,13 @@ export default {
     // Genral Settings
     // ===============================================================
     {
-      title: 'Website Name',
+      title: 'Nom du site web',
       name: 'websiteName',
       type: 'string',
       group: 'genralSetings'
     },
     {
-      title: 'Website URL',
+      title: 'URL du site Web',
       name: 'websiteUrl',
       type: 'string',
       group: 'genralSetings'
@@ -48,7 +48,7 @@ export default {
     // Page Not Found 404
     // ===============================================================
     {
-      title: 'Page Not Found 404',
+      title: 'Page non trouvée 404',
       name: 'pageNotFound404',
       type: 'siteSettings.pageNotFound404',
       group: 'pageNotFound404Configuration'

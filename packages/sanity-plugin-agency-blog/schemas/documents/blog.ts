@@ -74,7 +74,7 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
       group: 'post'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       group: 'post',
@@ -114,7 +114,7 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Feature Image',
+      title: 'Image principale',
       name: 'image',
       type: 'image',
       group: 'post',
@@ -122,7 +122,7 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -132,7 +132,7 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
       ]
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }],
@@ -167,7 +167,7 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -195,27 +195,27 @@ export default ({ commonLayoutsBlog }: BlogArgs) => ({
   ],
   initialValue: {
     dynamicRoute: 'blogs/post/'
-  },
-  preview: {
-    select: {
-      title: 'title',
-      image: 'image',
-      locale: '__i18n_lang',
-      locales: '__i18n_refs'
-    },
-    prepare(selection: {
-      title: string;
-      image: string;
-      locale: string;
-      locales: { _key: string | number }[];
-    }) {
-      const { title, locale, locales = [], image } = selection;
-      const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
-      return {
-        title: title,
-        subtitle: languages,
-        media: image
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'image',
+  //     locale: '__i18n_lang',
+  //     locales: '__i18n_refs'
+  //   },
+  //   prepare(selection: {
+  //     title: string;
+  //     image: string;
+  //     locale: string;
+  //     locales: { _key: string | number }[];
+  //   }) {
+  //     const { title, locale, locales = [], image } = selection;
+  //     const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
+  //     return {
+  //       title: title,
+  //       subtitle: languages,
+  //       media: image
+  //     };
+  //   }
+  // }
 });

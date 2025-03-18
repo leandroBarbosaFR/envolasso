@@ -4,12 +4,12 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
@@ -27,7 +27,7 @@ export default {
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -37,7 +37,7 @@ export default {
       ]
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -48,20 +48,20 @@ export default {
       type: 'array',
       of: [{ type: 'common.externalLink' }, { type: 'common.internalLink' }]
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'credit',
-      image: 'image'
-    },
-    prepare(selection: { title: string; subtitle: string; image: string }) {
-      const { title, subtitle, image } = selection;
-      return {
-        title: title,
-        subtitle: `${subtitle ? subtitle : 'unknown'}`,
-        media: image
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'credit',
+  //     image: 'image'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string; image: string }) {
+  //     const { title, subtitle, image } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `${subtitle ? subtitle : 'unknown'}`,
+  //       media: image
+  //     };
+  //   }
+  // }
 };

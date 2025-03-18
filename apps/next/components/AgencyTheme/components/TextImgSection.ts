@@ -818,7 +818,7 @@ const TextImgSection = {
     // StyledSection
     // ==========================================================================
     StyledSection: {
-      background: `${colors.white}`,
+      background: `#EFEEF2`,
       position: `relative`,
       mobile: {
         height: ``,

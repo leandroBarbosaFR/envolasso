@@ -85,9 +85,6 @@ import { SiteFooter } from './components/SiteFooter';
 import { SiteHeader } from './components/SiteHeader';
 import { SocialNav } from './components/SocialNav';
 import { StandardPageBody } from './components/StandardPageBody';
-import { TeamProfileFeedItem } from './components/TeamProfileFeedItem';
-import { TeamProfileFeedItemDefault } from './components/TeamProfileFeedItemDefault';
-import { TeamProfileFeedSection } from './components/TeamProfileFeedSection';
 import { TextImgSection } from './components/TextImgSection';
 import { TextSection } from './components/TextSection';
 import { TextSectionAside } from './components/TextSectionAside';
@@ -196,9 +193,6 @@ const theme: AgencyTheme = {
   SiteHeader,
   SocialNav,
   StandardPageBody,
-  TeamProfileFeedItem,
-  TeamProfileFeedItemDefault,
-  TeamProfileFeedSection,
   TextImgSection,
   TextSection,
   TextSectionAside,

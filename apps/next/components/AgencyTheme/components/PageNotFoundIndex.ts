@@ -9,7 +9,7 @@ const PageNotFoundIndex = {
     // Section Styles
     // ==========================================================================
     StyledSection: {
-      background: `${colors.black}`,
+      background: `${colors.transparent}`,
       mobile: {
         height: `100%`,
         margin: `0`,

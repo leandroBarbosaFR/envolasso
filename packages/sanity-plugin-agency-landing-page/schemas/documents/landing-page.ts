@@ -12,7 +12,7 @@ export default ({ commonLayouts }: LandingPageArgs) => ({
   groups: [
     {
       name: 'hero',
-      title: 'Hero seciton',
+      title: 'Hero section',
       default: true
     },
     {
@@ -59,21 +59,21 @@ export default ({ commonLayouts }: LandingPageArgs) => ({
     },
     // Content Static
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string',
       group: 'hero',
       hidden: ({ parent }: any) => parent?.heroType === 'contentCarousel'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       group: 'hero',
       hidden: ({ parent }: any) => parent?.heroType === 'contentCarousel'
     },
     {
-      title: 'Stand first',
+      title: 'Description',
       name: 'standFirst',
       type: 'array',
       of: [{ type: 'block' }],
@@ -89,7 +89,7 @@ export default ({ commonLayouts }: LandingPageArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -145,7 +145,7 @@ export default ({ commonLayouts }: LandingPageArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -193,27 +193,27 @@ export default ({ commonLayouts }: LandingPageArgs) => ({
   ],
   initialValue: {
     isSlideTransition: false
-  },
-  preview: {
-    select: {
-      title: 'title',
-      image: 'image',
-      locale: '__i18n_lang',
-      locales: '__i18n_refs'
-    },
-    prepare(selection: {
-      title: string;
-      image: string;
-      locale: string;
-      locales: { _key: string | number }[];
-    }) {
-      const { title, locale, locales = [], image } = selection;
-      const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
-      return {
-        title: title,
-        subtitle: languages,
-        media: image
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'image',
+  //     locale: '__i18n_lang',
+  //     locales: '__i18n_refs'
+  //   },
+  //   prepare(selection: {
+  //     title: string;
+  //     image: string;
+  //     locale: string;
+  //     locales: { _key: string | number }[];
+  //   }) {
+  //     const { title, locale, locales = [], image } = selection;
+  //     const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
+  //     return {
+  //       title: title,
+  //       subtitle: languages,
+  //       media: image
+  //     };
+  //   }
+  // }
 });

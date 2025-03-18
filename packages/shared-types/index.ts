@@ -262,27 +262,27 @@ export interface PortfolioCategories {
   };
 }
 
-export interface TeamProfile {
-  _id: string;
-  _key: string;
-  slug: { current: string };
-  title: string;
-  position: string;
-  body: any;
-  excerpt: string;
-  contactLinks?: {
-    _key: string;
-    _type: string;
-    title: string;
-    email: string;
-    phoneNumber: string;
-  }[];
-  featureImage: Media;
-  featureImageEffect: Media;
-  cta: Cta[];
-  category: Category;
-  layout: LayoutConfig[];
-}
+// export interface TeamProfile {
+//   _id: string;
+//   _key: string;
+//   slug: { current: string };
+//   title: string;
+//   position: string;
+//   body: any;
+//   excerpt: string;
+//   contactLinks?: {
+//     _key: string;
+//     _type: string;
+//     title: string;
+//     email: string;
+//     phoneNumber: string;
+//   }[];
+//   featureImage: Media;
+//   featureImageEffect: Media;
+//   cta: Cta[];
+//   category: Category;
+//   layout: LayoutConfig[];
+// }
 
 export interface SocialNavProps {
   variant: string;

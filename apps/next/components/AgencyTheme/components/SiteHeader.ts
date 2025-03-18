@@ -14,14 +14,14 @@ const SiteHeader = {
     top: `0px`,
     width: `100%;`,
     transition: `0.3s ease-in-out`,
-    backgroud: `${colors.white}`,
-    collapsedbackground: `${colors.white}`,
+    backgroud: `${colors.transparent}`,
+    // collapsedbackground: `${colors.white}`,
     borderRadius: ``,
     // boxShadow: `0 4px 30px rgba(0, 0, 0, 0.1)`,
     // backdropFilter: `blur(10.9px)`,
     // webkitBackdropFilter: `blur(10.9px)`,
     // border: `1px solid rgba(255, 255, 255, 0.3)`,
-    toggledbackground: `${colors.white}`,
+    // toggledbackground: `${colors.white}`,
     borderRadiusCollapsed: ``,
     // boxShadowCollapsed: `0 4px 30px rgba(0, 0, 0, 0.1)`,
     // backdropFilterCollapsed: `blur(10.9px)`,
@@ -35,9 +35,9 @@ const SiteHeader = {
 
     mobile: {
       margin: ``,
-      padding: `10px 0`,
+      padding: `5px 10px`,
       collapsedMargin: ``,
-      collapsedPadding: `10px 0`
+      collapsedPadding: `5px 10px`
     },
     mobileLarge: {
       margin: ``,
@@ -53,9 +53,9 @@ const SiteHeader = {
     },
     desktop: {
       margin: ``,
-      padding: `25px 0`,
+      padding: `5px 25px`,
       collapsedMargin: ``,
-      collapsedPadding: `25px 0`
+      collapsedPadding: `5px 25px`
     },
     widescreen: {
       margin: ``,

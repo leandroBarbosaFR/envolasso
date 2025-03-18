@@ -13,9 +13,7 @@ import agencyBlog from '@agency-platform/sanity-plugin-agency-blog'
 import agencyCommon from '@agency-platform/sanity-plugin-agency-common'
 import agencyLandingPage from '@agency-platform/sanity-plugin-agency-landing-page'
 import agencyPortfolio from '@agency-platform/sanity-plugin-agency-portfolio'
-import agencyServices from '@agency-platform/sanity-plugin-agency-services'
 import agencySiteSettings from '@agency-platform/sanity-plugin-agency-site-settings'
-import agencyTeamProfile from '@agency-platform/sanity-plugin-agency-team-profile'
 
 // 1367 Agency local plugins
 import {schemaTypes} from './schemas'
@@ -41,7 +39,7 @@ const singletonTypes = new Set([
   'siteFooter',
   'landingPage',
   'contact',
-  'teamProfile.index',
+  // 'teamProfile.index',
   'blog.index',
   'portfolio.index',
 ])
@@ -81,13 +79,13 @@ export default defineConfig({
             .title('Content')
             .items([
               S.listItem()
-                .title('Global site settings')
+                .title('Paramètres globaux du site')
                 .child(
                   S.list()
                     .title('Settings')
                     .items([
                       S.listItem()
-                        .title('Site Settings')
+                        .title('Paramètres du site')
                         .child(S.document().schemaType('siteSettings').documentId('siteSettings')),
                       S.divider(),
                       S.listItem()
@@ -106,32 +104,11 @@ export default defineConfig({
                 .child(S.document().schemaType('landingPage').documentId('landingPage')),
               S.divider(),
               S.listItem()
-                .title('About')
+                .title('À propos')
                 .child(
                   S.list()
-                    .title('About')
+                    .title('À propos')
                     .items([...docTypeListItems.filter(({id}) => ['about'].includes(id))])
-                ),
-              S.listItem()
-                .title('The Team')
-                .child(
-                  S.list()
-                    .title('The Team')
-                    .items([
-                      S.listItem()
-                        .title('Blog Index')
-                        .child(S.document().schemaType('teamProfile').documentId('teamProfile')),
-                      ...docTypeListItems.filter(({id}) =>
-                        ['teamProfile', 'teamProfile.category'].includes(id)
-                      ),
-                    ])
-                ),
-              S.listItem()
-                .title('Services')
-                .child(
-                  S.list()
-                    .title('Services')
-                    .items([...docTypeListItems.filter(({id}) => ['service'].includes(id))])
                 ),
               S.listItem()
                 .title('Blogs')
@@ -189,7 +166,7 @@ export default defineConfig({
           'common.layout.contactInfo',
           'common.layout.embedSection',
           'common.layout.portfolioFeed',
-          'common.layout.teamProfileFeed',
+          // 'common.layout.teamProfileFeed',
           'common.layout.textColumn',
           'common.layout.textColumnBasic',
           'common.layout.textImgSection',
@@ -222,7 +199,7 @@ export default defineConfig({
           'portfolio.category',
           'portfolio.index',
           'portfolio',
-          'service',
+          // 'service',
         ],
         commonLayoutsContact: [
           {type: 'common.layout.contactForm'},
@@ -240,7 +217,7 @@ export default defineConfig({
           {title: 'Default', value: 'default'},
           {title: 'Alternative', value: 'alternative'},
         ],
-        layoutVariantTeamProfileFeed: [{title: 'Default', value: 'default'}],
+        // layoutVariantTeamProfileFeed: [{title: 'Default', value: 'default'}],
         layoutVariantTextImgSection: [
           {title: 'Default', value: 'default'},
           {title: 'Alternative', value: 'alternative'},
@@ -258,12 +235,12 @@ export default defineConfig({
         commonLayouts: [
           {type: 'common.layout.textSection'},
           {type: 'common.layout.textImgSection'},
-          {type: 'common.layout.textSectionAside'},
-          {type: 'common.layout.embedSection'},
-          {type: 'common.layout.accordionSection'},
-          {type: 'common.layout.blogFeed'},
-          {type: 'common.layout.portfolioFeed'},
-          {type: 'common.layout.teamProfileFeed'},
+          // {type: 'common.layout.textSectionAside'},
+          // {type: 'common.layout.embedSection'},
+          // {type: 'common.layout.accordionSection'},
+          // {type: 'common.layout.blogFeed'},
+          // {type: 'common.layout.portfolioFeed'},
+          // {type: 'common.layout.teamProfileFeed'},
         ],
       }),
       agencyBlog({
@@ -271,26 +248,26 @@ export default defineConfig({
         commonLayoutsBlog: [
           {type: 'common.layout.textSection'},
           {type: 'common.layout.textImgSection'},
-          {type: 'common.layout.textSectionAside'},
-          {type: 'common.layout.embedSection'},
-          {type: 'common.layout.accordionSection'},
-          {type: 'common.layout.blogFeed'},
-          {type: 'common.layout.portfolioFeed'},
-          {type: 'common.layout.teamProfileFeed'},
+          // {type: 'common.layout.textSectionAside'},
+          // {type: 'common.layout.embedSection'},
+          // {type: 'common.layout.accordionSection'},
+          // {type: 'common.layout.blogFeed'},
+          // {type: 'common.layout.portfolioFeed'},
+          // {type: 'common.layout.teamProfileFeed'},
         ],
       }),
       agencyLandingPage({
         commonLayouts: [
-          {type: 'common.layout.textSection'},
+          // {type: 'common.layout.textSection'},
           {type: 'common.layout.textImgSection'},
-          {type: 'common.layout.textSectionAside'},
-          {type: 'common.layout.embedSection'},
-          {type: 'common.layout.accordionSection'},
+          // {type: 'common.layout.textSectionAside'},
+          // {type: 'common.layout.embedSection'},
+          // {type: 'common.layout.accordionSection'},
           {type: 'common.layout.blogFeed'},
           {type: 'common.layout.portfolioFeed'},
-          {type: 'common.layout.teamProfileFeed'},
-          {type: 'common.layout.logoFeedSection'},
-          {type: 'common.layout.clientLogos'},
+          // {type: 'common.layout.teamProfileFeed'},
+          // {type: 'common.layout.logoFeedSection'},
+          // {type: 'common.layout.clientLogos'},
         ],
       }),
       agencyPortfolio({
@@ -298,27 +275,14 @@ export default defineConfig({
         commonLayoutsPortfolio: [
           {type: 'common.layout.textSection'},
           {type: 'common.layout.textImgSection'},
-          {type: 'common.layout.textSectionAside'},
-          {type: 'common.layout.embedSection'},
-          {type: 'common.layout.accordionSection'},
-          {type: 'common.layout.blogFeed'},
-          {type: 'common.layout.portfolioFeed'},
-          {type: 'common.layout.teamProfileFeed'},
+          // {type: 'common.layout.textSectionAside'},
+          // {type: 'common.layout.embedSection'},
+          // {type: 'common.layout.accordionSection'},
+          // {type: 'common.layout.blogFeed'},
+          // {type: 'common.layout.portfolioFeed'},
+          // {type: 'common.layout.teamProfileFeed'},
         ],
       }),
-      agencyServices({
-        commonLayouts: [
-          {type: 'common.layout.textSection'},
-          {type: 'common.layout.textImgSection'},
-          {type: 'common.layout.textSectionAside'},
-          {type: 'common.layout.embedSection'},
-          {type: 'common.layout.accordionSection'},
-          {type: 'common.layout.blogFeed'},
-          {type: 'common.layout.portfolioFeed'},
-          {type: 'common.layout.teamProfileFeed'},
-        ],
-      }),
-      agencyTeamProfile(),
       // Code imput plugin for HTML portable text
       codeInput(),
     ],

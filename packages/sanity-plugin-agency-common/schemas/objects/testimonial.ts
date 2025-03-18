@@ -7,12 +7,12 @@ export default {
       title: 'Quote',
       name: 'quote',
       type: 'text',
-      rows: 4,
+      rows: 4
     },
     {
       title: 'Credit',
       name: 'credit',
-      type: 'string',
+      type: 'string'
     },
     {
       title: 'Image',
@@ -22,29 +22,29 @@ export default {
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption',
+          title: 'Légende'
         },
         {
           name: 'alt',
           type: 'string',
-          title: 'Alt text',
-        },
-      ],
-    },
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'credit',
-      image: 'image',
-    },
-    prepare(selection: {title: string; subtitle: string; image: string}) {
-      const {title, subtitle, image} = selection
-      return {
-        title: title,
-        subtitle: `${subtitle ? subtitle : 'unknown'}`,
-        media: image,
-      }
-    },
-  },
-}
+          title: 'Alt text'
+        }
+      ]
+    }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'credit',
+  //     image: 'image'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string; image: string }) {
+  //     const { title, subtitle, image } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `${subtitle ? subtitle : 'unknown'}`,
+  //       media: image
+  //     };
+  //   }
+  // }
+};

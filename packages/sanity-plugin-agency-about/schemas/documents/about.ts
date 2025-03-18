@@ -29,14 +29,14 @@ interface AboutArgs {
 
 export default ({ commonLayouts }: AboutArgs) => ({
   name: 'about',
-  title: 'About Pages',
+  title: 'À propos',
   type: 'document',
   // icon: HiOutlineDocumentDuplicate,
   i18n: true,
   groups: [
     {
       name: 'pageHeader',
-      title: 'Page Header',
+      title: 'En-tête de page',
       default: true
     },
     {
@@ -50,13 +50,13 @@ export default ({ commonLayouts }: AboutArgs) => ({
   ],
   fields: [
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string',
       group: 'pageHeader'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       initialValue: 'About',
@@ -85,7 +85,7 @@ export default ({ commonLayouts }: AboutArgs) => ({
       group: 'pageHeader'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }],
@@ -107,7 +107,7 @@ export default ({ commonLayouts }: AboutArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -125,7 +125,7 @@ export default ({ commonLayouts }: AboutArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -153,27 +153,27 @@ export default ({ commonLayouts }: AboutArgs) => ({
   ],
   initialValue: {
     dynamicRoute: 'about/'
-  },
-  preview: {
-    select: {
-      title: 'title',
-      image: 'image',
-      locale: '__i18n_lang',
-      locales: '__i18n_refs'
-    },
-    prepare(selection: {
-      title: string;
-      image: string;
-      locale: string;
-      locales: { _key: string | number }[];
-    }) {
-      const { title, locale, locales = [], image } = selection;
-      const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
-      return {
-        title: title,
-        subtitle: languages,
-        media: image
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'image',
+  //     locale: '__i18n_lang',
+  //     locales: '__i18n_refs'
+  //   },
+  //   prepare(selection: {
+  //     title: string;
+  //     image: string;
+  //     locale: string;
+  //     locales: { _key: string | number }[];
+  //   }) {
+  //     const { title, locale, locales = [], image } = selection;
+  //     const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
+  //     return {
+  //       title: title,
+  //       subtitle: languages,
+  //       media: image
+  //     };
+  //   }
+  // }
 });

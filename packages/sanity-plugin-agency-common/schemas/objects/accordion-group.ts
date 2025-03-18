@@ -4,15 +4,15 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
-      type: 'string',
+      type: 'string'
     },
     {
       title: 'Accordion',
       name: 'accordion',
       type: 'array',
-      of: [{type: 'common.accordionItem'}],
-    },
-  ],
-}
+      of: [{ type: 'common.accordionItem' }]
+    }
+  ]
+};

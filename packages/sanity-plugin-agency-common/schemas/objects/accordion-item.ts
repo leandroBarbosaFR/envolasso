@@ -4,15 +4,15 @@ export default {
   type: 'object',
   fields: [
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
-      type: 'string',
+      type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
-      of: [{type: 'block'}],
-    },
-  ],
-}
+      of: [{ type: 'block' }]
+    }
+  ]
+};

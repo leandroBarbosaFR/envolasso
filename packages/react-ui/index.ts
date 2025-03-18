@@ -50,8 +50,6 @@ export { SelectMenuFilter } from './components/SelectMenu';
 export { default as SiteFooter } from './components/SiteFooter';
 export { default as SiteHeader } from './components/SiteHeader';
 export { default as StandardPageBody } from './components/StandardPageBody';
-export { default as TeamProfileFeedItem } from './components/TeamProfileFeedItem';
-export { default as TeamProfileFeedSection } from './components/TeamProfileFeedSection';
 export { default as TextImgSection } from './components/TextImgSection';
 export { default as TextSection } from './components/TextSection';
 export { default as TextSectionAside } from './components/TextSectionAside';

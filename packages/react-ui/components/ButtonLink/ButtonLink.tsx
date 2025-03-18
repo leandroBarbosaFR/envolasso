@@ -17,6 +17,7 @@ export interface ButtonProps {
   children?: React.ReactNode | React.ReactNode[];
   href?: string;
   target?: string;
+  rel?: string;
   title?: string;
   variant: ButtonVariant;
   iconPosition?: string;

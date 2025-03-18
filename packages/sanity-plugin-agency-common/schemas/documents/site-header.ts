@@ -9,7 +9,7 @@ export default {
   groups: [
     {
       name: 'setings',
-      title: 'Setings',
+      title: 'Paramètres',
       default: true
     },
     {
@@ -31,7 +31,7 @@ export default {
     },
     // navigation
     {
-      title: 'Enable Site Navigaiton',
+      title: 'Activer la navigation du site',
       name: 'isNavEnabled',
       type: 'boolean',
       initialValue: true,

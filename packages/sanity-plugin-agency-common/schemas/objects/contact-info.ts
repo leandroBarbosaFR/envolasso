@@ -17,12 +17,12 @@ export default ({ layoutVariantConactInfo }: ConactInfoArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -33,18 +33,18 @@ export default ({ layoutVariantConactInfo }: ConactInfoArgs) => ({
       type: 'array',
       of: [{ type: 'common.layout.textColumn' }]
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'subtitle'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `Contact info: ${subtitle ? subtitle : ''}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'subtitle'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `Contact info: ${subtitle ? subtitle : ''}`
+  //     };
+  //   }
+  // }
 });

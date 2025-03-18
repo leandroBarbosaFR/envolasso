@@ -5,7 +5,7 @@ import {
   AddressList,
   EmbedSection,
   PortfolioFeedSection,
-  TeamProfileFeedSection,
+  // TeamProfileFeedSection,
   // TestimonialSection,
   TextImgSection,
   TextSection,
@@ -37,8 +37,8 @@ const Layout = ({ layout }: LayoutProps) => {
           return <EmbedSection key={index} data={layoutBlock} />;
         case 'common.layout.portfolioFeed':
           return <PortfolioFeedSection key={index} data={layoutBlock} />;
-        case 'common.layout.teamProfileFeed':
-          return <TeamProfileFeedSection key={index} data={layoutBlock} />;
+        // case 'common.layout.teamProfileFeed':
+        //   return <TeamProfileFeedSection key={index} data={layoutBlock} />;
         // case 'common.layout.testimonials':
         //   return <TestimonialSection key={index} data={layoutBlock} />;
         case 'common.layout.textImgSection':

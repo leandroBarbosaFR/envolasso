@@ -11,7 +11,7 @@ export default {
       initialValue: true
     },
     {
-      title: 'title',
+      title: 'Titre',
       name: 'titleNav',
       type: 'string',
       hidden: ({ parent }: any) => parent?.isTitleEnabled !== true
@@ -27,17 +27,17 @@ export default {
       ],
       validation: (Rule: { required: () => boolean }) => Rule.required()
     }
-  ],
-  preview: {
-    select: {
-      title: 'titleNav'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `${subtitle ? subtitle : 'unknown'}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'titleNav'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `${subtitle ? subtitle : 'unknown'}`
+  //     };
+  //   }
+  // }
 };

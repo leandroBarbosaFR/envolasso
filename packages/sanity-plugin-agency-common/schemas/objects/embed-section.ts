@@ -17,17 +17,17 @@ export default ({ layoutVariantEmbedSection }: EmbedSectionArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }]
@@ -37,20 +37,20 @@ export default ({ layoutVariantEmbedSection }: EmbedSectionArgs) => ({
       name: 'embedServices',
       type: 'common.embedServices'
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'subtitle',
-      image: 'image'
-    },
-    prepare(selection: { title: string; subtitle: string; image: string }) {
-      const { title, subtitle, image } = selection;
-      return {
-        title: title,
-        subtitle: `Embed Section: ${subtitle ? subtitle : 'unknown'}`,
-        media: image
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'subtitle',
+  //     image: 'image'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string; image: string }) {
+  //     const { title, subtitle, image } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `Embed Section: ${subtitle ? subtitle : 'unknown'}`,
+  //       media: image
+  //     };
+  //   }
+  // }
 });

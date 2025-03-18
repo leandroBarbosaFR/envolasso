@@ -74,6 +74,8 @@ const NavList = ({ layoutVariant, navListTitle, siteNavigation, handleClick }: N
               <StyledListItem key={index} layoutVariant={layoutVariant}>
                 <ButtonLink
                   key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href={`${url}`}
                   title={title}
                   variant={theme.NavList[layoutVariant!].externalLink.variant}

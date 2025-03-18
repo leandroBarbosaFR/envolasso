@@ -17,12 +17,12 @@ export default ({ layoutVariantTestimonials }: TestimonialsArgs) => ({
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'Sub title',
+      title: 'Sous-titre',
       name: 'subtitle',
       type: 'string'
     },
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string'
     },
@@ -32,19 +32,19 @@ export default ({ layoutVariantTestimonials }: TestimonialsArgs) => ({
       type: 'array',
       of: [{ type: 'common.testimonial' }]
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'subtitle',
-      image: 'image'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `${subtitle ? subtitle : 'unknown'}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'subtitle',
+  //     image: 'image'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `${subtitle ? subtitle : 'unknown'}`
+  //     };
+  //   }
+  // }
 });

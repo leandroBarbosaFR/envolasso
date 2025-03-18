@@ -28,7 +28,7 @@ export default ({ layoutVariantFeaturedPortfolio }: PortfolioIndexArgs) => ({
   ],
   fields: [
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       validation: (Rule: { required: () => boolean }) => Rule.required(),
@@ -54,7 +54,7 @@ export default ({ layoutVariantFeaturedPortfolio }: PortfolioIndexArgs) => ({
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption'
+          title: 'Légende'
         },
         {
           name: 'alt',
@@ -64,7 +64,7 @@ export default ({ layoutVariantFeaturedPortfolio }: PortfolioIndexArgs) => ({
       ]
     },
     {
-      title: 'Body',
+      title: 'Contenu text',
       name: 'body',
       type: 'array',
       of: [{ type: 'block' }],
@@ -104,27 +104,27 @@ export default ({ layoutVariantFeaturedPortfolio }: PortfolioIndexArgs) => ({
   ],
   initialValue: {
     slug: { current: `realisations/page/all/1/latest` }
-  },
-  preview: {
-    select: {
-      title: 'title',
-      image: 'image',
-      locale: '__i18n_lang',
-      locales: '__i18n_refs'
-    },
-    prepare(selection: {
-      title: string;
-      image: string;
-      locale: string;
-      locales: { _key: string | number }[];
-    }) {
-      const { title, locale, locales = [], image } = selection;
-      const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
-      return {
-        title: title,
-        subtitle: languages,
-        media: image
-      };
-    }
   }
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'image',
+  //     locale: '__i18n_lang',
+  //     locales: '__i18n_refs'
+  //   },
+  //   prepare(selection: {
+  //     title: string;
+  //     image: string;
+  //     locale: string;
+  //     locales: { _key: string | number }[];
+  //   }) {
+  //     const { title, locale, locales = [], image } = selection;
+  //     const languages = [locale, ...locales.map(({ _key }) => _key)].join(', ');
+  //     return {
+  //       title: title,
+  //       subtitle: languages,
+  //       media: image
+  //     };
+  //   }
+  // }
 });

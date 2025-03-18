@@ -4,7 +4,7 @@ export default () => ({
   type: 'object',
   fields: [
     {
-      title: 'Title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       description: 'Only used in CMS not redered on the fontend'
@@ -19,17 +19,17 @@ export default () => ({
         withFilename: false
       }
     }
-  ],
-  preview: {
-    select: {
-      title: 'title'
-    },
-    prepare(selection: { title: string }) {
-      const { title } = selection;
-      return {
-        title: title,
-        subtitle: 'html field'
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'title'
+  //   },
+  //   prepare(selection: { title: string }) {
+  //     const { title } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: 'html field'
+  //     };
+  //   }
+  // }
 });

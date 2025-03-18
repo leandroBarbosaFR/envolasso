@@ -20,7 +20,7 @@ export default {
       validation: (Rule: { required: () => boolean }) => Rule.required()
     },
     {
-      title: 'title',
+      title: 'Titre',
       name: 'title',
       type: 'string',
       validation: (Rule: { required: () => boolean }) => Rule.required()
@@ -31,18 +31,18 @@ export default {
       type: 'url',
       validation: (Rule: { required: () => boolean }) => Rule.required()
     }
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      subtitle: 'platform'
-    },
-    prepare(selection: { title: string; subtitle: string }) {
-      const { title, subtitle } = selection;
-      return {
-        title: title,
-        subtitle: `${subtitle ? subtitle : 'unknown'}`
-      };
-    }
-  }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     subtitle: 'platform'
+  //   },
+  //   prepare(selection: { title: string; subtitle: string }) {
+  //     const { title, subtitle } = selection;
+  //     return {
+  //       title: title,
+  //       subtitle: `${subtitle ? subtitle : 'unknown'}`
+  //     };
+  //   }
+  // }
 };

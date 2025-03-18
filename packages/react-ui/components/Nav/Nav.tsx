@@ -78,6 +78,8 @@ const Nav = ({ data, layoutVariant, isTitleEnabled, navListTitle }: NavProps) =>
                 key={index}
                 href={`${url}`}
                 title={title}
+                target="_blank"
+                rel="noopener noreferrer"
                 variant={theme.Nav[layoutVariant!].externalLink.variant}
                 withText={theme.Nav[layoutVariant!].externalLink.withText}
                 withIcon={theme.Nav[layoutVariant!].externalLink.withIcon}

@@ -6,7 +6,7 @@ export default {
     {
       title: 'Client Name',
       name: 'title',
-      type: 'string',
+      type: 'string'
     },
     {
       title: 'Logo',
@@ -16,32 +16,32 @@ export default {
         {
           name: 'alt',
           type: 'string',
-          title: 'Alt text',
+          title: 'Alt text'
         },
         {
           name: 'caption',
           type: 'string',
-          title: 'Caption',
-        },
-      ],
+          title: 'Légende'
+        }
+      ]
     },
     {
       title: 'URL',
       name: 'url',
-      type: 'url',
-    },
-  ],
-  preview: {
-    select: {
-      title: 'title',
-      image: 'logo',
-    },
-    prepare(selection: {title: string; image: string}) {
-      const {title, image} = selection
-      return {
-        title: title,
-        media: image,
-      }
-    },
-  },
-}
+      type: 'url'
+    }
+  ]
+  // preview: {
+  //   select: {
+  //     title: 'Titre',
+  //     image: 'logo'
+  //   },
+  //   prepare(selection: { title: string; image: string }) {
+  //     const { title, image } = selection;
+  //     return {
+  //       title: title,
+  //       media: image
+  //     };
+  //   }
+  // }
+};

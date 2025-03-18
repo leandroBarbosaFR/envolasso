@@ -20,7 +20,6 @@ import siteFooter from './schemas/documents/site-footer';
 import siteHeader from './schemas/documents/site-header';
 import socialMediaLink from './schemas/objects/socialMediaLink';
 import socialMediaNavigation from './schemas/objects/social-media-navigation';
-import teamProfileFeed from './schemas/objects/team-profile-feed';
 import telLink from './schemas/objects/tel-link';
 import textColumn from './schemas/objects/text-column';
 import textColumnBasic from './schemas/objects/text-column-basic';
@@ -47,7 +46,7 @@ interface AgencyCommonPluginOptions {
   layoutVariantConactInfo: layoutVariantOptions[];
   layoutVariantEmbedSection: layoutVariantOptions[];
   layoutVariantPortfolioFeed: layoutVariantOptions[];
-  layoutVariantTeamProfileFeed: layoutVariantOptions[];
+  // layoutVariantTeamProfileFeed: layoutVariantOptions[];
   layoutVariantTextImgSection: layoutVariantOptions[];
   layoutVariantTextSection: layoutVariantOptions[];
   layoutVariantLogoFeedSection: layoutVariantOptions[];
@@ -67,7 +66,7 @@ const agencyCommon = definePlugin(
     layoutVariantConactInfo,
     layoutVariantEmbedSection,
     layoutVariantPortfolioFeed,
-    layoutVariantTeamProfileFeed,
+    // layoutVariantTeamProfileFeed,
     layoutVariantTextImgSection,
     layoutVariantTextSection,
     layoutVariantLogoFeedSection,
@@ -120,7 +119,7 @@ const agencyCommon = definePlugin(
         contactInfo({ layoutVariantConactInfo }),
         embedSection({ layoutVariantEmbedSection }),
         portfolioFeed({ layoutVariantPortfolioFeed }),
-        teamProfileFeed({ layoutVariantTeamProfileFeed }),
+        // teamProfileFeed({ layoutVariantTeamProfileFeed }),
         textImgSection({ layoutVariantTextImgSection }),
         textSection({ layoutVariantTextSection }),
         logoFeedSection({ layoutVariantLogoFeedSection }),

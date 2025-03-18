@@ -9,19 +9,19 @@ export type SiteHeader = {
   // ==========================================================================
   // StyledHeader
   // ==========================================================================
-  zIndex: string;
-  isFluid: boolean;
-  position: string;
-  top: string;
-  width: string;
-  transition: string;
-  backgroud: string;
-  collapsedbackground: string;
-  toggledbackground: string;
-  HeaderIconVariant: string;
-  HeaderIconInvertVariant: string;
-  BurgerIconVariant: string;
-  BurgerIconInvertVariant: string;
+  zIndex?: string;
+  isFluid?: boolean;
+  position?: string;
+  top?: string;
+  width?: string;
+  transition?: string;
+  backgroud?: string;
+  collapsedbackground?: string;
+  toggledbackground?: string;
+  HeaderIconVariant?: string;
+  HeaderIconInvertVariant?: string;
+  BurgerIconVariant?: string;
+  BurgerIconInvertVariant?: string;
   borderRadius?: string;
   boxShadow?: string;
   backdropFilter?: string;
