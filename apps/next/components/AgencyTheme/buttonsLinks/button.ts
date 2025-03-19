@@ -1895,27 +1895,27 @@ const button = {
     asCursor: `auto`,
     asPointerEvents: `none`,
     // Hover
-    fontColorHover: colors.blueLight,
-    backgroundHover: colors.transparent,
+    fontColorHover: colors.midBlack,
+    backgroundHover: colors.blueLight,
     fontWeightHover: `300`,
     // Focus
-    fontColorFocus: colors.blueLight,
-    backgroundFocus: colors.transparent,
+    fontColorFocus: colors.midBlack,
+    backgroundFocus: colors.blueLight,
     fontWeightFocus: `300`,
     // Active
-    fontColorActive: colors.blueLight,
-    backgroundActive: colors.transparent,
+    fontColorActive: colors.midBlack,
+    backgroundActive: colors.blueLight,
     fontWeightActive: `300`,
     // activated
-    fontColorActivated: colors.blueLight,
-    backgroundaActivated: colors.transparent,
+    fontColorActivated: colors.midBlack,
+    backgroundaActivated: colors.blueLight,
     fontWeightActivated: `300`,
     // Icon
     icon: {
       fill: colors.midBlack,
-      fillHover: colors.blueLight,
-      fillFocus: colors.blueLight,
-      fillActive: colors.blueLight
+      fillHover: colors.midBlack,
+      fillFocus: colors.midBlack,
+      fillActive: colors.midBlack
     },
     // Mobile
     mobile: {
@@ -1923,8 +1923,9 @@ const button = {
       lineHeight: `13px`,
       letterSpacing: `0`,
       margin: `0`,
-      padding: ``,
+      padding: `8px 10px`,
       border: `none`,
+      borderRadius: `4px`,
       icon: {
         height: `13px`,
         width: `13px`,

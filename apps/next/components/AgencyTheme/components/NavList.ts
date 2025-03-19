@@ -64,7 +64,7 @@ const NavList = {
       },
       // Button
       Button: {
-        variant: `buttonLinkNav`
+        variant: `buttonLinkPrimary`
       },
       // StyledList
       // ==========================================================================
@@ -228,7 +228,7 @@ const NavList = {
     // Button - internalLinkButton
     // ==========================================================================
     internalLinkButton: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -238,7 +238,7 @@ const NavList = {
     // Button - internalAccountLink
     // ==========================================================================
     internalAccountLink: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -248,7 +248,7 @@ const NavList = {
     // Button - externalLink
     // ==========================================================================
     externalLink: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       iconPosition: ``,
       withIcon: false,
@@ -258,7 +258,7 @@ const NavList = {
     // Button - navigationDropdown
     // ==========================================================================
     navigationDropdown: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       withIcon: true,
       iconName: `reveal`,
@@ -269,7 +269,7 @@ const NavList = {
     // Button - arrowLeftButton
     // ==========================================================================
     arrowLeftButton: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       iconName: `arrowLeft`,
       iconPosition: `left`,
       withText: true,
@@ -279,7 +279,7 @@ const NavList = {
     // Button - logoutButton
     // ==========================================================================
     logoutButton: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       withText: true,
       withIcon: false
     },
@@ -287,7 +287,7 @@ const NavList = {
     // Button - arrowRightButton
     // ==========================================================================
     arrowRightButton: {
-      variant: `buttonLinkNav`,
+      variant: `buttonLinkPrimary`,
       iconName: `arrowRight`,
       withText: true,
       withIcon: true

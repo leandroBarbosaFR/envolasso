@@ -14,30 +14,30 @@ const SiteHeader = {
     top: `0px`,
     width: `100%;`,
     transition: `0.3s ease-in-out`,
-    backgroud: `${colors.transparent}`,
-    // collapsedbackground: `${colors.white}`,
+    backgroud: `${colors.white}`,
+    collapsedbackground: `${colors.white}`,
     borderRadius: ``,
-    // boxShadow: `0 4px 30px rgba(0, 0, 0, 0.1)`,
+    boxShadow: `0 4px 30px rgba(0, 0, 0, 0.1)`,
     // backdropFilter: `blur(10.9px)`,
     // webkitBackdropFilter: `blur(10.9px)`,
     // border: `1px solid rgba(255, 255, 255, 0.3)`,
     // toggledbackground: `${colors.white}`,
     borderRadiusCollapsed: ``,
-    // boxShadowCollapsed: `0 4px 30px rgba(0, 0, 0, 0.1)`,
+    boxShadowCollapsed: `0 4px 30px rgba(0, 0, 0, 0.1)`,
     // backdropFilterCollapsed: `blur(10.9px)`,
     // webkitBackdropFilterCollapsed: `blur(10.9px)`,
     // borderCollapsed: `1px solid rgba(255, 255, 255, 0.3)`,
     toggledBorderRadiusCollapsed: ``,
-    // toggledBoxShadowCollapsed: `0 4px 30px rgba(0, 0, 0, 0.1)`,
+    toggledBoxShadowCollapsed: `0 4px 30px rgba(0, 0, 0, 0.1)`,
     // toggledBackdropFilterCollapsed: `blur(10.9px)`,
     // toggledWebkitBackdropFilterCollapsed: `blur(10.9px)`,
     // toggledBorderCollapsed: `1px solid rgba(255, 255, 255, 0.3)`,
 
     mobile: {
       margin: ``,
-      padding: `5px 10px`,
+      padding: `10px 0px`,
       collapsedMargin: ``,
-      collapsedPadding: `5px 10px`
+      collapsedPadding: `10px 0px`
     },
     mobileLarge: {
       margin: ``,
@@ -53,9 +53,9 @@ const SiteHeader = {
     },
     desktop: {
       margin: ``,
-      padding: `5px 25px`,
+      padding: `25px 0px`,
       collapsedMargin: ``,
-      collapsedPadding: `5px 25px`
+      collapsedPadding: `25px 0px`
     },
     widescreen: {
       margin: ``,

@@ -7,12 +7,7 @@ const StyledHeaderContainer = styled(StyledContainer)<StyledComponentProps>`
   // Global
   // ==========================================================================
   display: ${({ layoutVariant, theme }) => theme.SiteHeader[layoutVariant!].StyledHeaderContainer.display};
-  background-color: white;
-  border-radius: 30px;
-  border: 1px solid white;
-  padding: 15px 15px;
-  backdrop-filter: blur(10.9px);
-  webkit-backdrop-filter: blur(10.9px);
+
   // ==========================================================================
   // Mobile
   // ==========================================================================
