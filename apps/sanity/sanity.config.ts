@@ -100,7 +100,7 @@ export default defineConfig({
                 ),
               S.divider(),
               S.listItem()
-                .title('Landing Page')
+                .title("Page d'accueil")
                 .child(S.document().schemaType('landingPage').documentId('landingPage')),
               S.divider(),
               S.listItem()
