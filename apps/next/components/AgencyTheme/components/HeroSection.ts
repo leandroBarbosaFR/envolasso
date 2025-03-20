@@ -419,7 +419,7 @@ const HeroSection = {
     // StyledHeadingWrap
     // ==========================================================================
     StyledHeadingWrap: {
-      display: 'none',
+      display: 'block',
       textAlign: ``,
       mobile: {
         gridColumn: `1/13`,
