@@ -103,7 +103,7 @@ export default ({ layoutVariantFeaturedPortfolio }: PortfolioIndexArgs) => ({
     ...seoFields
   ],
   initialValue: {
-    slug: { current: `realisations/page/all/1/latest` }
+    slug: { current: `portfolios/page/all/1/latest` }
   }
   // preview: {
   //   select: {
