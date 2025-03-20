@@ -1,3 +1,5 @@
+import { colors } from '../variables';
+
 const NavDraw = {
   // ==========================================================================
   // layoutVariant
@@ -14,7 +16,7 @@ const NavDraw = {
       left: `0`,
       bottom: `0`,
       right: `0`,
-      background: `rgba(255,255,255,1)`,
+      background: `${colors.white}`,
 
       NavList: {
         layoutVariant: `navDrawNavList`
