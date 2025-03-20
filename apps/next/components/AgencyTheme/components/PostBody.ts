@@ -234,12 +234,47 @@ const PostBody = {
       }
     },
     // ==========================================================================
+    // StyledBackButton
+    // ==========================================================================
+    StyledBackButton: {
+      mobile: {
+        gridColumn: `1/13`,
+        gridRow: `1`,
+        margin: ``,
+        padding: ``
+      },
+      mobileLarge: {
+        gridColumn: `1/13`,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      tablet: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      desktop: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      },
+      widescreen: {
+        gridColumn: ``,
+        gridRow: ``,
+        margin: ``,
+        padding: ``
+      }
+    },
+    // ==========================================================================
     // StyledSubTitle
     // ==========================================================================
     StyledSubTitleWrap: {
       mobile: {
         gridColumn: `1/10`,
-        gridRow: `1`,
+        gridRow: `2`,
         margin: ``,
         padding: ``
       },
@@ -294,7 +329,7 @@ const PostBody = {
     StyledHeadingWrap: {
       mobile: {
         gridColumn: `1/10`,
-        gridRow: `2`,
+        gridRow: `3`,
         margin: ``,
         padding: ``
       },
@@ -354,7 +389,7 @@ const PostBody = {
       },
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `3`,
+        gridRow: `4`,
         margin: ``
       },
       mobileLarge: {
@@ -388,7 +423,7 @@ const PostBody = {
       },
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `5`,
+        gridRow: `6`,
         margin: ``
       },
       mobileLarge: {
@@ -417,17 +452,17 @@ const PostBody = {
     // ==========================================================================
     StyledCtaNavWrap: {
       display: `block`,
-      justifyContent: ``,
+      justifyContent: `flex-start`,
       mobile: {
         gridColumn: `1/13`,
-        gridRow: `6`,
-        margin: `0 0 15px`,
+        gridRow: `7`,
+        margin: ``,
         padding: ``
       },
       mobileLarge: {
         gridColumn: `2/12`,
         gridRow: ``,
-        margin: `0 0 20px`,
+        margin: ``,
         padding: ``
       },
       tablet: {
@@ -437,8 +472,8 @@ const PostBody = {
         padding: ``
       },
       desktop: {
-        gridColumn: `6/13`,
-        gridRow: `6`,
+        gridColumn: `1/13`,
+        gridRow: `1`,
         margin: `0`,
         padding: ``
       },
@@ -451,7 +486,7 @@ const PostBody = {
       // StyledCtaNav
       // ==========================================================================
       StyledCtaNav: {
-        variant: `default`,
+        variant: `defaultIcon`,
         ctaTitle: `Links:`,
         mobile: {
           margin: ``

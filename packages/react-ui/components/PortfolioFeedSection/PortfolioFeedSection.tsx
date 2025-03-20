@@ -12,6 +12,7 @@ import DefaultFeed from '../DefaultFeed';
 import HorizontalFeed from '../HorizontalFeed';
 import ColoredText from '../ColoredText';
 import CustomPortableText from '../../utils/portableText';
+import ButtonLink from '../ButtonLink';
 // Styles
 import StyledContainer from './components/StyledContainer';
 import StyledCtaNav from './components/StyledCtaNav';
@@ -166,11 +167,17 @@ const PortfolioFeedSection = ({ data }: PortfolioFeedSectionProps) => {
           )}
           {cta && (
             <StyledCtaNavWrap layoutVariant={layoutVariant}>
-              <StyledCtaNav
-                variant={theme.PortfolioFeedSection[layoutVariant!].StyledCtaNavWrap.StyledCtaNav.variant}
-                layoutVariant={layoutVariant}
-                data={cta}
-              />
+              <ButtonLink
+                href={`/portfolios/page/all/1/latest`}
+                title={'Voir toutes les activités'}
+                variant={'buttonPrimary'}
+                withText={true}
+                withIcon={false}
+                iconPosition={'left'}
+                iconName={'arrowLeft'}
+              >
+                <span>Voir toutes les activités</span>
+              </ButtonLink>
             </StyledCtaNavWrap>
           )}
           <StyledFeedWrap layoutVariant={layoutVariant}>{renderFeed()}</StyledFeedWrap>

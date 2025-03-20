@@ -79,6 +79,7 @@ import { PostBodyTheme } from './components/PostBody';
 import { PostFeedItemDefaultTheme } from './components/PostFeedItemDefault';
 import { PostFeedItemTheme } from './components/PostFeedItem';
 import { PostFeedSectionTheme } from './components/PostFeedSection';
+import { PostIndexTheme } from './components/PostIndex';
 import { SelectMenuTheme } from './components/SelectMenu';
 import { SiteFooterTheme } from './components/SiteFooter';
 import { SiteHeaderTheme } from './components/SiteHeader';
@@ -183,6 +184,7 @@ export interface ThemeTypes {
   PortfolioFeedSection: PortfolioFeedSectionTheme;
   PortfolioFeedItemDefault: PortfolioFeedItemDefaultTheme;
   PortfolioFeedItem: PortfolioFeedItemTheme;
+  PostIndex: PostIndexTheme;
   PostBody: PostBodyTheme;
   PostFeedItem: PostFeedItemTheme;
   PostFeedItemDefault: PostFeedItemDefaultTheme;

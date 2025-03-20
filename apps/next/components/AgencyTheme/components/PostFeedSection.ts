@@ -269,13 +269,13 @@ const PostFeedSection = {
       alignItems: `end`,
       justifyContent: `flex-end`,
       mobile: {
-        gridColumn: `9/13`,
-        gridRow: `1/3`,
-        margin: ``,
+        gridColumn: `1/13`,
+        gridRow: `4`,
+        margin: `0 auto`,
         padding: ``
       },
       mobileLarge: {
-        gridColumn: `11/13`,
+        gridColumn: ``,
         gridRow: ``,
         margin: ``,
         padding: ``
@@ -293,7 +293,7 @@ const PostFeedSection = {
         padding: ``
       },
       widescreen: {
-        gridColumn: `12/13`,
+        gridColumn: ``,
         gridRow: ``,
         margin: ``,
         padding: ``

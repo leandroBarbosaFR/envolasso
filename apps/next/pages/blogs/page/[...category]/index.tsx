@@ -2,7 +2,7 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 // 1367 Agency UI
-import { BlogIndex, IndexPageHeader, Main } from '@agency-platform/react-ui';
+import { PostIndex, Main } from '@agency-platform/react-ui';
 import type { Blog, BlogCategories, OverrideMetaTags } from '@agency-platform/shared-types';
 // Components
 import MetaTags from 'components/MetaTags';
@@ -36,10 +36,8 @@ interface PageProps {
 
 function Page({ page, locale }: PageProps): JSX.Element | null {
   if (!page) return null;
-  const { blogsPage,  blogs, pageNumber } = page;
-  const { title,  paginationCount, dynamicRoute, slug, overrideMetaTags } =
-    blogsPage;
-
+  const { blogsPage, blogs, pageNumber } = page;
+  const { title, paginationCount, dynamicRoute, slug, overrideMetaTags } = blogsPage;
 
   return (
     <>
@@ -53,14 +51,14 @@ function Page({ page, locale }: PageProps): JSX.Element | null {
         overrideMetaTags={overrideMetaTags}
       />
       <Main layoutVariant="default">
-        <IndexPageHeader layoutVariant={'default'} title={title} />
-        <BlogIndex
-          layoutVariant={'default'}
+        <PostIndex
+          layoutVariant="default"
           pageName={'blogs'}
-          blog={blogs?.blogs}
-          blogCount={blogs?.blogsCount}
+          data={blogs?.blogs}
+          postsCount={blogs?.blogsCount}
           perPage={paginationCount}
           urlPageNumber={pageNumber}
+          feedItemComponent={'PostFeedItemDefault'}
         />
       </Main>
     </>

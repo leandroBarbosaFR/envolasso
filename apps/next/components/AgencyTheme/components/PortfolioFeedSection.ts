@@ -819,7 +819,7 @@ const PortfolioFeedSection = {
       },
       desktop: {
         gridColumn: ``,
-        gridRow: ``,
+        gridRow: `4`,
         margin: ``,
         padding: ``
       },

@@ -77,6 +77,7 @@ import { PortfolioBody } from './components/PortfolioBody';
 import { PortfolioFeedItem } from './components/PortfolioFeedItem';
 import { PortfolioFeedItemDefault } from './components/PortfolioFeedItemDefault';
 import { PostBody } from './components/PostBody';
+import { PostIndex } from './components/PostIndex';
 import { PostFeedItem } from './components/PostFeedItem';
 import { PostFeedItemDefault } from './components/PostFeedItemDefault';
 import { PostFeedSection } from './components/PostFeedSection';
@@ -186,6 +187,7 @@ const theme: AgencyTheme = {
   PortfolioFeedItemDefault,
   PostBody,
   PostFeedItem,
+  PostIndex,
   PostFeedItemDefault,
   PostFeedSection,
   SelectMenu,

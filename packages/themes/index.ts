@@ -54,6 +54,7 @@ export type { PortfolioFeedItemDefaultTheme } from './types/components/Portfolio
 export type { PortfolioBodyTheme } from './types/components/PortfolioBody';
 export type { PortfolioFeedItemTheme } from './types/components/PortfolioFeedItem';
 export type { PostBodyTheme } from './types/components/PostBody';
+export type { PostIndexTheme } from './types/components/PostIndex';
 export type { PostFeedItemDefaultTheme } from './types/components/PostFeedItemDefault';
 export type { PostFeedItemTheme } from './types/components/PostFeedItem';
 export type { PostFeedSectionTheme } from './types/components/PostFeedSection';

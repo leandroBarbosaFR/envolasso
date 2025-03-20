@@ -1,28 +1,36 @@
 import { colors } from '../variables';
 
-const PortfolioIndex = {
+const PostIndex = {
   // ==========================================================================
   // layoutVariant
   // ==========================================================================
   default: {
-    // ==========================================================================
-    // StyledPortfolioFeedItem
-    // ==========================================================================
-    StyledPortfolioFeedItem: {
+    StyledSection: {
+      background: `none`,
       mobile: {
-        gridColumn: `span 6`
+        height: `auto`,
+        margin: `0`,
+        padding: `80px 0 15px`
       },
       mobileLarge: {
-        gridColumn: `span 6`
+        height: ``,
+        margin: ``,
+        padding: `80px 0 20px`
       },
       tablet: {
-        gridColumn: `span 4`
+        height: ``,
+        margin: ``,
+        padding: `0 0 25px`
       },
       desktop: {
-        gridColumn: `span 4`
+        height: ``,
+        margin: ``,
+        padding: `100px 0 30px`
       },
       widescreen: {
-        gridColumn: `span 4`
+        height: ``,
+        margin: ``,
+        padding: `150px 0 30px`
       }
     },
     // ==========================================================================
@@ -30,8 +38,9 @@ const PortfolioIndex = {
     // ==========================================================================
     StyledContainer: {
       color: `inherit`,
+      // Props settings
       isFluid: true,
-      // Fluid Container
+      // fluidContainer
       fluidContainer: {
         marginLeft: ``,
         marginRight: ``,
@@ -58,7 +67,7 @@ const PortfolioIndex = {
           paddingRight: ``
         }
       },
-      // Container
+      // container
       container: {
         marginLeft: ``,
         marginRight: ``,
@@ -96,37 +105,38 @@ const PortfolioIndex = {
       display: `grid`,
       withRowGap: true,
       withColGapp: true,
-      alignItems: `center`,
+      gridTemplateColumns: ``,
+      alignItems: `flex-start`,
       mobile: {
-        gridTemplateColumns: ``,
+        gridTemplateColumns: `repeat(12,1fr)`,
         colGap: ``,
         rowGap: ``,
         margin: `0 0 30px`,
         padding: ``
       },
       mobileLarge: {
-        gridTemplateColumns: ``,
+        gridTemplateColumns: `repeat(12,1fr)`,
         colGap: ``,
         rowGap: ``,
         margin: ``,
         padding: ``
       },
       tablet: {
-        gridTemplateColumns: ``,
+        gridTemplateColumns: `repeat(12,1fr)`,
         colGap: ``,
         rowGap: ``,
         margin: ``,
         padding: ``
       },
       desktop: {
-        gridTemplateColumns: ``,
+        gridTemplateColumns: `repeat(12,1fr)`,
         colGap: ``,
         rowGap: ``,
         margin: ``,
         padding: ``
       },
       widescreen: {
-        gridTemplateColumns: ``,
+        gridTemplateColumns: `repeat(15,1fr)`,
         colGap: ``,
         rowGap: ``,
         margin: ``,
@@ -136,59 +146,32 @@ const PortfolioIndex = {
     // ==========================================================================
     // StyledNotFound
     // ==========================================================================
+    // Typeography variants
     StyledNotFound: {
       variant: `secondary`,
       color: `${colors.white}`,
       margin: `0 auto`,
       mobile: {
-        margin: `0 0 10px`,
-        gridColumn: ` 1/13`
+        gridColumn: ` 1/13`,
+        margin: `0 0 10px`
       },
       mobileLarge: {
+        gridColumn: ``,
         margin: ``
       },
       tablet: {
+        gridColumn: ``,
         margin: `0 0 15px`
       },
       desktop: {
+        gridColumn: ``,
         margin: ``
       },
       widescreen: {
+        gridColumn: ``,
         margin: `0 0 8px`
-      }
-    },
-    // ==========================================================================
-    // Section Styles
-    // ==========================================================================
-    StyledSection: {
-      background: `none`,
-      mobile: {
-        height: `auto`,
-        margin: `0`,
-        padding: `80px 0 15px`
-      },
-      mobileLarge: {
-        height: ``,
-        margin: ``,
-        padding: `80px 0 20px`
-      },
-      tablet: {
-        height: ``,
-        margin: ``,
-        padding: `0 0 25px`
-      },
-      desktop: {
-        height: ``,
-        margin: ``,
-        padding: `100px 0 30px`
-      },
-      widescreen: {
-        height: ``,
-        margin: ``,
-        padding: `150px 0 30px`
       }
     }
   }
 };
-
-export { PortfolioIndex };
+export { PostIndex };

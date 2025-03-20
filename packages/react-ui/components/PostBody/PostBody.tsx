@@ -24,6 +24,7 @@ import StyledSection from './components/StyledSection';
 import StyledSubTitle from './components/StyledSubTitle';
 import StyledSubTitleWrap from './components/StyledSubTitleWrap';
 import StyledIconNav from './components/StyledIconNav';
+import StyledBackButton from './components/StyledBackButton';
 // Props
 export interface PostBodyProps {
   layoutVariant: keyof PostBodyTheme;
@@ -118,14 +119,19 @@ const PostBody = ({ layoutVariant, subtitle, title, excerpt, body, category, cta
             </StyledArticle>
           )}
           {cta && isCtaVisible && (
-            <StyledCtaNavWrap layoutVariant={layoutVariant}>
-              <StyledCtaNav
-                variant={theme.PostBody[layoutVariant!].StyledCtaNavWrap.StyledCtaNav.variant}
-                layoutVariant={layoutVariant}
-                data={cta}
-                ctaTitle={theme.PostBody[layoutVariant!].StyledCtaNavWrap.StyledCtaNav.ctaTitle}
-              />
-            </StyledCtaNavWrap>
+            <StyledBackButton layoutVariant={layoutVariant}>
+              <ButtonLink
+                href={`/blogs/page/all/1/latest`}
+                title={'Retour aux Actualités'}
+                variant={'buttonIconPrimary'}
+                withText={true}
+                withIcon={true}
+                iconPosition={'left'}
+                iconName={'arrowLeft'}
+              >
+                <span>Retour aux actualités</span>
+              </ButtonLink>
+            </StyledBackButton>
           )}
         </StyledGrid>
       </StyledContainer>

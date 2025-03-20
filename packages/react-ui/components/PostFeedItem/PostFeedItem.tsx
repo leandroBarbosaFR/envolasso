@@ -15,7 +15,6 @@ export interface PostFeedItemProps {
   dynamicRoute: string;
   feedItemComponent?: string;
   isHorizontalFeed?: boolean;
-  createdAt: string;
   body: any;
   subtitle?: string;
 }
@@ -37,7 +36,6 @@ const PostFeedItem = ({
   dynamicRoute,
   feedItemComponent,
   isHorizontalFeed,
-  createdAt,
   body,
   subtitle
 }: PostFeedItemProps) => {
@@ -52,7 +50,6 @@ const PostFeedItem = ({
       featureImage={featureImage}
       dynamicRoute={dynamicRoute}
       isHorizontalFeed={isHorizontalFeed}
-      createdAt={createdAt}
       body={body}
       subtitle={subtitle}
     />

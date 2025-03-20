@@ -48,7 +48,7 @@ const BlogIndex = ({ layoutVariant, pageName, blog, blogCount, perPage, urlPageN
             height={200}
             priority={false}
             fill={false}
-            placeholder={'blur'}
+            // placeholder={'blur'}
           />
           <Link href={`/${dynamicRoute}${slug?.current}`}>{title}</Link>
           {excerpt && <article>{excerpt}</article>}

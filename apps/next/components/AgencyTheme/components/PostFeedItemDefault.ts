@@ -71,7 +71,7 @@ const PostFeedItemDefault = {
     // StyledFeedInner
     // ==========================================================================
     StyledFeedInner: {
-      pointerEvents: `none`,
+      // pointerEvents: `none`,
       // position: `absolute`,
       top: `0`,
       left: `0`,
