@@ -14,8 +14,8 @@ const DropdownMenu = {
       overflowY: `visible`,
       zIndex: `1000`,
       borderRadius: `0`,
-      border: `1px solid ${colors.green}`,
-      background: colors.green,
+      border: `1px solid ${colors.blueLight}`,
+      background: colors.blueLight,
       boxShadow: `0px 3px 6px 3px rgb(209 209 209 / 3%)`,
       animationDuration: `400ms`,
       animationTimingFunction: `cubic-bezier(0.16, 1, 0.3, 1)`,
@@ -42,7 +42,7 @@ const DropdownMenu = {
       },
       // Portal Arrow
       StyledArrow: {
-        fill: colors.green,
+        fill: colors.blueLight,
         mobile: {
           height: `15px`,
           width: `25px`

@@ -385,7 +385,7 @@ const PostBody = {
     StyledExcerpt: {
       variant: `standfirst`,
       blockquote: {
-        color: colors.green
+        color: colors.black
       },
       mobile: {
         gridColumn: `1/13`,
@@ -419,7 +419,7 @@ const PostBody = {
     StyledArticle: {
       variant: `bodyCopy`,
       blockquote: {
-        color: colors.green
+        color: colors.black
       },
       mobile: {
         gridColumn: `1/13`,

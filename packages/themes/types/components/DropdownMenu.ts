@@ -192,12 +192,7 @@ export type DropdownMenu = {
     };
   };
   StyledPortal: {
-    zIndex: string;
-    mobile: {};
-    mobileLarge: {};
-    tablet: {};
-    desktop: {};
-    widescreen: {};
+    zIndex?: string;
   };
 };
 

@@ -25,7 +25,7 @@ const DropdownFilter = {
       display: `flex`,
       zIndex: `300`,
       borderRadius: `6px`,
-      background: colors.green,
+      background: colors.blueLight,
       boxShadow: `0px 3px 6px 3px rgb(209 209 209 / 3%)`,
       animationDuration: `400ms`,
       mobile: {
@@ -49,7 +49,7 @@ const DropdownFilter = {
       },
       // Portal Arrow
       StyledArrow: {
-        fill: colors.green,
+        fill: colors.blueLight,
         mobile: {
           height: `15px`,
           width: `25px`
