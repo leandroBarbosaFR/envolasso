@@ -2760,10 +2760,10 @@ const button = {
     fontWeightActivated: `300`,
     // Icon
     icon: {
-      fill: colors.white,
-      fillHover: colors.grey,
-      fillFocus: colors.darkGrey,
-      fillActive: colors.grey
+      fill: colors.blueLight,
+      fillHover: colors.blueLightOpacity,
+      fillFocus: colors.blueLightOpacity,
+      fillActive: colors.blueLightOpacity
     },
     // Mobile
     mobile: {
