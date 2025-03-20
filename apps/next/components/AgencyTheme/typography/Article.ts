@@ -257,7 +257,7 @@ const Article = {
   bodyCopyPages: {
     familyHeading: `${fonts.PoppinsRegular}`,
     weightHeading: 300,
-    colorHeading: `${colors.white}`,
+    colorHeading: `${colors.black}`,
     family: `${fonts.PoppinsRegular}`,
     weight: 300,
     familyBold: `${fonts.PoppinsRegular}`,
