@@ -12,8 +12,8 @@ const StyledArticle = styled(Article)<StyledComponentProps>`
     color: ${({ layoutVariant, theme }) =>
       theme.StandardPageBody[layoutVariant!].StyledArticleWrap.StyledArticle.blockquote.color};
   }
-  display: flex;
-  flex-direction: column-reverse;
+  /* display: flex;
+  flex-direction: column-reverse; */
   // ==========================================================================
   // Mobile
   // ==========================================================================
