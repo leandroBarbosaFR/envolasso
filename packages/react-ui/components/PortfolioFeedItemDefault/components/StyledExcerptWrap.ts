@@ -5,7 +5,12 @@ const StyledExcerptWrap = styled.div<StyledComponentProps>`
   // ==========================================================================
   // Global
   // ==========================================================================
-
+  position: absolute;
+  bottom: 50px;
+  left: 0; /* Start from the left border */
+  right: 0; /* Optional: to make it extend to the right edge */
+  transition: transform 0.3s ease-in-out; /* Smooth animation */
+  padding: 0 25px;
   // ==========================================================================
   // Mobile
   // ==========================================================================

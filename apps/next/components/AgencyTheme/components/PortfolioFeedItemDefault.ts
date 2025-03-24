@@ -16,7 +16,7 @@ const PortfolioFeedItemDefault = {
       color: `${colors.white}`,
       background: ``,
       border: `none`,
-      borderRadius: ``,
+      borderRadius: `6px`,
       overflow: `hidden`,
       mobile: {
         gridColumn: `span 12`,

@@ -10,7 +10,7 @@ const StyledExcerpt = styled(StyledArticle)<StyledComponentProps>`
     theme.PortfolioFeedItemDefault[layoutVariant!].StyledExcerptWrap.StyledExcerpt.whiteSpace};
   color: ${({ layoutVariant, theme }) =>
     theme.PortfolioFeedItemDefault[layoutVariant!].StyledExcerptWrap.StyledExcerpt.color};
-
+  text-align: center;
   // ==========================================================================
   // Mobile
   // ==========================================================================
