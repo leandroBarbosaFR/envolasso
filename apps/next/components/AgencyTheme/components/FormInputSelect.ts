@@ -196,7 +196,7 @@ const FormInputSelect = {
       backgroundaActivated: `${colors.transparent}`,
       // placeholder
       placeholder: {
-        color: `${colors.white}`,
+        color: `${colors.GreyBlue}`,
         background: `${colors.transparent}`
       },
       //autofill
@@ -707,31 +707,31 @@ const FormInputSelect = {
       gap: ``,
       justifyContent: ``,
       alignItems: `center`,
-      fontColor: `${colors.black}`,
+      fontColor: `${colors.GreyBlue}`,
       background: `${colors.transparent}`,
       fontFamily: `${fonts.PoppinsRegular}`,
       fontWeight: 300,
       transition: `0.3s ease-in-out`,
       // Hover
-      fontColorHover: `${colors.black}`,
+      fontColorHover: `${colors.GreyBlue}`,
       backgroundHover: `${colors.transparent}`,
       // Focus
-      fontColorFocus: `${colors.black}`,
+      fontColorFocus: `${colors.GreyBlue}`,
       backgroundFocus: `${colors.transparent}`,
       // Active
-      fontColorActive: `${colors.black}`,
+      fontColorActive: `${colors.GreyBlue}`,
       backgroundActive: `${colors.transparent}`,
       // activated
-      fontColorActivated: `${colors.black}`,
+      fontColorActivated: `${colors.GreyBlue}`,
       backgroundaActivated: `${colors.transparent}`,
       // placeholder
       placeholder: {
-        color: `${colors.black}`,
+        color: `${colors.GreyBlue} !important`,
         background: `${colors.transparent}`
       },
       //autofill
       autofill: {
-        textFillColor: `${colors.black}`,
+        textFillColor: `${colors.GreyBlue}`,
         boxShadow: `rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset`,
         transition: `background-color 5000s ease-in-out 0s`
       },

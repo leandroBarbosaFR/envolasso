@@ -617,7 +617,7 @@ const FormInputMixed = {
       },
       // placeholder
       placeholder: {
-        color: colors.black,
+        color: colors.GreyBlue,
         fontFamily: fonts.PoppinsRegular,
         background: ``
       },
