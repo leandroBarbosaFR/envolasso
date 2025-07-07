@@ -130,8 +130,8 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 variant={theme.ContactForm[variant!].StyledFormFields.FormInputMixed.variant}
                 id={'email'}
                 type={'email'}
-                placeholder={'ex. envol-association@envol.fr'}
-                label={'Email'}
+                placeholder={'ex. jeandupont@votreemail.fr'}
+                label={'Votre email'}
                 error={errors.Email && errors.Email}
                 {...register('Email')}
               />
