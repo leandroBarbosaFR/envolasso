@@ -14,29 +14,35 @@ const formHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { body } = req;
   try {
     const schema = yup.object({
-      Email: yup.string().required().email(),
-      Name: yup.string().required(),
-      Message: yup.string().required()
+      Email: yup.string().required('L\'email est requis').email('L\'email n\'est pas valide'),
+      Name: yup.string().required('Le nom est requis'),
+      Message: yup.string().required('Le message est requis')
     });
-    console.info(`validating request`);
+
+    console.info(`Validation de la requête`);
     console.info(body);
+
     await schema.validate(body);
+
     const { Email, Name, Subject, Message } = body as ContactFormInput;
-    console.info(body);
+
     const emailHtml = contactEmailBody(`
-      <p>Email: ${Email}</p>
-      <p>Name: ${Name}</p>
-      <p>Subject: ${Subject}</p>
-      <p>Message: ${Message}</p>`);
+      <p>Email : ${Email}</p>
+      <p>Nom : ${Name}</p>
+      <p>Sujet : ${Subject}</p>
+      <p>Message : ${Message}</p>`);
+
     await mailClient.sendMail({
       from: `${Name} <${Email}>`,
-      subject: `Message from 1367 Studio contact form - ${Name}`,
+      subject: `Siteweb message de ${Name}`,
       html: emailHtml
     });
-    res.status(200).json({ message: 'email sent' });
+
+    res.status(200).json({ message: 'Email envoyé avec succès' });
   } catch (error) {
     console.error(error);
-    res.status(400).json({ error: 'Invalid form data' });
+    res.status(400).json({ error: 'Données du formulaire invalides' });
   }
 };
+
 export default formHandler;

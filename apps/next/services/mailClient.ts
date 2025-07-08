@@ -15,7 +15,7 @@ const mailClient = createTransport(
   },
   {
     to: process.env.MAIL_RECEIVER,
-    subject: `Message from 1367 Studio`
+    subject: `Message Envol Culture`
   }
 );
 
