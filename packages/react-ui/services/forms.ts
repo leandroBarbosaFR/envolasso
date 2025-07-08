@@ -8,6 +8,7 @@ interface formResponse {
 type requestBody = {
   Name: string;
   Email: string;
+  Phone: string;
   Subject: string;
   Message: string;
 };

@@ -6,6 +6,7 @@ import contactEmailBody from '../../lib/middleware/emails/contactEmailBody';
 interface ContactFormInput {
   Email: string;
   Name: string;
+  Phone: string;
   Subject: string;
   Message: string;
 }
@@ -16,6 +17,7 @@ const formHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     const schema = yup.object({
       Email: yup.string().required('L\'email est requis').email('L\'email n\'est pas valide'),
       Name: yup.string().required('Le nom est requis'),
+      Phone: yup.string().required('Le numéro de téléphone est requis'),
       Message: yup.string().required('Le message est requis')
     });
 
@@ -24,17 +26,18 @@ const formHandler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     await schema.validate(body);
 
-    const { Email, Name, Subject, Message } = body as ContactFormInput;
+    const { Email, Name, Subject, Message, Phone } = body as ContactFormInput;
 
     const emailHtml = contactEmailBody(`
       <p>Email : ${Email}</p>
       <p>Nom : ${Name}</p>
+      <p>Téléphone : ${Phone}</p>
       <p>Sujet : ${Subject}</p>
       <p>Message : ${Message}</p>`);
 
     await mailClient.sendMail({
       from: `${Name} <${Email}>`,
-      subject: `Siteweb message de ${Name}`,
+      subject: `Siteweb | message de ${Name}`,
       html: emailHtml
     });
 

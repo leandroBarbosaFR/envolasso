@@ -34,6 +34,7 @@ export interface ContactFormProps {
 interface ContactFormInput {
   Email: string;
   Name: string;
+  Phone: string;
   Subject: string;
   Message: string;
 }
@@ -41,6 +42,7 @@ interface ContactFormInput {
 const schema = yup.object({
   Email: yup.string().required().email(),
   Name: yup.string().required(),
+  Phone: yup.string().required(),
   Subject: yup.string().required(),
   Message: yup.string().required()
 });
@@ -95,6 +97,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
     }
     setValue('Email', '');
     setValue('Name', '');
+    setValue('Phone', '');
     setValue('Subject', 'music');
     setValue('Message', '');
   };
@@ -130,7 +133,7 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 variant={theme.ContactForm[variant!].StyledFormFields.FormInputMixed.variant}
                 id={'email'}
                 type={'email'}
-                placeholder={'ex. jeandupont@votreemail.fr'}
+                placeholder={'ex. jeandupont@email.fr'}
                 label={'Votre email'}
                 error={errors.Email && errors.Email}
                 {...register('Email')}
@@ -142,9 +145,20 @@ const ContactForm = ({ data }: ContactFormProps) => {
                 id={'name'}
                 type={'text'}
                 placeholder={'Nom complet'}
-                label={'Nom'}
+                label={'Nom complet'}
                 error={errors.Name && errors.Name}
                 {...register('Name')}
+              />
+            </StyledFormFields>
+              <StyledFormFields layoutVariant={variant}>
+              <FormInputMixed
+                variant={theme.ContactForm[variant!].StyledFormFields.FormInputMixed.variant}
+                id={'phone'}
+                type={'phone'}
+                placeholder={'ex. +33 0123456789'}
+                label={'Votre numéro de téléphone'}
+                error={errors.Phone && errors.Phone}
+                {...register('Phone')}
               />
             </StyledFormFields>
             <StyledFormFields layoutVariant={variant}>
